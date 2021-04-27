@@ -1,0 +1,1128 @@
+2021-04-23 14:11:50.674  INFO 12552 --- [restartedMain] com.program.blog.BlogApplication         : Starting BlogApplication using Java 12.0.2 on LAPTOP-B2BM54RN with PID 12552 (E:\IdeaProjects\blog\target\classes started by 轩 in E:\IdeaProjects\blog)
+2021-04-23 14:11:50.765 DEBUG 12552 --- [restartedMain] com.program.blog.BlogApplication         : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-04-23 14:11:50.765  INFO 12552 --- [restartedMain] com.program.blog.BlogApplication         : The following profiles are active: dev
+2021-04-23 14:11:50.836  INFO 12552 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-23 14:11:50.836  INFO 12552 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-23 14:11:55.487  INFO 12552 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-23 14:11:55.501  INFO 12552 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-23 14:11:55.501  INFO 12552 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-04-23 14:11:55.635  INFO 12552 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-23 14:11:55.640  INFO 12552 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4802 ms
+2021-04-23 14:11:59.448  INFO 12552 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-23 14:11:59.609  INFO 12552 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-04-23 14:12:04.404  INFO 12552 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-04-23 14:12:04.499  INFO 12552 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-23 14:12:04.543  INFO 12552 --- [restartedMain] com.program.blog.BlogApplication         : Started BlogApplication in 15.213 seconds (JVM running for 17.997)
+2021-04-23 14:12:07.121  INFO 12552 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-23 14:12:07.121  INFO 12552 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-23 14:12:07.122  INFO 12552 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-04-23 14:12:07.285  INFO 12552 --- [http-nio-8080-exec-1] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/admin/blogs, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.admin.BlogController.blogsPage, args=[{}, 1])
+2021-04-23 14:12:07.412  INFO 12552 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-04-23 14:12:08.824  INFO 12552 --- [http-nio-8080-exec-4] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.IndexController.index, args=[{}])
+2021-04-23 14:12:10.045  INFO 12552 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-04-23 14:12:10.267  INFO 12552 --- [http-nio-8080-exec-1] com.program.blog.aspect.LogAspect        : Result : admin/blogs
+2021-04-23 14:12:10.284  INFO 12552 --- [http-nio-8080-exec-4] com.program.blog.aspect.LogAspect        : Result : index
+2021-04-23 14:12:16.849  INFO 12552 --- [http-nio-8080-exec-5] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/types, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.UTypeController.toTypePage, args=[{}])
+2021-04-23 14:12:16.865  INFO 12552 --- [http-nio-8080-exec-5] com.program.blog.aspect.LogAspect        : Result : types
+2021-04-23 14:14:01.762  INFO 12552 --- [http-nio-8080-exec-9] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/types, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.UTypeController.toTypePage, args=[{}])
+2021-04-23 14:14:01.779  INFO 12552 --- [http-nio-8080-exec-9] com.program.blog.aspect.LogAspect        : Result : types
+2021-04-23 14:16:17.496  INFO 12256 --- [restartedMain] com.program.blog.BlogApplication         : Starting BlogApplication using Java 12.0.2 on LAPTOP-B2BM54RN with PID 12256 (E:\IdeaProjects\blog\target\classes started by 轩 in E:\IdeaProjects\blog)
+2021-04-23 14:16:17.498 DEBUG 12256 --- [restartedMain] com.program.blog.BlogApplication         : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-04-23 14:16:17.498  INFO 12256 --- [restartedMain] com.program.blog.BlogApplication         : The following profiles are active: dev
+2021-04-23 14:16:17.536  INFO 12256 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-23 14:16:17.537  INFO 12256 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-23 14:16:18.485  INFO 12256 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-23 14:16:18.491  INFO 12256 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-23 14:16:18.491  INFO 12256 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-04-23 14:16:18.557  INFO 12256 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-23 14:16:18.557  INFO 12256 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1019 ms
+2021-04-23 14:16:19.034  INFO 12256 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-23 14:16:19.114  INFO 12256 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-04-23 14:16:19.459  INFO 12256 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-04-23 14:16:19.487  INFO 12256 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-23 14:16:19.496  INFO 12256 --- [restartedMain] com.program.blog.BlogApplication         : Started BlogApplication in 2.388 seconds (JVM running for 3.412)
+2021-04-23 14:16:21.905  INFO 12256 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-23 14:16:21.907  INFO 12256 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-23 14:16:21.908  INFO 12256 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-04-23 14:16:21.933  INFO 12256 --- [http-nio-8080-exec-1] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/types, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.UTypeController.toTypePage, args=[{}])
+2021-04-23 14:16:21.950  INFO 12256 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-04-23 14:16:22.178  INFO 12256 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-04-23 14:16:22.290  INFO 12256 --- [http-nio-8080-exec-1] com.program.blog.aspect.LogAspect        : Result : types
+2021-04-23 14:17:07.492  INFO 12256 --- [http-nio-8080-exec-3] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/types, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.UTypeController.toTypePage, args=[{}])
+2021-04-23 14:17:07.511  INFO 12256 --- [http-nio-8080-exec-3] com.program.blog.aspect.LogAspect        : Result : types
+2021-04-23 14:20:22.289  INFO 12256 --- [Thread-5] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-23 14:20:22.290  INFO 12256 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-04-23 14:20:22.320  INFO 12256 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-04-23 14:20:22.439  INFO 12256 --- [restartedMain] com.program.blog.BlogApplication         : Starting BlogApplication using Java 12.0.2 on LAPTOP-B2BM54RN with PID 12256 (E:\IdeaProjects\blog\target\classes started by 轩 in E:\IdeaProjects\blog)
+2021-04-23 14:20:22.439 DEBUG 12256 --- [restartedMain] com.program.blog.BlogApplication         : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-04-23 14:20:22.439  INFO 12256 --- [restartedMain] com.program.blog.BlogApplication         : The following profiles are active: dev
+2021-04-23 14:20:22.696  INFO 12256 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-23 14:20:22.696  INFO 12256 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-23 14:20:22.696  INFO 12256 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-04-23 14:20:22.721  INFO 12256 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-23 14:20:22.721  INFO 12256 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 280 ms
+2021-04-23 14:20:22.956  INFO 12256 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-23 14:20:22.995  INFO 12256 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-04-23 14:20:23.162  INFO 12256 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-04-23 14:20:23.173  INFO 12256 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-23 14:20:23.176  INFO 12256 --- [restartedMain] com.program.blog.BlogApplication         : Started BlogApplication in 0.778 seconds (JVM running for 247.092)
+2021-04-23 14:20:23.178  INFO 12256 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-04-23 14:20:23.348  INFO 12256 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-23 14:20:23.350  INFO 12256 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-23 14:20:23.350  INFO 12256 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-04-23 14:20:23.352  INFO 12256 --- [http-nio-8080-exec-1] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/types, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.UTypeController.toTypePage, args=[{}])
+2021-04-23 14:20:23.355  INFO 12256 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2021-04-23 14:20:23.369  INFO 12256 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2021-04-23 14:20:23.385  INFO 12256 --- [http-nio-8080-exec-1] com.program.blog.aspect.LogAspect        : Result : types
+2021-04-23 14:20:27.729  INFO 12256 --- [http-nio-8080-exec-1] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/types/search, ip=127.0.0.1, classMethod=com.program.blog.controller.user.UTypeController.page, args=[1, 2, {}])
+2021-04-23 14:20:27.730  INFO 12256 --- [http-nio-8080-exec-1] c.p.b.controller.user.UTypeController    : 1  2
+2021-04-23 14:20:27.747  INFO 12256 --- [http-nio-8080-exec-1] com.program.blog.aspect.LogAspect        : Result : types :: blogList
+2021-04-23 14:24:01.977  INFO 12256 --- [Thread-8] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-23 14:24:01.978  INFO 12256 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2021-04-23 14:24:01.984  INFO 12256 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2021-04-23 14:24:02.072  INFO 12256 --- [restartedMain] com.program.blog.BlogApplication         : Starting BlogApplication using Java 12.0.2 on LAPTOP-B2BM54RN with PID 12256 (E:\IdeaProjects\blog\target\classes started by 轩 in E:\IdeaProjects\blog)
+2021-04-23 14:24:02.072 DEBUG 12256 --- [restartedMain] com.program.blog.BlogApplication         : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-04-23 14:24:02.072  INFO 12256 --- [restartedMain] com.program.blog.BlogApplication         : The following profiles are active: dev
+2021-04-23 14:24:02.298  INFO 12256 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-23 14:24:02.299  INFO 12256 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-23 14:24:02.299  INFO 12256 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-04-23 14:24:02.328  INFO 12256 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-23 14:24:02.328  INFO 12256 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 254 ms
+2021-04-23 14:24:02.550  INFO 12256 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-23 14:24:02.603  INFO 12256 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-04-23 14:24:02.767  INFO 12256 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-04-23 14:24:02.777  INFO 12256 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-23 14:24:02.780  INFO 12256 --- [restartedMain] com.program.blog.BlogApplication         : Started BlogApplication in 0.739 seconds (JVM running for 466.695)
+2021-04-23 14:24:02.781  INFO 12256 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-04-23 14:24:04.844  INFO 12256 --- [Thread-13] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-23 14:24:04.947  INFO 12256 --- [restartedMain] com.program.blog.BlogApplication         : Starting BlogApplication using Java 12.0.2 on LAPTOP-B2BM54RN with PID 12256 (E:\IdeaProjects\blog\target\classes started by 轩 in E:\IdeaProjects\blog)
+2021-04-23 14:24:04.947 DEBUG 12256 --- [restartedMain] com.program.blog.BlogApplication         : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-04-23 14:24:04.948  INFO 12256 --- [restartedMain] com.program.blog.BlogApplication         : The following profiles are active: dev
+2021-04-23 14:24:05.298  INFO 12256 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-23 14:24:05.299  INFO 12256 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-23 14:24:05.300  INFO 12256 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-04-23 14:24:05.326  INFO 12256 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-23 14:24:05.326  INFO 12256 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 377 ms
+2021-04-23 14:24:05.641  INFO 12256 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-23 14:24:05.689  INFO 12256 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-04-23 14:24:05.929  INFO 12256 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-04-23 14:24:05.945  INFO 12256 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-23 14:24:05.951  INFO 12256 --- [restartedMain] com.program.blog.BlogApplication         : Started BlogApplication in 1.031 seconds (JVM running for 469.866)
+2021-04-23 14:24:05.952  INFO 12256 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-04-23 14:24:06.124  INFO 12256 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-23 14:24:06.124  INFO 12256 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-23 14:24:06.126  INFO 12256 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-04-23 14:24:06.130  INFO 12256 --- [http-nio-8080-exec-1] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/types, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.UTypeController.toTypePage, args=[{}])
+2021-04-23 14:24:06.134  INFO 12256 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2021-04-23 14:24:06.157  INFO 12256 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2021-04-23 14:24:06.177  INFO 12256 --- [http-nio-8080-exec-1] com.program.blog.aspect.LogAspect        : Result : types
+2021-04-23 14:24:09.674  INFO 12256 --- [http-nio-8080-exec-10] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/types/search, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.UTypeController.page, args=[1, 2, {}])
+2021-04-23 14:24:09.684  INFO 12256 --- [http-nio-8080-exec-10] com.program.blog.aspect.LogAspect        : Result : types :: blogList
+2021-04-23 14:24:24.780  INFO 12256 --- [http-nio-8080-exec-1] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/types, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.UTypeController.toTypePage, args=[{}])
+2021-04-23 14:24:24.789  INFO 12256 --- [http-nio-8080-exec-1] com.program.blog.aspect.LogAspect        : Result : types
+2021-04-23 14:24:26.052  INFO 12256 --- [http-nio-8080-exec-9] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/types/search, ip=127.0.0.1, classMethod=com.program.blog.controller.user.UTypeController.page, args=[1, 2, {}])
+2021-04-23 14:24:26.062  INFO 12256 --- [http-nio-8080-exec-9] com.program.blog.aspect.LogAspect        : Result : types :: blogList
+2021-04-23 14:24:28.911  INFO 12256 --- [http-nio-8080-exec-2] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/types/search, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.UTypeController.page, args=[1, 4, {}])
+2021-04-23 14:24:28.918  INFO 12256 --- [http-nio-8080-exec-2] com.program.blog.aspect.LogAspect        : Result : types :: blogList
+2021-04-23 14:25:01.753  INFO 12256 --- [http-nio-8080-exec-5] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/types/search, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.UTypeController.page, args=[1, 2, {}])
+2021-04-23 14:25:01.762  INFO 12256 --- [http-nio-8080-exec-5] com.program.blog.aspect.LogAspect        : Result : types :: blogList
+2021-04-23 14:25:02.793  INFO 12256 --- [http-nio-8080-exec-7] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/types/search, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.UTypeController.page, args=[1, 4, {}])
+2021-04-23 14:25:02.800  INFO 12256 --- [http-nio-8080-exec-7] com.program.blog.aspect.LogAspect        : Result : types :: blogList
+2021-04-23 14:25:03.269  INFO 12256 --- [http-nio-8080-exec-1] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/types/search, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.UTypeController.page, args=[1, 2, {}])
+2021-04-23 14:25:03.275  INFO 12256 --- [http-nio-8080-exec-1] com.program.blog.aspect.LogAspect        : Result : types :: blogList
+2021-04-23 14:25:04.314  INFO 12256 --- [http-nio-8080-exec-9] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/types, ip=127.0.0.1, classMethod=com.program.blog.controller.user.UTypeController.toTypePage, args=[{}])
+2021-04-23 14:25:04.322  INFO 12256 --- [http-nio-8080-exec-9] com.program.blog.aspect.LogAspect        : Result : types
+2021-04-23 14:25:05.412  INFO 12256 --- [http-nio-8080-exec-4] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/types/search, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.UTypeController.page, args=[1, 2, {}])
+2021-04-23 14:25:05.418  INFO 12256 --- [http-nio-8080-exec-4] com.program.blog.aspect.LogAspect        : Result : types :: blogList
+2021-04-23 14:25:06.482  INFO 12256 --- [http-nio-8080-exec-9] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/types/search, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.UTypeController.page, args=[1, 4, {}])
+2021-04-23 14:25:06.489  INFO 12256 --- [http-nio-8080-exec-9] com.program.blog.aspect.LogAspect        : Result : types :: blogList
+2021-04-23 14:25:08.208  INFO 12256 --- [http-nio-8080-exec-2] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/types/search, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.UTypeController.page, args=[1, 2, {}])
+2021-04-23 14:25:08.214  INFO 12256 --- [http-nio-8080-exec-2] com.program.blog.aspect.LogAspect        : Result : types :: blogList
+2021-04-23 14:25:10.850  INFO 12256 --- [http-nio-8080-exec-6] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/types/search, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.UTypeController.page, args=[1, 4, {}])
+2021-04-23 14:25:10.857  INFO 12256 --- [http-nio-8080-exec-6] com.program.blog.aspect.LogAspect        : Result : types :: blogList
+2021-04-23 14:26:57.099  INFO 12256 --- [http-nio-8080-exec-5] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/types, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.UTypeController.toTypePage, args=[{}])
+2021-04-23 14:26:57.108  INFO 12256 --- [http-nio-8080-exec-5] com.program.blog.aspect.LogAspect        : Result : types
+2021-04-23 14:26:58.456  INFO 12256 --- [http-nio-8080-exec-2] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/types/search, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.UTypeController.page, args=[1, 2, {}])
+2021-04-23 14:26:58.461  INFO 12256 --- [http-nio-8080-exec-2] com.program.blog.aspect.LogAspect        : Result : types :: blogList
+2021-04-23 14:27:01.103  INFO 12256 --- [http-nio-8080-exec-5] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/types/search, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.UTypeController.page, args=[1, 2, {}])
+2021-04-23 14:27:01.108  INFO 12256 --- [http-nio-8080-exec-5] com.program.blog.aspect.LogAspect        : Result : types :: blogList
+2021-04-23 14:27:02.292  INFO 12256 --- [http-nio-8080-exec-2] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/types/search, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.UTypeController.page, args=[1, 4, {}])
+2021-04-23 14:27:02.296  INFO 12256 --- [http-nio-8080-exec-2] com.program.blog.aspect.LogAspect        : Result : types :: blogList
+2021-04-23 14:27:03.211  INFO 12256 --- [http-nio-8080-exec-8] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/types/search, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.UTypeController.page, args=[1, 4, {}])
+2021-04-23 14:27:03.217  INFO 12256 --- [http-nio-8080-exec-8] com.program.blog.aspect.LogAspect        : Result : types :: blogList
+2021-04-23 14:27:03.453  INFO 12256 --- [http-nio-8080-exec-3] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/types/search, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.UTypeController.page, args=[1, 4, {}])
+2021-04-23 14:27:03.458  INFO 12256 --- [http-nio-8080-exec-3] com.program.blog.aspect.LogAspect        : Result : types :: blogList
+2021-04-23 14:27:03.641  INFO 12256 --- [http-nio-8080-exec-4] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/types/search, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.UTypeController.page, args=[1, 4, {}])
+2021-04-23 14:27:03.647  INFO 12256 --- [http-nio-8080-exec-4] com.program.blog.aspect.LogAspect        : Result : types :: blogList
+2021-04-23 14:27:03.858  INFO 12256 --- [http-nio-8080-exec-6] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/types/search, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.UTypeController.page, args=[1, 4, {}])
+2021-04-23 14:27:03.864  INFO 12256 --- [http-nio-8080-exec-6] com.program.blog.aspect.LogAspect        : Result : types :: blogList
+2021-04-23 14:27:05.086  INFO 12256 --- [http-nio-8080-exec-2] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/types/search, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.UTypeController.page, args=[1, 2, {}])
+2021-04-23 14:27:05.092  INFO 12256 --- [http-nio-8080-exec-2] com.program.blog.aspect.LogAspect        : Result : types :: blogList
+2021-04-23 14:27:31.716  INFO 12256 --- [http-nio-8080-exec-5] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/types, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.UTypeController.toTypePage, args=[{}])
+2021-04-23 14:27:31.722  INFO 12256 --- [http-nio-8080-exec-5] com.program.blog.aspect.LogAspect        : Result : types
+2021-04-23 14:27:32.945  INFO 12256 --- [http-nio-8080-exec-6] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/types/search, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.UTypeController.page, args=[1, 2, {}])
+2021-04-23 14:27:32.952  INFO 12256 --- [http-nio-8080-exec-6] com.program.blog.aspect.LogAspect        : Result : types :: blogList
+2021-04-23 14:27:34.671  INFO 12256 --- [http-nio-8080-exec-5] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/types/search, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.UTypeController.page, args=[1, 4, {}])
+2021-04-23 14:27:34.675  INFO 12256 --- [http-nio-8080-exec-5] com.program.blog.aspect.LogAspect        : Result : types :: blogList
+2021-04-23 14:27:35.825  INFO 12256 --- [http-nio-8080-exec-8] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/types/search, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.UTypeController.page, args=[1, 2, {}])
+2021-04-23 14:27:35.834  INFO 12256 --- [http-nio-8080-exec-8] com.program.blog.aspect.LogAspect        : Result : types :: blogList
+2021-04-23 14:27:59.477  INFO 12256 --- [http-nio-8080-exec-10] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/types, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.UTypeController.toTypePage, args=[{}])
+2021-04-23 14:27:59.483  INFO 12256 --- [http-nio-8080-exec-10] com.program.blog.aspect.LogAspect        : Result : types
+2021-04-23 14:29:30.262  INFO 12256 --- [http-nio-8080-exec-9] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/types, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.UTypeController.toTypePage, args=[{}])
+2021-04-23 14:29:30.268  INFO 12256 --- [http-nio-8080-exec-9] com.program.blog.aspect.LogAspect        : Result : types
+2021-04-23 14:29:36.581  INFO 12256 --- [http-nio-8080-exec-3] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/types, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.UTypeController.toTypePage, args=[{}])
+2021-04-23 14:29:36.589  INFO 12256 --- [http-nio-8080-exec-3] com.program.blog.aspect.LogAspect        : Result : types
+2021-04-23 14:29:37.960  INFO 12256 --- [http-nio-8080-exec-2] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/types/search, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.UTypeController.page, args=[1, 2, {}])
+2021-04-23 14:29:37.966  INFO 12256 --- [http-nio-8080-exec-2] com.program.blog.aspect.LogAspect        : Result : types :: blogList
+2021-04-23 14:39:25.703  INFO 12256 --- [http-nio-8080-exec-7] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/types, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.UTypeController.toTypePage, args=[{}])
+2021-04-23 14:39:25.710  INFO 12256 --- [http-nio-8080-exec-7] com.program.blog.aspect.LogAspect        : Result : types
+2021-04-23 14:39:26.988  INFO 12256 --- [http-nio-8080-exec-3] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/types/search, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.UTypeController.page, args=[1, 2, {}])
+2021-04-23 14:39:26.994  INFO 12256 --- [http-nio-8080-exec-3] com.program.blog.aspect.LogAspect        : Result : types :: blogList
+2021-04-23 14:40:02.094  INFO 12256 --- [Thread-18] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-23 14:40:02.094  INFO 12256 --- [Thread-18] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2021-04-23 14:40:02.103  INFO 12256 --- [Thread-18] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2021-04-23 14:40:02.167  INFO 12256 --- [restartedMain] com.program.blog.BlogApplication         : Starting BlogApplication using Java 12.0.2 on LAPTOP-B2BM54RN with PID 12256 (E:\IdeaProjects\blog\target\classes started by 轩 in E:\IdeaProjects\blog)
+2021-04-23 14:40:02.168 DEBUG 12256 --- [restartedMain] com.program.blog.BlogApplication         : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-04-23 14:40:02.168  INFO 12256 --- [restartedMain] com.program.blog.BlogApplication         : The following profiles are active: dev
+2021-04-23 14:40:02.402  INFO 12256 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-23 14:40:02.402  INFO 12256 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-23 14:40:02.491  INFO 12256 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-04-23 14:40:02.512  INFO 12256 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-23 14:40:02.513  INFO 12256 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 344 ms
+2021-04-23 14:40:02.814  INFO 12256 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-23 14:40:02.860  INFO 12256 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-04-23 14:40:03.068  INFO 12256 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-04-23 14:40:03.079  INFO 12256 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-23 14:40:03.083  INFO 12256 --- [restartedMain] com.program.blog.BlogApplication         : Started BlogApplication in 0.94 seconds (JVM running for 1426.997)
+2021-04-23 14:40:03.084  INFO 12256 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-04-23 14:40:03.121  INFO 12256 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-23 14:40:03.122  INFO 12256 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-23 14:40:03.123  INFO 12256 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-04-23 14:40:03.126  INFO 12256 --- [http-nio-8080-exec-2] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/types, ip=127.0.0.1, classMethod=com.program.blog.controller.user.UTypeController.toTypePage, args=[{}])
+2021-04-23 14:40:03.130  INFO 12256 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2021-04-23 14:40:03.144  INFO 12256 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2021-04-23 14:40:03.152  INFO 12256 --- [http-nio-8080-exec-2] com.program.blog.aspect.LogAspect        : Result : types
+2021-04-23 14:40:04.415  INFO 12256 --- [http-nio-8080-exec-8] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/types/search, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.UTypeController.page, args=[1, 2, {}])
+2021-04-23 14:40:04.424  INFO 12256 --- [http-nio-8080-exec-8] com.program.blog.aspect.LogAspect        : Result : types :: blogList
+2021-04-23 14:40:05.068  INFO 12256 --- [Thread-23] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-23 14:40:05.068  INFO 12256 --- [Thread-23] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2021-04-23 14:40:05.076  INFO 12256 --- [Thread-23] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2021-04-23 14:40:05.133  INFO 12256 --- [restartedMain] com.program.blog.BlogApplication         : Starting BlogApplication using Java 12.0.2 on LAPTOP-B2BM54RN with PID 12256 (E:\IdeaProjects\blog\target\classes started by 轩 in E:\IdeaProjects\blog)
+2021-04-23 14:40:05.133 DEBUG 12256 --- [restartedMain] com.program.blog.BlogApplication         : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-04-23 14:40:05.133  INFO 12256 --- [restartedMain] com.program.blog.BlogApplication         : The following profiles are active: dev
+2021-04-23 14:40:05.356  INFO 12256 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-23 14:40:05.357  INFO 12256 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-23 14:40:05.358  INFO 12256 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-04-23 14:40:05.377  INFO 12256 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-23 14:40:05.378  INFO 12256 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 243 ms
+2021-04-23 14:40:05.619  INFO 12256 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-23 14:40:05.653  INFO 12256 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-04-23 14:40:05.816  INFO 12256 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-04-23 14:40:05.825  INFO 12256 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-23 14:40:05.829  INFO 12256 --- [restartedMain] com.program.blog.BlogApplication         : Started BlogApplication in 0.718 seconds (JVM running for 1429.744)
+2021-04-23 14:40:05.830  INFO 12256 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-04-23 14:40:54.717  INFO 12256 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-23 14:40:54.718  INFO 12256 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-23 14:40:54.719  INFO 12256 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-04-23 14:40:54.721  INFO 12256 --- [http-nio-8080-exec-1] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.IndexController.index, args=[{}])
+2021-04-23 14:40:54.727  INFO 12256 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2021-04-23 14:40:54.738  INFO 12256 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2021-04-23 14:40:54.753  INFO 12256 --- [http-nio-8080-exec-1] com.program.blog.aspect.LogAspect        : Result : index
+2021-04-23 14:40:58.173  INFO 12256 --- [http-nio-8080-exec-10] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/page, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.IndexController.page, args=[2, {}])
+2021-04-23 14:40:58.179  INFO 12256 --- [http-nio-8080-exec-10] com.program.blog.aspect.LogAspect        : Result : index :: blogList
+2021-04-23 14:41:02.432  INFO 12256 --- [http-nio-8080-exec-7] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/page, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.IndexController.page, args=[3, {}])
+2021-04-23 14:41:02.436  INFO 12256 --- [http-nio-8080-exec-7] com.program.blog.aspect.LogAspect        : Result : index :: blogList
+2021-04-23 14:41:56.752  INFO 12256 --- [http-nio-8080-exec-10] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.IndexController.index, args=[{}])
+2021-04-23 14:41:56.765  INFO 12256 --- [http-nio-8080-exec-10] com.program.blog.aspect.LogAspect        : Result : index
+2021-04-23 14:42:00.432  INFO 12256 --- [http-nio-8080-exec-1] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/page, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.IndexController.page, args=[2, {}])
+2021-04-23 14:42:00.437  INFO 12256 --- [http-nio-8080-exec-1] com.program.blog.aspect.LogAspect        : Result : index :: blogList
+2021-04-23 14:42:14.909  INFO 12256 --- [http-nio-8080-exec-5] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.IndexController.index, args=[{}])
+2021-04-23 14:42:14.918  INFO 12256 --- [http-nio-8080-exec-5] com.program.blog.aspect.LogAspect        : Result : index
+2021-04-23 14:42:17.077  INFO 12256 --- [http-nio-8080-exec-5] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/page, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.IndexController.page, args=[2, {}])
+2021-04-23 14:42:17.080  INFO 12256 --- [http-nio-8080-exec-5] com.program.blog.aspect.LogAspect        : Result : index :: blogList
+2021-04-23 14:44:05.431  INFO 12256 --- [http-nio-8080-exec-3] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.IndexController.index, args=[{}])
+2021-04-23 14:44:05.442  INFO 12256 --- [http-nio-8080-exec-3] com.program.blog.aspect.LogAspect        : Result : index
+2021-04-23 14:44:07.025  INFO 12256 --- [http-nio-8080-exec-9] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/page, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.IndexController.page, args=[2, {}])
+2021-04-23 14:44:07.029  INFO 12256 --- [http-nio-8080-exec-9] com.program.blog.aspect.LogAspect        : Result : index :: blogList
+2021-04-23 14:44:09.845  INFO 12256 --- [http-nio-8080-exec-2] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/page, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.IndexController.page, args=[3, {}])
+2021-04-23 14:44:09.849  INFO 12256 --- [http-nio-8080-exec-2] com.program.blog.aspect.LogAspect        : Result : index :: blogList
+2021-04-23 14:46:53.905  INFO 12256 --- [http-nio-8080-exec-2] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.IndexController.index, args=[{}])
+2021-04-23 14:46:53.917  INFO 12256 --- [http-nio-8080-exec-2] com.program.blog.aspect.LogAspect        : Result : index
+2021-04-23 14:48:10.459  INFO 12256 --- [http-nio-8080-exec-9] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.IndexController.index, args=[{}])
+2021-04-23 14:48:10.468  INFO 12256 --- [http-nio-8080-exec-9] com.program.blog.aspect.LogAspect        : Result : index
+2021-04-23 14:48:13.098  INFO 12256 --- [http-nio-8080-exec-8] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.IndexController.index, args=[{}])
+2021-04-23 14:48:13.107  INFO 12256 --- [http-nio-8080-exec-8] com.program.blog.aspect.LogAspect        : Result : index
+2021-04-23 14:48:15.965  INFO 12256 --- [http-nio-8080-exec-8] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.IndexController.index, args=[{}])
+2021-04-23 14:48:15.975  INFO 12256 --- [http-nio-8080-exec-8] com.program.blog.aspect.LogAspect        : Result : index
+2021-04-23 14:48:53.333  INFO 12256 --- [http-nio-8080-exec-8] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.IndexController.index, args=[{}])
+2021-04-23 14:48:53.342  INFO 12256 --- [http-nio-8080-exec-8] com.program.blog.aspect.LogAspect        : Result : index
+2021-04-23 14:49:06.655  INFO 12256 --- [http-nio-8080-exec-5] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.IndexController.index, args=[{}])
+2021-04-23 14:49:06.668  INFO 12256 --- [http-nio-8080-exec-5] com.program.blog.aspect.LogAspect        : Result : index
+2021-04-23 14:49:10.017  INFO 12256 --- [http-nio-8080-exec-5] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/page, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.IndexController.page, args=[2, {}])
+2021-04-23 14:49:10.021  INFO 12256 --- [http-nio-8080-exec-5] com.program.blog.aspect.LogAspect        : Result : index :: blogList
+2021-04-23 14:49:19.492  INFO 12256 --- [http-nio-8080-exec-3] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/page, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.IndexController.page, args=[3, {}])
+2021-04-23 14:49:19.496  INFO 12256 --- [http-nio-8080-exec-3] com.program.blog.aspect.LogAspect        : Result : index :: blogList
+2021-04-23 14:49:54.485  INFO 12256 --- [http-nio-8080-exec-2] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.IndexController.index, args=[{}])
+2021-04-23 14:49:54.494  INFO 12256 --- [http-nio-8080-exec-2] com.program.blog.aspect.LogAspect        : Result : index
+2021-04-23 14:49:56.228  INFO 12256 --- [http-nio-8080-exec-5] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/page, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.IndexController.page, args=[2, {}])
+2021-04-23 14:49:56.231  INFO 12256 --- [http-nio-8080-exec-5] com.program.blog.aspect.LogAspect        : Result : index :: blogList
+2021-04-23 14:50:01.285  INFO 12256 --- [http-nio-8080-exec-3] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/types, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.UTypeController.toTypePage, args=[{}])
+2021-04-23 14:50:01.292  INFO 12256 --- [http-nio-8080-exec-3] com.program.blog.aspect.LogAspect        : Result : types
+2021-04-23 14:50:03.431  INFO 12256 --- [http-nio-8080-exec-6] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/types/search, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.UTypeController.page, args=[2, noType, {}])
+2021-04-23 14:50:03.531 ERROR 12256 --- [http-nio-8080-exec-6] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NumberFormatException: For input string: "noType"] with root cause
+
+java.lang.NumberFormatException: For input string: "noType"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:68)
+	at java.base/java.lang.Long.parseLong(Long.java:699)
+	at java.base/java.lang.Long.valueOf(Long.java:1151)
+	at com.program.blog.service.user.UBlogServiceImpl.listBlog(UBlogServiceImpl.java:48)
+	at com.program.blog.controller.user.UTypeController.page(UTypeController.java:44)
+	at com.program.blog.controller.user.UTypeController$$FastClassBySpringCGLIB$$600f3f45.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:779)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:57)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.aspectj.AspectJAfterAdvice.invoke(AspectJAfterAdvice.java:49)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:58)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692)
+	at com.program.blog.controller.user.UTypeController$$EnhancerBySpringCGLIB$$da5152c6.page(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+
+2021-04-23 14:50:05.774  INFO 12256 --- [http-nio-8080-exec-5] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/types/search, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.UTypeController.page, args=[2, 2, {}])
+2021-04-23 14:50:05.778  INFO 12256 --- [http-nio-8080-exec-5] com.program.blog.aspect.LogAspect        : Result : types :: blogList
+2021-04-23 14:50:07.792  INFO 12256 --- [http-nio-8080-exec-1] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/types/search, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.UTypeController.page, args=[1, 4, {}])
+2021-04-23 14:50:07.797  INFO 12256 --- [http-nio-8080-exec-1] com.program.blog.aspect.LogAspect        : Result : types :: blogList
+2021-04-23 14:50:08.935  INFO 12256 --- [http-nio-8080-exec-10] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/types/search, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.UTypeController.page, args=[1, 2, {}])
+2021-04-23 14:50:08.941  INFO 12256 --- [http-nio-8080-exec-10] com.program.blog.aspect.LogAspect        : Result : types :: blogList
+2021-04-23 14:50:10.208  INFO 12256 --- [http-nio-8080-exec-6] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/types/search, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.UTypeController.page, args=[1, 4, {}])
+2021-04-23 14:50:10.215  INFO 12256 --- [http-nio-8080-exec-6] com.program.blog.aspect.LogAspect        : Result : types :: blogList
+2021-04-23 14:50:10.613  INFO 12256 --- [http-nio-8080-exec-8] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/types/search, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.UTypeController.page, args=[1, 2, {}])
+2021-04-23 14:50:10.618  INFO 12256 --- [http-nio-8080-exec-8] com.program.blog.aspect.LogAspect        : Result : types :: blogList
+2021-04-23 14:50:11.385  INFO 12256 --- [http-nio-8080-exec-4] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/types/search, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.UTypeController.page, args=[1, 4, {}])
+2021-04-23 14:50:11.390  INFO 12256 --- [http-nio-8080-exec-4] com.program.blog.aspect.LogAspect        : Result : types :: blogList
+2021-04-23 14:50:12.309  INFO 12256 --- [http-nio-8080-exec-9] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/types/search, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.UTypeController.page, args=[1, 2, {}])
+2021-04-23 14:50:12.315  INFO 12256 --- [http-nio-8080-exec-9] com.program.blog.aspect.LogAspect        : Result : types :: blogList
+2021-04-23 14:50:13.953  INFO 12256 --- [http-nio-8080-exec-10] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/types/search, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.UTypeController.page, args=[2, noType, {}])
+2021-04-23 14:50:13.958 ERROR 12256 --- [http-nio-8080-exec-10] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NumberFormatException: For input string: "noType"] with root cause
+
+java.lang.NumberFormatException: For input string: "noType"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:68)
+	at java.base/java.lang.Long.parseLong(Long.java:699)
+	at java.base/java.lang.Long.valueOf(Long.java:1151)
+	at com.program.blog.service.user.UBlogServiceImpl.listBlog(UBlogServiceImpl.java:48)
+	at com.program.blog.controller.user.UTypeController.page(UTypeController.java:44)
+	at com.program.blog.controller.user.UTypeController$$FastClassBySpringCGLIB$$600f3f45.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:779)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:57)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.aspectj.AspectJAfterAdvice.invoke(AspectJAfterAdvice.java:49)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:58)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692)
+	at com.program.blog.controller.user.UTypeController$$EnhancerBySpringCGLIB$$da5152c6.page(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+
+2021-04-23 14:50:15.113  INFO 12256 --- [http-nio-8080-exec-2] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/types/search, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.UTypeController.page, args=[2, 2, {}])
+2021-04-23 14:50:15.118  INFO 12256 --- [http-nio-8080-exec-2] com.program.blog.aspect.LogAspect        : Result : types :: blogList
+2021-04-23 14:50:20.221  INFO 12256 --- [http-nio-8080-exec-4] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/types/search, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.UTypeController.page, args=[1, 2, {}])
+2021-04-23 14:50:20.227  INFO 12256 --- [http-nio-8080-exec-4] com.program.blog.aspect.LogAspect        : Result : types :: blogList
+2021-04-23 14:50:21.214  INFO 12256 --- [http-nio-8080-exec-1] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/types/search, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.UTypeController.page, args=[1, 2, {}])
+2021-04-23 14:50:21.221  INFO 12256 --- [http-nio-8080-exec-1] com.program.blog.aspect.LogAspect        : Result : types :: blogList
+2021-04-23 14:50:22.765  INFO 12256 --- [http-nio-8080-exec-4] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/types/search, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.UTypeController.page, args=[2, noType, {}])
+2021-04-23 14:50:22.769 ERROR 12256 --- [http-nio-8080-exec-4] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NumberFormatException: For input string: "noType"] with root cause
+
+java.lang.NumberFormatException: For input string: "noType"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:68)
+	at java.base/java.lang.Long.parseLong(Long.java:699)
+	at java.base/java.lang.Long.valueOf(Long.java:1151)
+	at com.program.blog.service.user.UBlogServiceImpl.listBlog(UBlogServiceImpl.java:48)
+	at com.program.blog.controller.user.UTypeController.page(UTypeController.java:44)
+	at com.program.blog.controller.user.UTypeController$$FastClassBySpringCGLIB$$600f3f45.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:779)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:57)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.aspectj.AspectJAfterAdvice.invoke(AspectJAfterAdvice.java:49)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:58)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692)
+	at com.program.blog.controller.user.UTypeController$$EnhancerBySpringCGLIB$$da5152c6.page(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+
+2021-04-23 14:50:24.089  INFO 12256 --- [http-nio-8080-exec-7] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/types/search, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.UTypeController.page, args=[2, 2, {}])
+2021-04-23 14:50:24.093  INFO 12256 --- [http-nio-8080-exec-7] com.program.blog.aspect.LogAspect        : Result : types :: blogList
+2021-04-23 14:51:16.827  INFO 14704 --- [restartedMain] com.program.blog.BlogApplication         : Starting BlogApplication using Java 12.0.2 on LAPTOP-B2BM54RN with PID 14704 (E:\IdeaProjects\blog\target\classes started by 轩 in E:\IdeaProjects\blog)
+2021-04-23 14:51:16.830 DEBUG 14704 --- [restartedMain] com.program.blog.BlogApplication         : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-04-23 14:51:16.831  INFO 14704 --- [restartedMain] com.program.blog.BlogApplication         : The following profiles are active: dev
+2021-04-23 14:51:16.872  INFO 14704 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-23 14:51:16.873  INFO 14704 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-23 14:51:17.797  INFO 14704 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-23 14:51:17.803  INFO 14704 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-23 14:51:17.803  INFO 14704 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-04-23 14:51:17.862  INFO 14704 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-23 14:51:17.862  INFO 14704 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 988 ms
+2021-04-23 14:51:18.321  INFO 14704 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-23 14:51:18.400  INFO 14704 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-04-23 14:51:18.711  INFO 14704 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-04-23 14:51:18.735  INFO 14704 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-23 14:51:18.744  INFO 14704 --- [restartedMain] com.program.blog.BlogApplication         : Started BlogApplication in 2.473 seconds (JVM running for 4.053)
+2021-04-23 14:51:22.828  INFO 14704 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-23 14:51:22.829  INFO 14704 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-23 14:51:22.830  INFO 14704 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-04-23 14:51:22.853  INFO 14704 --- [http-nio-8080-exec-1] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/types, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.UTypeController.toTypePage, args=[{}])
+2021-04-23 14:51:22.870  INFO 14704 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-04-23 14:51:23.061  INFO 14704 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-04-23 14:51:23.149  INFO 14704 --- [http-nio-8080-exec-1] com.program.blog.aspect.LogAspect        : Result : types
+2021-04-23 14:51:26.248  INFO 14704 --- [http-nio-8080-exec-5] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/types/search, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.UTypeController.page, args=[2, noType, {}])
+2021-04-23 14:51:26.263 ERROR 14704 --- [http-nio-8080-exec-5] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NumberFormatException: For input string: "noType"] with root cause
+
+java.lang.NumberFormatException: For input string: "noType"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:68)
+	at java.base/java.lang.Long.parseLong(Long.java:699)
+	at java.base/java.lang.Long.valueOf(Long.java:1151)
+	at com.program.blog.service.user.UBlogServiceImpl.listBlog(UBlogServiceImpl.java:48)
+	at com.program.blog.controller.user.UTypeController.page(UTypeController.java:44)
+	at com.program.blog.controller.user.UTypeController$$FastClassBySpringCGLIB$$600f3f45.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:779)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:57)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.aspectj.AspectJAfterAdvice.invoke(AspectJAfterAdvice.java:49)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:58)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692)
+	at com.program.blog.controller.user.UTypeController$$EnhancerBySpringCGLIB$$d2f66d19.page(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+
+2021-04-23 14:51:27.824  INFO 14704 --- [http-nio-8080-exec-10] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/types/search, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.UTypeController.page, args=[1, 2, {}])
+2021-04-23 14:51:27.838  INFO 14704 --- [http-nio-8080-exec-10] com.program.blog.aspect.LogAspect        : Result : types :: blogList
+2021-04-23 14:51:31.748  INFO 14704 --- [http-nio-8080-exec-4] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/types/search, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.UTypeController.page, args=[2, 2, {}])
+2021-04-23 14:51:31.756  INFO 14704 --- [http-nio-8080-exec-4] com.program.blog.aspect.LogAspect        : Result : types :: blogList
+2021-04-23 14:55:26.443  INFO 14704 --- [http-nio-8080-exec-6] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.IndexController.index, args=[{}])
+2021-04-23 14:55:26.462  INFO 14704 --- [http-nio-8080-exec-6] com.program.blog.aspect.LogAspect        : Result : index
+2021-04-23 14:59:12.168  INFO 14704 --- [http-nio-8080-exec-5] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.IndexController.index, args=[{}])
+2021-04-23 14:59:12.195  INFO 14704 --- [http-nio-8080-exec-5] com.program.blog.aspect.LogAspect        : Result : index
+2021-04-23 14:59:14.835  INFO 14704 --- [http-nio-8080-exec-10] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.IndexController.index, args=[{}])
+2021-04-23 14:59:14.850  INFO 14704 --- [http-nio-8080-exec-10] com.program.blog.aspect.LogAspect        : Result : index
+2021-04-23 14:59:26.598  INFO 14704 --- [http-nio-8080-exec-5] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.IndexController.index, args=[{}])
+2021-04-23 14:59:26.613  INFO 14704 --- [http-nio-8080-exec-5] com.program.blog.aspect.LogAspect        : Result : index
+2021-04-23 15:02:16.707  INFO 7664 --- [restartedMain] com.program.blog.BlogApplication         : Starting BlogApplication using Java 12.0.2 on LAPTOP-B2BM54RN with PID 7664 (E:\IdeaProjects\blog\target\classes started by 轩 in E:\IdeaProjects\blog)
+2021-04-23 15:02:16.709 DEBUG 7664 --- [restartedMain] com.program.blog.BlogApplication         : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-04-23 15:02:16.709  INFO 7664 --- [restartedMain] com.program.blog.BlogApplication         : The following profiles are active: dev
+2021-04-23 15:02:16.739  INFO 7664 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-23 15:02:16.739  INFO 7664 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-23 15:02:17.603  INFO 7664 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-23 15:02:17.608  INFO 7664 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-23 15:02:17.608  INFO 7664 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-04-23 15:02:17.670  INFO 7664 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-23 15:02:17.670  INFO 7664 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 930 ms
+2021-04-23 15:02:18.096  INFO 7664 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-23 15:02:18.172  INFO 7664 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-04-23 15:02:18.489  INFO 7664 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-04-23 15:02:18.517  INFO 7664 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-23 15:02:18.526  INFO 7664 --- [restartedMain] com.program.blog.BlogApplication         : Started BlogApplication in 2.171 seconds (JVM running for 3.165)
+2021-04-23 15:02:28.359  INFO 7664 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-23 15:02:28.361  INFO 7664 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-23 15:02:28.361  INFO 7664 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-04-23 15:02:28.383  INFO 7664 --- [http-nio-8080-exec-1] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.IndexController.index, args=[{}])
+2021-04-23 15:02:28.399  INFO 7664 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-04-23 15:02:28.605  INFO 7664 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-04-23 15:02:28.702  INFO 7664 --- [http-nio-8080-exec-1] com.program.blog.aspect.LogAspect        : Result : index
+2021-04-23 15:02:43.883  INFO 7664 --- [http-nio-8080-exec-7] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/search, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.IndexController.search, args=[冲啊冲啊冲啊冲啊冲啊冲啊冲啊冲啊冲啊冲啊冲啊冲啊冲啊冲啊冲啊冲啊冲啊冲啊冲啊冲啊冲啊冲啊冲啊冲啊冲啊冲啊冲啊冲啊])
+2021-04-23 15:02:43.883  INFO 7664 --- [http-nio-8080-exec-7] c.p.b.controller.user.IndexController    : 冲啊冲啊冲啊冲啊冲啊冲啊冲啊冲啊冲啊冲啊冲啊冲啊冲啊冲啊冲啊冲啊冲啊冲啊冲啊冲啊冲啊冲啊冲啊冲啊冲啊冲啊冲啊冲啊
+2021-04-23 15:02:43.883  INFO 7664 --- [http-nio-8080-exec-7] com.program.blog.aspect.LogAspect        : Result : redirect:/
+2021-04-23 15:02:43.900  INFO 7664 --- [http-nio-8080-exec-6] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.IndexController.index, args=[{}])
+2021-04-23 15:02:43.918  INFO 7664 --- [http-nio-8080-exec-6] com.program.blog.aspect.LogAspect        : Result : index
+2021-04-23 15:16:56.434  INFO 2256 --- [restartedMain] com.program.blog.BlogApplication         : Starting BlogApplication using Java 12.0.2 on LAPTOP-B2BM54RN with PID 2256 (E:\IdeaProjects\blog\target\classes started by 轩 in E:\IdeaProjects\blog)
+2021-04-23 15:16:56.437 DEBUG 2256 --- [restartedMain] com.program.blog.BlogApplication         : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-04-23 15:16:56.438  INFO 2256 --- [restartedMain] com.program.blog.BlogApplication         : The following profiles are active: dev
+2021-04-23 15:16:56.493  INFO 2256 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-23 15:16:56.493  INFO 2256 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-23 15:16:57.536  INFO 2256 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-23 15:16:57.542  INFO 2256 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-23 15:16:57.542  INFO 2256 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-04-23 15:16:57.612  INFO 2256 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-23 15:16:57.612  INFO 2256 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1117 ms
+2021-04-23 15:16:58.111  INFO 2256 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-23 15:16:58.190  INFO 2256 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-04-23 15:16:58.520  INFO 2256 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-04-23 15:16:58.552  INFO 2256 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-23 15:16:58.567  INFO 2256 --- [restartedMain] com.program.blog.BlogApplication         : Started BlogApplication in 2.561 seconds (JVM running for 3.556)
+2021-04-23 15:16:59.589  INFO 2256 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-23 15:16:59.590  INFO 2256 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-23 15:16:59.591  INFO 2256 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-04-23 15:16:59.613  INFO 2256 --- [http-nio-8080-exec-1] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.IndexController.index, args=[{}])
+2021-04-23 15:16:59.631  INFO 2256 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-04-23 15:16:59.822  INFO 2256 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-04-23 15:16:59.924  INFO 2256 --- [http-nio-8080-exec-1] com.program.blog.aspect.LogAspect        : Result : index
+2021-04-23 15:17:04.161  INFO 2256 --- [http-nio-8080-exec-3] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/search, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.IndexController.search, args=[555, {}])
+2021-04-23 15:17:04.305 ERROR 2256 --- [http-nio-8080-exec-3] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.type.TypeException: Could not set parameters for mapping: ParameterMapping{property='title', mode=IN, javaType=class java.lang.Long, jdbcType=null, numericScale=null, resultMapId='null', jdbcTypeName='null', expression='null'}. Cause: org.apache.ibatis.type.TypeException: Error setting non null for parameter #1 with JdbcType null . Try setting a different JdbcType for this parameter or a different configuration property. Cause: java.lang.ClassCastException: class java.lang.String cannot be cast to class java.lang.Long (java.lang.String and java.lang.Long are in module java.base of loader 'bootstrap')] with root cause
+
+java.lang.ClassCastException: class java.lang.String cannot be cast to class java.lang.Long (java.lang.String and java.lang.Long are in module java.base of loader 'bootstrap')
+	at org.apache.ibatis.type.LongTypeHandler.setNonNullParameter(LongTypeHandler.java:26)
+	at org.apache.ibatis.type.BaseTypeHandler.setParameter(BaseTypeHandler.java:73)
+	at org.apache.ibatis.scripting.defaults.DefaultParameterHandler.setParameters(DefaultParameterHandler.java:87)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.parameterize(PreparedStatementHandler.java:94)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.parameterize(RoutingStatementHandler.java:64)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:88)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:325)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at com.github.pagehelper.util.ExecutorUtil.executeAutoCount(ExecutorUtil.java:166)
+	at com.github.pagehelper.PageInterceptor.count(PageInterceptor.java:157)
+	at com.github.pagehelper.PageInterceptor.intercept(PageInterceptor.java:100)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:61)
+	at com.sun.proxy.$Proxy111.query(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:427)
+	at com.sun.proxy.$Proxy83.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:224)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:147)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:80)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:152)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85)
+	at com.sun.proxy.$Proxy90.listBlogByTitle(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at com.sun.proxy.$Proxy91.listBlogByTitle(Unknown Source)
+	at com.program.blog.service.user.UBlogServiceImpl.searchBlog(UBlogServiceImpl.java:70)
+	at com.program.blog.controller.user.IndexController.search(IndexController.java:41)
+	at com.program.blog.controller.user.IndexController$$FastClassBySpringCGLIB$$41e45f08.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:779)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:57)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.aspectj.AspectJAfterAdvice.invoke(AspectJAfterAdvice.java:49)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:58)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692)
+	at com.program.blog.controller.user.IndexController$$EnhancerBySpringCGLIB$$cd3c9125.search(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+
+2021-04-23 15:17:45.490  INFO 11544 --- [restartedMain] com.program.blog.BlogApplication         : Starting BlogApplication using Java 12.0.2 on LAPTOP-B2BM54RN with PID 11544 (E:\IdeaProjects\blog\target\classes started by 轩 in E:\IdeaProjects\blog)
+2021-04-23 15:17:45.493 DEBUG 11544 --- [restartedMain] com.program.blog.BlogApplication         : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-04-23 15:17:45.493  INFO 11544 --- [restartedMain] com.program.blog.BlogApplication         : The following profiles are active: dev
+2021-04-23 15:17:45.527  INFO 11544 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-23 15:17:45.528  INFO 11544 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-23 15:17:46.400  INFO 11544 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-23 15:17:46.406  INFO 11544 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-23 15:17:46.406  INFO 11544 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-04-23 15:17:46.466  INFO 11544 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-23 15:17:46.466  INFO 11544 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 937 ms
+2021-04-23 15:17:46.911  INFO 11544 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-23 15:17:46.984  INFO 11544 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-04-23 15:17:47.300  INFO 11544 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-04-23 15:17:47.326  INFO 11544 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-23 15:17:47.337  INFO 11544 --- [restartedMain] com.program.blog.BlogApplication         : Started BlogApplication in 2.214 seconds (JVM running for 3.174)
+2021-04-23 15:17:54.411  INFO 11544 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-23 15:17:54.412  INFO 11544 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-23 15:17:54.413  INFO 11544 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-04-23 15:17:54.439  INFO 11544 --- [http-nio-8080-exec-1] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/search, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.IndexController.search, args=[555, {}])
+2021-04-23 15:17:54.474  INFO 11544 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-04-23 15:17:54.665  INFO 11544 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-04-23 15:17:54.702  INFO 11544 --- [http-nio-8080-exec-1] com.program.blog.aspect.LogAspect        : Result : search
+2021-04-23 15:18:41.978  INFO 11544 --- [http-nio-8080-exec-1] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/search, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.IndexController.search, args=[555, {}])
+2021-04-23 15:18:41.981  INFO 11544 --- [http-nio-8080-exec-1] com.program.blog.aspect.LogAspect        : Result : search
+2021-04-23 15:18:41.992 ERROR 11544 --- [http-nio-8080-exec-1] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-1] Exception processing template "search": An error happened during template parsing (template: "class path resource [templates/search.html]")
+
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/search.html]")
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:241)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1393)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1138)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1077)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+Caused by: org.attoparser.ParseException: Error resolving fragment: "~{user_fragment :: firstNav ('_arg0'=0)}": template or fragment could not be resolved (template: "search" - line 15, col 29)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:393)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	... 48 common frames omitted
+Caused by: org.thymeleaf.exceptions.TemplateInputException: Error resolving fragment: "~{user_fragment :: firstNav ('_arg0'=0)}": template or fragment could not be resolved (template: "search" - line 15, col 29)
+	at org.thymeleaf.standard.expression.FragmentExpression.resolveExecutedFragmentExpression(FragmentExpression.java:619)
+	at org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor.computeFragment(AbstractStandardFragmentInsertionTagProcessor.java:379)
+	at org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor.doProcess(AbstractStandardFragmentInsertionTagProcessor.java:110)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleOpenElementEnd(OutputExpressionInlinePreProcessorHandler.java:186)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:124)
+	at org.attoparser.HtmlElement.handleOpenElementEnd(HtmlElement.java:109)
+	at org.attoparser.HtmlMarkupHandler.handleOpenElementEnd(HtmlMarkupHandler.java:297)
+	at org.attoparser.MarkupEventProcessorHandler.handleOpenElementEnd(MarkupEventProcessorHandler.java:402)
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:159)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	... 50 common frames omitted
+
+2021-04-23 15:18:41.995 ERROR 11544 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/search.html]")] with root cause
+
+org.thymeleaf.exceptions.TemplateInputException: Error resolving fragment: "~{user_fragment :: firstNav ('_arg0'=0)}": template or fragment could not be resolved (template: "search" - line 15, col 29)
+	at org.thymeleaf.standard.expression.FragmentExpression.resolveExecutedFragmentExpression(FragmentExpression.java:619)
+	at org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor.computeFragment(AbstractStandardFragmentInsertionTagProcessor.java:379)
+	at org.thymeleaf.standard.processor.AbstractStandardFragmentInsertionTagProcessor.doProcess(AbstractStandardFragmentInsertionTagProcessor.java:110)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleOpenElementEnd(OutputExpressionInlinePreProcessorHandler.java:186)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:124)
+	at org.attoparser.HtmlElement.handleOpenElementEnd(HtmlElement.java:109)
+	at org.attoparser.HtmlMarkupHandler.handleOpenElementEnd(HtmlMarkupHandler.java:297)
+	at org.attoparser.MarkupEventProcessorHandler.handleOpenElementEnd(MarkupEventProcessorHandler.java:402)
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:159)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1393)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1138)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1077)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+
+2021-04-23 15:19:07.696  INFO 11544 --- [http-nio-8080-exec-7] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/search, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.IndexController.search, args=[555, {}])
+2021-04-23 15:19:07.701  INFO 11544 --- [http-nio-8080-exec-7] com.program.blog.aspect.LogAspect        : Result : search
+2021-04-23 15:24:09.405  INFO 11544 --- [Thread-5] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-23 15:24:09.406  INFO 11544 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-04-23 15:24:09.534  INFO 11544 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-04-23 15:24:09.627  INFO 11544 --- [restartedMain] com.program.blog.BlogApplication         : Starting BlogApplication using Java 12.0.2 on LAPTOP-B2BM54RN with PID 11544 (E:\IdeaProjects\blog\target\classes started by 轩 in E:\IdeaProjects\blog)
+2021-04-23 15:24:09.627 DEBUG 11544 --- [restartedMain] com.program.blog.BlogApplication         : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-04-23 15:24:09.627  INFO 11544 --- [restartedMain] com.program.blog.BlogApplication         : The following profiles are active: dev
+2021-04-23 15:24:09.988  INFO 11544 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-23 15:24:09.989  INFO 11544 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-23 15:24:09.989  INFO 11544 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-04-23 15:24:10.017  INFO 11544 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-23 15:24:10.017  INFO 11544 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 387 ms
+2021-04-23 15:24:10.321  INFO 11544 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-23 15:24:10.366  INFO 11544 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-04-23 15:24:10.556  INFO 11544 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-04-23 15:24:10.568  INFO 11544 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-23 15:24:10.572  INFO 11544 --- [restartedMain] com.program.blog.BlogApplication         : Started BlogApplication in 0.975 seconds (JVM running for 386.41)
+2021-04-23 15:24:10.574  INFO 11544 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-04-23 15:34:38.973  INFO 10724 --- [restartedMain] com.program.blog.BlogApplication         : Starting BlogApplication using Java 12.0.2 on LAPTOP-B2BM54RN with PID 10724 (E:\IdeaProjects\blog\target\classes started by 轩 in E:\IdeaProjects\blog)
+2021-04-23 15:34:38.975 DEBUG 10724 --- [restartedMain] com.program.blog.BlogApplication         : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-04-23 15:34:38.976  INFO 10724 --- [restartedMain] com.program.blog.BlogApplication         : The following profiles are active: dev
+2021-04-23 15:34:39.016  INFO 10724 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-23 15:34:39.016  INFO 10724 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-23 15:34:39.875  INFO 10724 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-23 15:34:39.880  INFO 10724 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-23 15:34:39.881  INFO 10724 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-04-23 15:34:39.940  INFO 10724 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-23 15:34:39.940  INFO 10724 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 923 ms
+2021-04-23 15:34:40.384  INFO 10724 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-23 15:34:40.460  INFO 10724 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-04-23 15:34:40.770  INFO 10724 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-04-23 15:34:40.795  INFO 10724 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-23 15:34:40.804  INFO 10724 --- [restartedMain] com.program.blog.BlogApplication         : Started BlogApplication in 2.174 seconds (JVM running for 3.106)
+2021-04-23 15:34:43.597  INFO 10724 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-23 15:34:43.599  INFO 10724 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-23 15:34:43.600  INFO 10724 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-04-23 15:34:43.622  INFO 10724 --- [http-nio-8080-exec-1] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.IndexController.index, args=[{}])
+2021-04-23 15:34:43.639  INFO 10724 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-04-23 15:34:43.835  INFO 10724 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-04-23 15:34:43.935  INFO 10724 --- [http-nio-8080-exec-1] com.program.blog.aspect.LogAspect        : Result : index
+2021-04-23 15:36:18.839  INFO 6548 --- [restartedMain] com.program.blog.BlogApplication         : Starting BlogApplication using Java 12.0.2 on LAPTOP-B2BM54RN with PID 6548 (E:\IdeaProjects\blog\target\classes started by 轩 in E:\IdeaProjects\blog)
+2021-04-23 15:36:18.842 DEBUG 6548 --- [restartedMain] com.program.blog.BlogApplication         : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-04-23 15:36:18.842  INFO 6548 --- [restartedMain] com.program.blog.BlogApplication         : The following profiles are active: dev
+2021-04-23 15:36:18.875  INFO 6548 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-23 15:36:18.875  INFO 6548 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-23 15:36:19.756  INFO 6548 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-23 15:36:19.762  INFO 6548 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-23 15:36:19.762  INFO 6548 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-04-23 15:36:19.824  INFO 6548 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-23 15:36:19.824  INFO 6548 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 948 ms
+2021-04-23 15:36:20.260  INFO 6548 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-23 15:36:20.333  INFO 6548 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-04-23 15:36:20.649  INFO 6548 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-04-23 15:36:20.673  INFO 6548 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-23 15:36:20.683  INFO 6548 --- [restartedMain] com.program.blog.BlogApplication         : Started BlogApplication in 2.176 seconds (JVM running for 3.144)
+2021-04-23 15:36:23.841  INFO 6548 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-23 15:36:23.843  INFO 6548 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-23 15:36:23.844  INFO 6548 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-04-23 15:36:23.870  INFO 6548 --- [http-nio-8080-exec-1] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/search, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.IndexController.search, args=[T, {}])
+2021-04-23 15:36:23.905  INFO 6548 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-04-23 15:36:24.095  INFO 6548 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-04-23 15:36:24.158  INFO 6548 --- [http-nio-8080-exec-1] com.program.blog.aspect.LogAspect        : Result : search
+2021-04-23 15:38:20.329  INFO 14872 --- [restartedMain] com.program.blog.BlogApplication         : Starting BlogApplication using Java 12.0.2 on LAPTOP-B2BM54RN with PID 14872 (E:\IdeaProjects\blog\target\classes started by 轩 in E:\IdeaProjects\blog)
+2021-04-23 15:38:20.332 DEBUG 14872 --- [restartedMain] com.program.blog.BlogApplication         : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-04-23 15:38:20.332  INFO 14872 --- [restartedMain] com.program.blog.BlogApplication         : The following profiles are active: dev
+2021-04-23 15:38:20.364  INFO 14872 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-23 15:38:20.365  INFO 14872 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-23 15:38:21.221  INFO 14872 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-23 15:38:21.226  INFO 14872 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-23 15:38:21.226  INFO 14872 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-04-23 15:38:21.285  INFO 14872 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-23 15:38:21.285  INFO 14872 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 919 ms
+2021-04-23 15:38:21.722  INFO 14872 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-23 15:38:21.796  INFO 14872 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-04-23 15:38:22.108  INFO 14872 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-04-23 15:38:22.137  INFO 14872 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-23 15:38:22.146  INFO 14872 --- [restartedMain] com.program.blog.BlogApplication         : Started BlogApplication in 2.169 seconds (JVM running for 3.31)
+2021-04-23 15:38:26.134  INFO 14872 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-23 15:38:26.135  INFO 14872 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-23 15:38:26.136  INFO 14872 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-04-23 15:38:26.158  INFO 14872 --- [http-nio-8080-exec-1] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.IndexController.index, args=[{}])
+2021-04-23 15:38:26.174  INFO 14872 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-04-23 15:38:26.377  INFO 14872 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-04-23 15:38:26.477  INFO 14872 --- [http-nio-8080-exec-1] com.program.blog.aspect.LogAspect        : Result : index
+2021-04-23 15:38:33.741  INFO 14872 --- [http-nio-8080-exec-4] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/search, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.IndexController.search, args=[T, {}])
+2021-04-23 15:38:33.754  INFO 14872 --- [http-nio-8080-exec-4] com.program.blog.aspect.LogAspect        : Result : search
+2021-04-23 15:39:16.705  INFO 14872 --- [http-nio-8080-exec-3] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/search, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.IndexController.search, args=[T, {}])
+2021-04-23 15:39:16.714  INFO 14872 --- [http-nio-8080-exec-3] com.program.blog.aspect.LogAspect        : Result : search
+2021-04-23 15:45:17.980  INFO 14872 --- [http-nio-8080-exec-1] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/search, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.IndexController.search, args=[T, {}])
+2021-04-23 15:45:17.990  INFO 14872 --- [http-nio-8080-exec-1] com.program.blog.aspect.LogAspect        : Result : search
+2021-04-23 15:46:05.815  INFO 14872 --- [http-nio-8080-exec-6] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/types, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.UTypeController.toTypePage, args=[{}])
+2021-04-23 15:46:05.826  INFO 14872 --- [http-nio-8080-exec-6] com.program.blog.aspect.LogAspect        : Result : types
+2021-04-23 15:46:07.936  INFO 14872 --- [http-nio-8080-exec-3] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/types/search, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.UTypeController.search, args=[1, 2, {}])
+2021-04-23 15:46:07.948  INFO 14872 --- [http-nio-8080-exec-3] com.program.blog.aspect.LogAspect        : Result : types :: blogList
+2021-04-23 15:46:09.764  INFO 14872 --- [http-nio-8080-exec-10] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/types/search, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.UTypeController.search, args=[1, 4, {}])
+2021-04-23 15:46:09.775  INFO 14872 --- [http-nio-8080-exec-10] com.program.blog.aspect.LogAspect        : Result : types :: blogList
+2021-04-23 15:46:10.717  INFO 14872 --- [http-nio-8080-exec-4] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/types/search, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.UTypeController.search, args=[1, 3, {}])
+2021-04-23 15:46:10.729  INFO 14872 --- [http-nio-8080-exec-4] com.program.blog.aspect.LogAspect        : Result : types :: blogList
+2021-04-23 15:46:11.213  INFO 14872 --- [http-nio-8080-exec-3] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/types/search, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.UTypeController.search, args=[1, 5, {}])
+2021-04-23 15:46:11.220  INFO 14872 --- [http-nio-8080-exec-3] com.program.blog.aspect.LogAspect        : Result : types :: blogList
+2021-04-23 15:46:11.791  INFO 14872 --- [http-nio-8080-exec-1] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/types/search, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.UTypeController.search, args=[1, 1, {}])
+2021-04-23 15:46:11.795  INFO 14872 --- [http-nio-8080-exec-1] com.program.blog.aspect.LogAspect        : Result : types :: blogList
+2021-04-23 15:46:12.778  INFO 14872 --- [http-nio-8080-exec-7] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/types/search, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.UTypeController.search, args=[1, 6, {}])
+2021-04-23 15:46:12.784  INFO 14872 --- [http-nio-8080-exec-7] com.program.blog.aspect.LogAspect        : Result : types :: blogList
+2021-04-23 15:46:13.535  INFO 14872 --- [http-nio-8080-exec-10] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/types/search, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.UTypeController.search, args=[1, 7, {}])
+2021-04-23 15:46:13.542  INFO 14872 --- [http-nio-8080-exec-10] com.program.blog.aspect.LogAspect        : Result : types :: blogList
+2021-04-23 15:46:14.897  INFO 14872 --- [http-nio-8080-exec-4] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/types/search, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.UTypeController.search, args=[1, 2, {}])
+2021-04-23 15:46:14.906  INFO 14872 --- [http-nio-8080-exec-4] com.program.blog.aspect.LogAspect        : Result : types :: blogList
+2021-04-23 15:46:25.944  INFO 14872 --- [http-nio-8080-exec-1] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/search, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.IndexController.search, args=[, {}])
+2021-04-23 15:46:25.949  INFO 14872 --- [http-nio-8080-exec-1] com.program.blog.aspect.LogAspect        : Result : search
+2021-04-23 15:47:22.460  INFO 14872 --- [http-nio-8080-exec-9] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/types, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.UTypeController.toTypePage, args=[{}])
+2021-04-23 15:47:22.468  INFO 14872 --- [http-nio-8080-exec-9] com.program.blog.aspect.LogAspect        : Result : types
+2021-04-23 15:47:24.360  INFO 14872 --- [http-nio-8080-exec-2] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/search, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.IndexController.search, args=[, {}])
+2021-04-23 15:47:24.366  INFO 14872 --- [http-nio-8080-exec-2] com.program.blog.aspect.LogAspect        : Result : search
+2021-04-23 15:58:46.470  INFO 7096 --- [restartedMain] com.program.blog.BlogApplication         : Starting BlogApplication using Java 12.0.2 on LAPTOP-B2BM54RN with PID 7096 (E:\IdeaProjects\blog\target\classes started by 轩 in E:\IdeaProjects\blog)
+2021-04-23 15:58:46.471 DEBUG 7096 --- [restartedMain] com.program.blog.BlogApplication         : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-04-23 15:58:46.472  INFO 7096 --- [restartedMain] com.program.blog.BlogApplication         : The following profiles are active: dev
+2021-04-23 15:58:46.518  INFO 7096 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-23 15:58:46.519  INFO 7096 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-23 15:58:47.470  INFO 7096 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-23 15:58:47.477  INFO 7096 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-23 15:58:47.477  INFO 7096 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-04-23 15:58:47.541  INFO 7096 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-23 15:58:47.541  INFO 7096 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1022 ms
+2021-04-23 15:58:48.052  INFO 7096 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-23 15:58:48.128  INFO 7096 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-04-23 15:58:48.459  INFO 7096 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-04-23 15:58:48.486  INFO 7096 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-23 15:58:48.494  INFO 7096 --- [restartedMain] com.program.blog.BlogApplication         : Started BlogApplication in 2.447 seconds (JVM running for 3.403)
+2021-04-23 16:01:15.654  INFO 7096 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-23 16:01:15.655  INFO 7096 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-23 16:01:15.656  INFO 7096 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-04-23 16:01:15.685  INFO 7096 --- [http-nio-8080-exec-1] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/types/search, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.UTypeController.search, args=[1, 4, {}])
+2021-04-23 16:01:15.722  INFO 7096 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-04-23 16:01:15.915  INFO 7096 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-04-23 16:01:15.981  INFO 7096 --- [http-nio-8080-exec-1] com.program.blog.aspect.LogAspect        : Result : types :: blogList
+2021-04-23 16:01:16.114  INFO 7096 --- [http-nio-8080-exec-2] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/types/search, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.UTypeController.search, args=[1, 2, {}])
+2021-04-23 16:01:16.133  INFO 7096 --- [http-nio-8080-exec-2] com.program.blog.aspect.LogAspect        : Result : types :: blogList
+2021-04-23 16:01:16.752  INFO 7096 --- [http-nio-8080-exec-7] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/types/search, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.UTypeController.search, args=[1, 4, {}])
+2021-04-23 16:01:16.763  INFO 7096 --- [http-nio-8080-exec-7] com.program.blog.aspect.LogAspect        : Result : types :: blogList
+2021-04-23 16:01:17.190  INFO 7096 --- [http-nio-8080-exec-9] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/types/search, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.UTypeController.search, args=[1, 3, {}])
+2021-04-23 16:01:17.200  INFO 7096 --- [http-nio-8080-exec-9] com.program.blog.aspect.LogAspect        : Result : types :: blogList
+2021-04-23 16:01:17.612  INFO 7096 --- [http-nio-8080-exec-1] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/types/search, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.UTypeController.search, args=[1, 5, {}])
+2021-04-23 16:01:17.618  INFO 7096 --- [http-nio-8080-exec-1] com.program.blog.aspect.LogAspect        : Result : types :: blogList
+2021-04-23 16:01:18.393  INFO 7096 --- [http-nio-8080-exec-6] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/types/search, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.UTypeController.search, args=[1, 6, {}])
+2021-04-23 16:01:18.402  INFO 7096 --- [http-nio-8080-exec-6] com.program.blog.aspect.LogAspect        : Result : types :: blogList
+2021-04-23 16:01:18.809  INFO 7096 --- [http-nio-8080-exec-3] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/types/search, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.UTypeController.search, args=[1, 7, {}])
+2021-04-23 16:01:18.815  INFO 7096 --- [http-nio-8080-exec-3] com.program.blog.aspect.LogAspect        : Result : types :: blogList

@@ -1,0 +1,2159 @@
+2021-04-26 19:12:42.345  INFO 7724 --- [restartedMain] com.program.blog.BlogApplication         : Starting BlogApplication using Java 12.0.2 on LAPTOP-B2BM54RN with PID 7724 (E:\IdeaProjects\blog\target\classes started by 轩 in E:\IdeaProjects\blog)
+2021-04-26 19:12:42.351 DEBUG 7724 --- [restartedMain] com.program.blog.BlogApplication         : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-04-26 19:12:42.351  INFO 7724 --- [restartedMain] com.program.blog.BlogApplication         : The following profiles are active: dev
+2021-04-26 19:12:42.427  INFO 7724 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-26 19:12:42.428  INFO 7724 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-26 19:12:44.421  INFO 7724 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-26 19:12:44.432  INFO 7724 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-26 19:12:44.433  INFO 7724 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-04-26 19:12:44.559  INFO 7724 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-26 19:12:44.559  INFO 7724 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2130 ms
+2021-04-26 19:12:45.673  INFO 7724 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-26 19:12:45.830  INFO 7724 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-04-26 19:12:46.328  INFO 7724 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-04-26 19:12:46.357  INFO 7724 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-26 19:12:46.384  INFO 7724 --- [restartedMain] com.program.blog.BlogApplication         : Started BlogApplication in 4.94 seconds (JVM running for 6.995)
+2021-04-26 19:15:27.326  INFO 7724 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-26 19:15:27.328  INFO 7724 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-26 19:15:27.329  INFO 7724 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-04-26 19:15:27.375  INFO 7724 --- [http-nio-8080-exec-1] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.IndexController.index, args=[{}])
+2021-04-26 19:15:27.420  INFO 7724 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-04-26 19:15:28.392  INFO 7724 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-04-26 19:15:28.735  INFO 7724 --- [http-nio-8080-exec-1] com.program.blog.aspect.LogAspect        : Result : index
+2021-04-26 19:15:35.304  INFO 7724 --- [http-nio-8080-exec-1] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/types, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.UTypeController.toTypePage, args=[{}])
+2021-04-26 19:15:35.325  INFO 7724 --- [http-nio-8080-exec-1] com.program.blog.aspect.LogAspect        : Result : types
+2021-04-26 19:15:39.617  INFO 7724 --- [http-nio-8080-exec-8] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/archives, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.archiveController.archivePage, args=[{}])
+2021-04-26 19:15:39.636  INFO 7724 --- [http-nio-8080-exec-8] com.program.blog.aspect.LogAspect        : Result : archives
+2021-04-26 19:43:56.983  INFO 664 --- [restartedMain] com.program.blog.BlogApplication         : Starting BlogApplication using Java 12.0.2 on LAPTOP-B2BM54RN with PID 664 (E:\IdeaProjects\blog\target\classes started by 轩 in E:\IdeaProjects\blog)
+2021-04-26 19:43:56.984 DEBUG 664 --- [restartedMain] com.program.blog.BlogApplication         : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-04-26 19:43:56.985  INFO 664 --- [restartedMain] com.program.blog.BlogApplication         : The following profiles are active: dev
+2021-04-26 19:43:57.014  INFO 664 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-26 19:43:57.015  INFO 664 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-26 19:43:58.097  INFO 664 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-26 19:43:58.105  INFO 664 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-26 19:43:58.105  INFO 664 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-04-26 19:43:58.207  INFO 664 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-26 19:43:58.208  INFO 664 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1193 ms
+2021-04-26 19:43:58.972  INFO 664 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-26 19:43:59.055  INFO 664 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-04-26 19:43:59.396  INFO 664 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-04-26 19:43:59.422  INFO 664 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-26 19:43:59.433  INFO 664 --- [restartedMain] com.program.blog.BlogApplication         : Started BlogApplication in 2.894 seconds (JVM running for 4.264)
+2021-04-26 19:44:33.549  INFO 664 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-26 19:44:33.551  INFO 664 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-26 19:44:33.552  INFO 664 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-04-26 19:44:33.574  INFO 664 --- [http-nio-8080-exec-1] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/archives, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.archiveController.archivePage, args=[{}])
+2021-04-26 19:44:33.608  INFO 664 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-04-26 19:44:34.300  INFO 664 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-04-26 19:44:34.385  INFO 664 --- [http-nio-8080-exec-1] com.program.blog.aspect.LogAspect        : Result : archives
+2021-04-26 19:44:36.554  INFO 664 --- [http-nio-8080-exec-7] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/music, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.IndexController.music, args=[])
+2021-04-26 19:44:36.557  INFO 664 --- [http-nio-8080-exec-7] com.program.blog.aspect.LogAspect        : Result : music
+2021-04-26 19:45:21.917  INFO 664 --- [http-nio-8080-exec-1] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/music, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.IndexController.music, args=[])
+2021-04-26 19:45:21.917  INFO 664 --- [http-nio-8080-exec-1] com.program.blog.aspect.LogAspect        : Result : music
+2021-04-26 19:46:59.561  INFO 664 --- [http-nio-8080-exec-2] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/music, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.IndexController.music, args=[])
+2021-04-26 19:46:59.561  INFO 664 --- [http-nio-8080-exec-2] com.program.blog.aspect.LogAspect        : Result : music
+2021-04-26 19:47:20.733  INFO 21496 --- [restartedMain] com.program.blog.BlogApplication         : Starting BlogApplication using Java 12.0.2 on LAPTOP-B2BM54RN with PID 21496 (E:\IdeaProjects\blog\target\classes started by 轩 in E:\IdeaProjects\blog)
+2021-04-26 19:47:20.736 DEBUG 21496 --- [restartedMain] com.program.blog.BlogApplication         : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-04-26 19:47:20.736  INFO 21496 --- [restartedMain] com.program.blog.BlogApplication         : The following profiles are active: dev
+2021-04-26 19:47:20.795  INFO 21496 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-26 19:47:20.795  INFO 21496 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-26 19:47:21.659  INFO 21496 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-26 19:47:21.665  INFO 21496 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-26 19:47:21.665  INFO 21496 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-04-26 19:47:21.724  INFO 21496 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-26 19:47:21.724  INFO 21496 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 928 ms
+2021-04-26 19:47:22.183  INFO 21496 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-26 19:47:22.260  INFO 21496 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-04-26 19:47:22.576  INFO 21496 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-04-26 19:47:22.601  INFO 21496 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-26 19:47:22.610  INFO 21496 --- [restartedMain] com.program.blog.BlogApplication         : Started BlogApplication in 2.358 seconds (JVM running for 3.535)
+2021-04-26 19:47:24.533  INFO 21496 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-26 19:47:24.534  INFO 21496 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-26 19:47:24.535  INFO 21496 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-04-26 19:47:24.556  INFO 21496 --- [http-nio-8080-exec-1] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/music, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.IndexController.music, args=[])
+2021-04-26 19:47:24.561  INFO 21496 --- [http-nio-8080-exec-1] com.program.blog.aspect.LogAspect        : Result : music
+2021-04-26 19:47:46.806  INFO 21496 --- [http-nio-8080-exec-9] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/music, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.IndexController.music, args=[])
+2021-04-26 19:47:46.806  INFO 21496 --- [http-nio-8080-exec-9] com.program.blog.aspect.LogAspect        : Result : music
+2021-04-26 19:47:49.081  INFO 21496 --- [http-nio-8080-exec-10] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/music, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.IndexController.music, args=[])
+2021-04-26 19:47:49.081  INFO 21496 --- [http-nio-8080-exec-10] com.program.blog.aspect.LogAspect        : Result : music
+2021-04-26 19:47:53.318  INFO 21496 --- [http-nio-8080-exec-10] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/music, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.IndexController.music, args=[])
+2021-04-26 19:47:53.318  INFO 21496 --- [http-nio-8080-exec-10] com.program.blog.aspect.LogAspect        : Result : music
+2021-04-26 19:48:16.883  INFO 21496 --- [http-nio-8080-exec-6] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/music, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.IndexController.music, args=[])
+2021-04-26 19:48:16.883  INFO 21496 --- [http-nio-8080-exec-6] com.program.blog.aspect.LogAspect        : Result : music
+2021-04-26 19:50:47.054  INFO 21496 --- [http-nio-8080-exec-5] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/music, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.IndexController.music, args=[])
+2021-04-26 19:50:47.055  INFO 21496 --- [http-nio-8080-exec-5] com.program.blog.aspect.LogAspect        : Result : music
+2021-04-26 19:52:09.640  INFO 21496 --- [http-nio-8080-exec-8] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/archives, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.archiveController.archivePage, args=[{}])
+2021-04-26 19:52:09.656  INFO 21496 --- [http-nio-8080-exec-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-04-26 19:52:09.937  INFO 21496 --- [http-nio-8080-exec-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-04-26 19:52:10.010  INFO 21496 --- [http-nio-8080-exec-8] com.program.blog.aspect.LogAspect        : Result : archives
+2021-04-26 19:52:12.198  INFO 21496 --- [http-nio-8080-exec-9] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/types, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.UTypeController.toTypePage, args=[{}])
+2021-04-26 19:52:12.231  INFO 21496 --- [http-nio-8080-exec-9] com.program.blog.aspect.LogAspect        : Result : types
+2021-04-26 19:52:14.209  INFO 21496 --- [http-nio-8080-exec-1] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/about, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.IndexController.about, args=[])
+2021-04-26 19:52:14.210  INFO 21496 --- [http-nio-8080-exec-1] com.program.blog.aspect.LogAspect        : Result : about
+2021-04-26 19:52:18.014  INFO 21496 --- [http-nio-8080-exec-9] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.IndexController.index, args=[{}])
+2021-04-26 19:52:18.037  INFO 21496 --- [http-nio-8080-exec-9] com.program.blog.aspect.LogAspect        : Result : index
+2021-04-26 19:53:40.950  INFO 21496 --- [http-nio-8080-exec-7] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/page, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.IndexController.page, args=[2, {}])
+2021-04-26 19:53:40.957  INFO 21496 --- [http-nio-8080-exec-7] com.program.blog.aspect.LogAspect        : Result : index :: blogList
+2021-04-26 19:53:43.203  INFO 21496 --- [http-nio-8080-exec-2] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/page, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.IndexController.page, args=[3, {}])
+2021-04-26 19:53:43.209  INFO 21496 --- [http-nio-8080-exec-2] com.program.blog.aspect.LogAspect        : Result : index :: blogList
+2021-04-26 19:57:43.706  INFO 21496 --- [http-nio-8080-exec-5] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/32/blog, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.UBlogController.toBlogPage, args=[32, {}])
+2021-04-26 19:57:44.209  INFO 21496 --- [http-nio-8080-exec-5] com.program.blog.aspect.LogAspect        : Result : blog
+2021-04-26 20:06:31.016  INFO 16244 --- [restartedMain] com.program.blog.BlogApplication         : Starting BlogApplication using Java 12.0.2 on LAPTOP-B2BM54RN with PID 16244 (E:\IdeaProjects\blog\target\classes started by 轩 in E:\IdeaProjects\blog)
+2021-04-26 20:06:31.019 DEBUG 16244 --- [restartedMain] com.program.blog.BlogApplication         : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-04-26 20:06:31.019  INFO 16244 --- [restartedMain] com.program.blog.BlogApplication         : The following profiles are active: dev
+2021-04-26 20:06:31.054  INFO 16244 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-26 20:06:31.054  INFO 16244 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-26 20:06:32.144  INFO 16244 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-26 20:06:32.194  INFO 16244 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-26 20:06:32.194  INFO 16244 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-04-26 20:06:32.291  INFO 16244 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-26 20:06:32.292  INFO 16244 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1237 ms
+2021-04-26 20:06:32.911  INFO 16244 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-26 20:06:32.994  INFO 16244 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-04-26 20:06:33.351  INFO 16244 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-04-26 20:06:33.379  INFO 16244 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-26 20:06:33.398  INFO 16244 --- [restartedMain] com.program.blog.BlogApplication         : Started BlogApplication in 2.844 seconds (JVM running for 4.178)
+2021-04-26 20:06:36.518  INFO 16244 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-26 20:06:36.519  INFO 16244 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-26 20:06:36.519  INFO 16244 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-04-26 20:06:36.547  INFO 16244 --- [http-nio-8080-exec-1] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/32/blog, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.UBlogController.toBlogPage, args=[32, {}])
+2021-04-26 20:06:36.565  INFO 16244 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-04-26 20:06:36.837  INFO 16244 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-04-26 20:06:37.264  INFO 16244 --- [http-nio-8080-exec-1] com.program.blog.aspect.LogAspect        : Result : blog
+2021-04-26 20:06:42.258  INFO 16244 --- [http-nio-8080-exec-7] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/admin/blogs, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.admin.BlogController.blogsPage, args=[{}, 1])
+2021-04-26 20:06:42.516  INFO 16244 --- [http-nio-8080-exec-7] com.program.blog.aspect.LogAspect        : Result : admin/blogs
+2021-04-26 20:06:45.334  INFO 16244 --- [http-nio-8080-exec-4] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/admin/blogs/input, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.admin.BlogController.blogAddPage, args=[{}])
+2021-04-26 20:06:45.338  INFO 16244 --- [http-nio-8080-exec-4] com.program.blog.aspect.LogAspect        : Result : admin/blogs-input
+2021-04-26 20:10:18.846  INFO 3648 --- [restartedMain] com.program.blog.BlogApplication         : Starting BlogApplication using Java 12.0.2 on LAPTOP-B2BM54RN with PID 3648 (E:\IdeaProjects\blog\target\classes started by 轩 in E:\IdeaProjects\blog)
+2021-04-26 20:10:18.850 DEBUG 3648 --- [restartedMain] com.program.blog.BlogApplication         : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-04-26 20:10:18.850  INFO 3648 --- [restartedMain] com.program.blog.BlogApplication         : The following profiles are active: dev
+2021-04-26 20:10:18.891  INFO 3648 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-26 20:10:18.891  INFO 3648 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-26 20:10:19.942  INFO 3648 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-26 20:10:19.948  INFO 3648 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-26 20:10:19.948  INFO 3648 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-04-26 20:10:20.012  INFO 3648 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-26 20:10:20.013  INFO 3648 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1121 ms
+2021-04-26 20:10:20.501  INFO 3648 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-26 20:10:20.584  INFO 3648 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-04-26 20:10:20.936  INFO 3648 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-04-26 20:10:20.969  INFO 3648 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-26 20:10:20.979  INFO 3648 --- [restartedMain] com.program.blog.BlogApplication         : Started BlogApplication in 2.558 seconds (JVM running for 3.612)
+2021-04-26 20:10:50.864  INFO 3648 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-26 20:10:50.866  INFO 3648 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-26 20:10:50.867  INFO 3648 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-04-26 20:10:50.889  INFO 3648 --- [http-nio-8080-exec-1] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/admin/blogs/input, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.admin.BlogController.blogAddPage, args=[{}])
+2021-04-26 20:10:50.908  INFO 3648 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-04-26 20:10:51.197  INFO 3648 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-04-26 20:10:51.237  INFO 3648 --- [http-nio-8080-exec-1] com.program.blog.aspect.LogAspect        : Result : admin/blogs-input
+2021-04-26 20:10:58.782  INFO 3648 --- [http-nio-8080-exec-3] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/admin/blogs/input, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.admin.BlogController.blogAddPage, args=[{}])
+2021-04-26 20:10:58.788  INFO 3648 --- [http-nio-8080-exec-3] com.program.blog.aspect.LogAspect        : Result : admin/blogs-input
+2021-04-26 20:11:04.405  INFO 2836 --- [restartedMain] com.program.blog.BlogApplication         : Starting BlogApplication using Java 12.0.2 on LAPTOP-B2BM54RN with PID 2836 (E:\IdeaProjects\blog\target\classes started by 轩 in E:\IdeaProjects\blog)
+2021-04-26 20:11:04.407 DEBUG 2836 --- [restartedMain] com.program.blog.BlogApplication         : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-04-26 20:11:04.407  INFO 2836 --- [restartedMain] com.program.blog.BlogApplication         : The following profiles are active: dev
+2021-04-26 20:11:04.444  INFO 2836 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-26 20:11:04.445  INFO 2836 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-26 20:11:05.363  INFO 2836 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-26 20:11:05.369  INFO 2836 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-26 20:11:05.369  INFO 2836 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-04-26 20:11:05.430  INFO 2836 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-26 20:11:05.431  INFO 2836 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 985 ms
+2021-04-26 20:11:05.906  INFO 2836 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-26 20:11:05.987  INFO 2836 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-04-26 20:11:06.312  INFO 2836 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-04-26 20:11:06.337  INFO 2836 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-26 20:11:06.346  INFO 2836 --- [restartedMain] com.program.blog.BlogApplication         : Started BlogApplication in 2.321 seconds (JVM running for 3.521)
+2021-04-26 20:11:08.352  INFO 2836 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-26 20:11:08.354  INFO 2836 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-26 20:11:08.355  INFO 2836 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-04-26 20:11:08.382  INFO 2836 --- [http-nio-8080-exec-1] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/admin/blogs/input, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.admin.BlogController.blogAddPage, args=[{}])
+2021-04-26 20:11:08.405  INFO 2836 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-04-26 20:11:08.637  INFO 2836 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-04-26 20:11:08.800  INFO 2836 --- [http-nio-8080-exec-1] com.program.blog.aspect.LogAspect        : Result : admin/blogs-input
+2021-04-26 20:11:14.778  INFO 2836 --- [http-nio-8080-exec-10] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.IndexController.index, args=[{}])
+2021-04-26 20:11:14.972  INFO 2836 --- [http-nio-8080-exec-10] com.program.blog.aspect.LogAspect        : Result : index
+2021-04-26 20:11:17.093  INFO 2836 --- [http-nio-8080-exec-3] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/23/blog, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.UBlogController.toBlogPage, args=[23, {}])
+2021-04-26 20:11:17.110  INFO 2836 --- [http-nio-8080-exec-3] com.program.blog.aspect.LogAspect        : Result : blog
+2021-04-26 20:24:40.801  INFO 19560 --- [restartedMain] com.program.blog.BlogApplication         : Starting BlogApplication using Java 12.0.2 on LAPTOP-B2BM54RN with PID 19560 (E:\IdeaProjects\blog\target\classes started by 轩 in E:\IdeaProjects\blog)
+2021-04-26 20:24:40.802 DEBUG 19560 --- [restartedMain] com.program.blog.BlogApplication         : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-04-26 20:24:40.803  INFO 19560 --- [restartedMain] com.program.blog.BlogApplication         : The following profiles are active: dev
+2021-04-26 20:24:40.948  INFO 19560 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-26 20:24:40.949  INFO 19560 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-26 20:24:42.150  INFO 19560 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-26 20:24:42.158  INFO 19560 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-26 20:24:42.159  INFO 19560 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-04-26 20:24:42.251  INFO 19560 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-26 20:24:42.251  INFO 19560 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1302 ms
+2021-04-26 20:24:42.929  INFO 19560 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-26 20:24:43.012  INFO 19560 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-04-26 20:24:43.367  INFO 19560 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-04-26 20:24:43.394  INFO 19560 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-26 20:24:43.405  INFO 19560 --- [restartedMain] com.program.blog.BlogApplication         : Started BlogApplication in 3.081 seconds (JVM running for 4.553)
+2021-04-26 20:24:47.606  INFO 19560 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-26 20:24:47.607  INFO 19560 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-26 20:24:47.608  INFO 19560 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-04-26 20:24:47.637  INFO 19560 --- [http-nio-8080-exec-1] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/23/blog, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.UBlogController.toBlogPage, args=[23, {}])
+2021-04-26 20:24:47.659  INFO 19560 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-04-26 20:24:49.128  INFO 19560 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-04-26 20:24:49.323  INFO 19560 --- [http-nio-8080-exec-1] com.program.blog.aspect.LogAspect        : Result : blog
+2021-04-26 20:25:51.150  INFO 19560 --- [http-nio-8080-exec-9] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/23/blog, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.UBlogController.toBlogPage, args=[23, {}])
+2021-04-26 20:25:51.264  INFO 19560 --- [http-nio-8080-exec-9] com.program.blog.aspect.LogAspect        : Result : blog
+2021-04-26 20:26:31.410  INFO 19560 --- [http-nio-8080-exec-6] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/admin/blogs, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.admin.BlogController.blogsPage, args=[{}, 1])
+2021-04-26 20:26:32.085  INFO 19560 --- [http-nio-8080-exec-6] com.program.blog.aspect.LogAspect        : Result : admin/blogs
+2021-04-26 20:26:38.984  INFO 19560 --- [http-nio-8080-exec-10] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/admin/blogs/input, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.admin.BlogController.blogAddPage, args=[{}])
+2021-04-26 20:26:38.988  INFO 19560 --- [http-nio-8080-exec-10] com.program.blog.aspect.LogAspect        : Result : admin/blogs-input
+2021-04-26 20:27:56.769  WARN 19560 --- [http-nio-8080-exec-4] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [397] milliseconds.
+2021-04-26 20:27:56.784  INFO 19560 --- [http-nio-8080-exec-4] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/admin/blogs/new, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.admin.BlogController.blogAdd, args=[Blog(id=null, title=Web学习——过滤器, content=# Web学习
+
+## 过滤器
+
+### Filter
+
+功能：
+
+1、用来拦截传入的请求和传出的响应。
+
+2、修改或以某种方式处理正在客户端和服务端之间交换的数据流。
+
+使用方式：
+
+与使用 Servlet 类似，Filter 是 Java web 提供的一个接口，开发者只需要自定义一个类并实现该接口即可。
+
+``` Java
+package com.example.filter;
+
+import javax.servlet.*;
+import java.io.IOException;
+
+public class CharacterFilter implements Filter {
+    @Override
+    public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
+        servletRequest.setCharacterEncoding("UTF-8");
+        filterChain.doFilter(servletRequest, servletResponse);
+    }
+}
+
+```
+
+1、Filter 接口有三个函数，另外两个函数有 default 关键字修饰，可实现可不实现。
+
+2、在 doFilter 中，拦截的 request 经过业务处理后通过 filterChain 将处理后的 request 或 response 传递给相应的 servlet，否则，请求/响应就会一直停留在过滤器中。(filterChain.doFilter(servletRequest, servletResponse);)
+
+配置 web.xml
+
+~~~ xml
+	<filter>
+        <filter-name>character</filter-name>
+        <filter-class>com.example.filter.CharacterFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>character</filter-name>
+        <url-pattern>/test</url-pattern>
+        <url-pattern></url-pattern>
+    </filter-mapping>
+~~~
+
+通过以上方式配置拦截器映射，要是相同拦截方式的界面有多个，可以添加多个 url-pattern。
+
+### Filter生命周期
+
+当 Tomcat 启动时，同过反射机制调用 Filter 的无参构造函数创建实例化对象，同时调用 init 方法完成初始化，一次请求时调用一次 doFilter ，多次请求 ，doFilter 方法就调用多次，当 Tomcat 服务器关闭时，调用 destory 方法销毁 Filter 对象。
+
+无参构造函数：只调用一次，当 Tomcat 启动时调用（Filter 一定要在 web.xml 中配置）
+
+init 函数：只调用一次，当 Filter 实例化对象创建完成之后调用。
+
+doFilter 函数：调用多次，访问 Filter 的业务逻辑都写在 Filter 中。
+
+destory 函数：调用一次，当 Tomcat 关闭时调用。
+
+
+
+同时配置多个 Filter 时，Filter 的调用顺序是由 web.xml 中的配置顺序决定的，写在上面的先调用，因为 web.xml 是从上到下读取的。
+
+~~~ xml
+<filter>
+        <filter-name>character</filter-name>
+        <filter-class>com.example.filter.CharacterFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>character</filter-name>
+        <url-pattern>/test</url-pattern>
+    </filter-mapping>
+
+    <filter>
+        <filter-name>my</filter-name>
+        <filter-class>com.example.filter.MyFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>my</filter-name>
+        <url-pattern>/test</url-pattern>
+    </filter-mapping>
+
+~~~
+
+
+
+也可以通过注解的方式配置 Filter 
+
+~~~ java
+@WebFilter("/test")
+public class CharacterFilter implements Filter {
+    
+}
+~~~
+
+
+
+### Filter 的使用场景
+
+1、解决中文乱码问题。
+
+2、屏蔽敏感词。
+
+​		获取从浏览器传递的信息通过 Parameter 获取，两个资源之间信息的传递通过 Attribute
+
+3、控制资源的访问权限。
+
+~~~ Java
+package com.example.filter;
+
+import javax.servlet.*;
+import javax.servlet.annotation.WebFilter;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+import java.io.IOException;
+@WebFilter("/download.jsp")
+public class DownloadFilter implements Filter {
+    @Override
+    public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
+        HttpServletRequest request = (HttpServletRequest) servletRequest;
+        HttpServletResponse response = (HttpServletResponse) servletResponse;
+        HttpSession session = request.getSession();
+        String name = (String)session.getAttribute("name");
+        if (name == null) {
+            response.sendRedirect("/login.jsp");
+        } else {
+            filterChain.doFilter(request, response);
+        }
+    }
+}
+
+~~~
+
+
+
+
+
+## 文件上传和下载
+
+- JSP
+
+1、input 的 type 设置为 file。
+
+2、form 表单的 method 必须设置为 post，如果是 get 只会上传文件名而不是文件。
+
+3、form 表单的 enctype 设置 multipart/form-data，以二进制的形式传输数据。
+
+- Servlet
+
+在实际开发中，使用 fileupload 组件上传文件，属于第三方组件，需要下载 jar 包。可以将所有的请求信息都解析成 Fileitem 对象，通过对 Fileitem 对象的操作完成上传。
+
+
+
+## Ajax
+
+Asynchronous JavaScript And XML：异步的 Javascript和XML
+
+Ajax 是一种交互方式，异步加载，客户端与服务器的数据交互更新在局部页面的技术，不需要刷新整个页面（局部刷新）。
+
+优点：
+
+1、局部刷新的效率更高。
+
+2、用户的体验更好。
+
+基于 jQuery 的Ajax
+
+~~~ jsp
+<%--
+  Created by IntelliJ IDEA.
+  User: 啦啦啦
+  Date: 2020/4/1
+  Time: 21:03
+  To change this template use File | Settings | File Templates.
+--%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<html>
+<head>
+    <title>Title</title>
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript"> 
+        $(function () {
+            var btn = $("#btn");
+            btn.click(function () {
+                $.ajax({
+                    url: '/ajaxtest',
+                    type:'post',
+                    data:'id=1',
+                    dataType:'text',
+                    success:function (data) {
+                        var text = $("#text");
+                        text.before("<span>" + data + "</span><br/>")
+                    }
+                });
+            })
+        })
+    </script>
+</head>
+<body>
+    <input id="text" type="text"><br/>
+    <input id="btn" type="button" value="提交">
+</body>
+</html>
+
+~~~
+
+不能用表单提交请求，改用 jQuery 动态绑定事件来提交。
+
+url：和 form 表单中的 action
+
+type：相当于 form 表单中的 method
+
+data：要传给服务端的属性，如 用户名、密码等，服务端通过 getParameter 方式获取内容。
+
+dataType：是服务端要传送给客户端的数据的类型。
+
+success：data 是 Servlet 返回的数据。
+
+Servlet 不能跳转整个页面，只负责将数据返回。ajax 是将内容添加到页面上，不是对整个页面的刷新。
+
+~~~Java
+package com.example.servlet;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+
+@WebServlet("/ajaxtest")
+public class AjaxTest extends HttpServlet {
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        String str = "Hello World";
+        resp.getWriter().write(str);
+//        req.setAttribute("str", str);
+//        req.getRequestDispatcher("ajaxtest.jsp").forward(req, resp);
+    }
+}
+
+~~~
+
+### 传统的 WEB 数据交互 和 AJAX 交互的区别
+
+- 客户端请求的方式不同：
+
+传统，浏览器发送 同步请求，通过 form、a
+
+AJAX，异步引擎对象发送异步请求。
+
+- 服务端响应的方式不同：
+
+传统，通过重定向响应一个完整的页面。
+
+AJAX，只需要通过 response 的 write函数 响应需要的数据，不影响页面其他部分。
+
+- 客户端处理方式不同：
+
+传统，需要等待服务器完成响应并且加载整个页面之后，用户才能进行后续的操作
+
+AJAX，只动态更新局部的数据内容，不影响用户在页面其他部分的操作。
+
+### AJAX原理
+
+![image-20200402150030712](C:\Users\啦啦啦\AppData\Roaming\Typora\typora-user-images\image-20200402150030712.png)
+
+### 基于 jQuery 的 AJAX语法
+
+$.ajax({属性})
+
+常用的属性：
+
+url：请求的的后端服务地址
+
+type：请求的方式，默认为 get
+
+data：请求参数
+
+dataType：服务器返回的数据的类型
+
+success：请求成功的回调函数
+
+error：请求失败的回调函数
+
+complete：无论成功或失败都会回调
+
+### JSON
+
+Javascript Objec Notation ， 一种轻量级数据交互格式，完成 js 与 java 等后端开发语言对象数据之间的转换。
+
+客户端与服务端之间传递对象数据。
+
+~~~jsp
+<%--
+  Created by IntelliJ IDEA.
+  User: 啦啦啦
+  Date: 2020/4/11
+  Time: 15:21
+  To change this template use File | Settings | File Templates.
+--%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<html>
+<head>
+    <title>Title</title>
+</head>
+<body>
+    编号：<input id="id" type="text"><br>
+    姓名：<input id="name" type="text"><br>
+    分数：<input id="score" type="text"><br>
+    <input id="submit" type="button" value="提交">
+<script src="js/jquery-3.3.1.js"></script>
+<script>
+    $(function () {
+        var btn = $("#submit");
+        btn.click(function () {
+            $.ajax({
+                url:"/test",
+                type:"post",
+                dataType:"json",
+                success:function (data) {
+                    $("#id").val(data.id);
+                    $("#name").val(data.name);
+                    $("#score").val(data.score);
+                }
+            })
+        })
+    })
+</script>
+</body>
+</html>
+
+~~~
+
+
+
+~~~Java
+package com.example.servlet;
+
+import com.example.entity.User;
+import net.sf.json.JSONObject;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+@WebServlet("/test")
+public class AjaxTest extends HttpServlet {
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        resp.setCharacterEncoding("UTF-8");
+        User user = new User(1,"张三", 96.5);
+        JSONObject jsonObject = JSONObject.fromObject(user);
+        resp.getWriter().write(jsonObject.toString());
+
+    }
+}
+
+~~~
+
+
+
+将 实体类 转化为 JSON格式所需要的 jar包。
+
+![image-20200411163658514](C:\Users\啦啦啦\AppData\Roaming\Typora\typora-user-images\image-20200411163658514.png)
+
+
+
+
+
+
+
+
+
+## Session
+
+会话
+
+
+
+
+, indexPicture=https://images.unsplash.com/photo-1618762273540-56007afea45e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80, flag=, describe=最近学习了一下JVM的内存模型，本来想自己写一篇学习心得，总是觉得自己表达不清，然后就从学习资料里复制一段，写到最后发现，基本都是复制的。, viewCount=null, published=true, recommend=false, createTime=null, updateTime=null, tagIds=null, commentList=null, type=Type(id=24, name=null, blogCount=0, blogList=null), writer=null), org.apache.catalina.session.StandardSessionFacade@371ded5e, {blog=Blog(id=null, title=Web学习——过滤器, content=# Web学习
+
+## 过滤器
+
+### Filter
+
+功能：
+
+1、用来拦截传入的请求和传出的响应。
+
+2、修改或以某种方式处理正在客户端和服务端之间交换的数据流。
+
+使用方式：
+
+与使用 Servlet 类似，Filter 是 Java web 提供的一个接口，开发者只需要自定义一个类并实现该接口即可。
+
+``` Java
+package com.example.filter;
+
+import javax.servlet.*;
+import java.io.IOException;
+
+public class CharacterFilter implements Filter {
+    @Override
+    public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
+        servletRequest.setCharacterEncoding("UTF-8");
+        filterChain.doFilter(servletRequest, servletResponse);
+    }
+}
+
+```
+
+1、Filter 接口有三个函数，另外两个函数有 default 关键字修饰，可实现可不实现。
+
+2、在 doFilter 中，拦截的 request 经过业务处理后通过 filterChain 将处理后的 request 或 response 传递给相应的 servlet，否则，请求/响应就会一直停留在过滤器中。(filterChain.doFilter(servletRequest, servletResponse);)
+
+配置 web.xml
+
+~~~ xml
+	<filter>
+        <filter-name>character</filter-name>
+        <filter-class>com.example.filter.CharacterFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>character</filter-name>
+        <url-pattern>/test</url-pattern>
+        <url-pattern></url-pattern>
+    </filter-mapping>
+~~~
+
+通过以上方式配置拦截器映射，要是相同拦截方式的界面有多个，可以添加多个 url-pattern。
+
+### Filter生命周期
+
+当 Tomcat 启动时，同过反射机制调用 Filter 的无参构造函数创建实例化对象，同时调用 init 方法完成初始化，一次请求时调用一次 doFilter ，多次请求 ，doFilter 方法就调用多次，当 Tomcat 服务器关闭时，调用 destory 方法销毁 Filter 对象。
+
+无参构造函数：只调用一次，当 Tomcat 启动时调用（Filter 一定要在 web.xml 中配置）
+
+init 函数：只调用一次，当 Filter 实例化对象创建完成之后调用。
+
+doFilter 函数：调用多次，访问 Filter 的业务逻辑都写在 Filter 中。
+
+destory 函数：调用一次，当 Tomcat 关闭时调用。
+
+
+
+同时配置多个 Filter 时，Filter 的调用顺序是由 web.xml 中的配置顺序决定的，写在上面的先调用，因为 web.xml 是从上到下读取的。
+
+~~~ xml
+<filter>
+        <filter-name>character</filter-name>
+        <filter-class>com.example.filter.CharacterFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>character</filter-name>
+        <url-pattern>/test</url-pattern>
+    </filter-mapping>
+
+    <filter>
+        <filter-name>my</filter-name>
+        <filter-class>com.example.filter.MyFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>my</filter-name>
+        <url-pattern>/test</url-pattern>
+    </filter-mapping>
+
+~~~
+
+
+
+也可以通过注解的方式配置 Filter 
+
+~~~ java
+@WebFilter("/test")
+public class CharacterFilter implements Filter {
+    
+}
+~~~
+
+
+
+### Filter 的使用场景
+
+1、解决中文乱码问题。
+
+2、屏蔽敏感词。
+
+​		获取从浏览器传递的信息通过 Parameter 获取，两个资源之间信息的传递通过 Attribute
+
+3、控制资源的访问权限。
+
+~~~ Java
+package com.example.filter;
+
+import javax.servlet.*;
+import javax.servlet.annotation.WebFilter;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+import java.io.IOException;
+@WebFilter("/download.jsp")
+public class DownloadFilter implements Filter {
+    @Override
+    public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
+        HttpServletRequest request = (HttpServletRequest) servletRequest;
+        HttpServletResponse response = (HttpServletResponse) servletResponse;
+        HttpSession session = request.getSession();
+        String name = (String)session.getAttribute("name");
+        if (name == null) {
+            response.sendRedirect("/login.jsp");
+        } else {
+            filterChain.doFilter(request, response);
+        }
+    }
+}
+
+~~~
+
+
+
+
+
+## 文件上传和下载
+
+- JSP
+
+1、input 的 type 设置为 file。
+
+2、form 表单的 method 必须设置为 post，如果是 get 只会上传文件名而不是文件。
+
+3、form 表单的 enctype 设置 multipart/form-data，以二进制的形式传输数据。
+
+- Servlet
+
+在实际开发中，使用 fileupload 组件上传文件，属于第三方组件，需要下载 jar 包。可以将所有的请求信息都解析成 Fileitem 对象，通过对 Fileitem 对象的操作完成上传。
+
+
+
+## Ajax
+
+Asynchronous JavaScript And XML：异步的 Javascript和XML
+
+Ajax 是一种交互方式，异步加载，客户端与服务器的数据交互更新在局部页面的技术，不需要刷新整个页面（局部刷新）。
+
+优点：
+
+1、局部刷新的效率更高。
+
+2、用户的体验更好。
+
+基于 jQuery 的Ajax
+
+~~~ jsp
+<%--
+  Created by IntelliJ IDEA.
+  User: 啦啦啦
+  Date: 2020/4/1
+  Time: 21:03
+  To change this template use File | Settings | File Templates.
+--%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<html>
+<head>
+    <title>Title</title>
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript"> 
+        $(function () {
+            var btn = $("#btn");
+            btn.click(function () {
+                $.ajax({
+                    url: '/ajaxtest',
+                    type:'post',
+                    data:'id=1',
+                    dataType:'text',
+                    success:function (data) {
+                        var text = $("#text");
+                        text.before("<span>" + data + "</span><br/>")
+                    }
+                });
+            })
+        })
+    </script>
+</head>
+<body>
+    <input id="text" type="text"><br/>
+    <input id="btn" type="button" value="提交">
+</body>
+</html>
+
+~~~
+
+不能用表单提交请求，改用 jQuery 动态绑定事件来提交。
+
+url：和 form 表单中的 action
+
+type：相当于 form 表单中的 method
+
+data：要传给服务端的属性，如 用户名、密码等，服务端通过 getParameter 方式获取内容。
+
+dataType：是服务端要传送给客户端的数据的类型。
+
+success：data 是 Servlet 返回的数据。
+
+Servlet 不能跳转整个页面，只负责将数据返回。ajax 是将内容添加到页面上，不是对整个页面的刷新。
+
+~~~Java
+package com.example.servlet;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+
+@WebServlet("/ajaxtest")
+public class AjaxTest extends HttpServlet {
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        String str = "Hello World";
+        resp.getWriter().write(str);
+//        req.setAttribute("str", str);
+//        req.getRequestDispatcher("ajaxtest.jsp").forward(req, resp);
+    }
+}
+
+~~~
+
+### 传统的 WEB 数据交互 和 AJAX 交互的区别
+
+- 客户端请求的方式不同：
+
+传统，浏览器发送 同步请求，通过 form、a
+
+AJAX，异步引擎对象发送异步请求。
+
+- 服务端响应的方式不同：
+
+传统，通过重定向响应一个完整的页面。
+
+AJAX，只需要通过 response 的 write函数 响应需要的数据，不影响页面其他部分。
+
+- 客户端处理方式不同：
+
+传统，需要等待服务器完成响应并且加载整个页面之后，用户才能进行后续的操作
+
+AJAX，只动态更新局部的数据内容，不影响用户在页面其他部分的操作。
+
+### AJAX原理
+
+![image-20200402150030712](C:\Users\啦啦啦\AppData\Roaming\Typora\typora-user-images\image-20200402150030712.png)
+
+### 基于 jQuery 的 AJAX语法
+
+$.ajax({属性})
+
+常用的属性：
+
+url：请求的的后端服务地址
+
+type：请求的方式，默认为 get
+
+data：请求参数
+
+dataType：服务器返回的数据的类型
+
+success：请求成功的回调函数
+
+error：请求失败的回调函数
+
+complete：无论成功或失败都会回调
+
+### JSON
+
+Javascript Objec Notation ， 一种轻量级数据交互格式，完成 js 与 java 等后端开发语言对象数据之间的转换。
+
+客户端与服务端之间传递对象数据。
+
+~~~jsp
+<%--
+  Created by IntelliJ IDEA.
+  User: 啦啦啦
+  Date: 2020/4/11
+  Time: 15:21
+  To change this template use File | Settings | File Templates.
+--%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<html>
+<head>
+    <title>Title</title>
+</head>
+<body>
+    编号：<input id="id" type="text"><br>
+    姓名：<input id="name" type="text"><br>
+    分数：<input id="score" type="text"><br>
+    <input id="submit" type="button" value="提交">
+<script src="js/jquery-3.3.1.js"></script>
+<script>
+    $(function () {
+        var btn = $("#submit");
+        btn.click(function () {
+            $.ajax({
+                url:"/test",
+                type:"post",
+                dataType:"json",
+                success:function (data) {
+                    $("#id").val(data.id);
+                    $("#name").val(data.name);
+                    $("#score").val(data.score);
+                }
+            })
+        })
+    })
+</script>
+</body>
+</html>
+
+~~~
+
+
+
+~~~Java
+package com.example.servlet;
+
+import com.example.entity.User;
+import net.sf.json.JSONObject;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+@WebServlet("/test")
+public class AjaxTest extends HttpServlet {
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        resp.setCharacterEncoding("UTF-8");
+        User user = new User(1,"张三", 96.5);
+        JSONObject jsonObject = JSONObject.fromObject(user);
+        resp.getWriter().write(jsonObject.toString());
+
+    }
+}
+
+~~~
+
+
+
+将 实体类 转化为 JSON格式所需要的 jar包。
+
+![image-20200411163658514](C:\Users\啦啦啦\AppData\Roaming\Typora\typora-user-images\image-20200411163658514.png)
+
+
+
+
+
+
+
+
+
+## Session
+
+会话
+
+
+
+
+, indexPicture=https://images.unsplash.com/photo-1618762273540-56007afea45e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80, flag=, describe=最近学习了一下JVM的内存模型，本来想自己写一篇学习心得，总是觉得自己表达不清，然后就从学习资料里复制一段，写到最后发现，基本都是复制的。, viewCount=null, published=true, recommend=false, createTime=null, updateTime=null, tagIds=null, commentList=null, type=Type(id=24, name=null, blogCount=0, blogList=null), writer=null), org.springframework.validation.BindingResult.blog=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, {}])
+2021-04-26 20:27:56.786  INFO 19560 --- [http-nio-8080-exec-4] c.p.b.controller.admin.BlogController    : false
+2021-04-26 20:27:56.994  INFO 19560 --- [http-nio-8080-exec-4] com.program.blog.aspect.LogAspect        : Result : redirect:/admin/blogs
+2021-04-26 20:27:57.019  INFO 19560 --- [http-nio-8080-exec-1] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/admin/blogs;jsessionid=78FE1C254F59C17AE3ACA488FC6065A5, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.admin.BlogController.blogsPage, args=[{message=success}, 1])
+2021-04-26 20:27:57.060  INFO 19560 --- [http-nio-8080-exec-1] com.program.blog.aspect.LogAspect        : Result : admin/blogs
+2021-04-26 20:28:00.474  INFO 19560 --- [http-nio-8080-exec-3] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.IndexController.index, args=[{}])
+2021-04-26 20:28:00.514  INFO 19560 --- [http-nio-8080-exec-3] com.program.blog.aspect.LogAspect        : Result : index
+2021-04-26 20:28:55.613  INFO 8412 --- [restartedMain] com.program.blog.BlogApplication         : Starting BlogApplication using Java 12.0.2 on LAPTOP-B2BM54RN with PID 8412 (E:\IdeaProjects\blog\target\classes started by 轩 in E:\IdeaProjects\blog)
+2021-04-26 20:28:55.615 DEBUG 8412 --- [restartedMain] com.program.blog.BlogApplication         : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-04-26 20:28:55.616  INFO 8412 --- [restartedMain] com.program.blog.BlogApplication         : The following profiles are active: dev
+2021-04-26 20:28:55.649  INFO 8412 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-26 20:28:55.650  INFO 8412 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-26 20:28:56.591  INFO 8412 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-26 20:28:56.597  INFO 8412 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-26 20:28:56.597  INFO 8412 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-04-26 20:28:56.657  INFO 8412 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-26 20:28:56.657  INFO 8412 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1005 ms
+2021-04-26 20:28:57.141  INFO 8412 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-26 20:28:57.224  INFO 8412 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-04-26 20:28:57.573  INFO 8412 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-04-26 20:28:57.601  INFO 8412 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-26 20:28:57.611  INFO 8412 --- [restartedMain] com.program.blog.BlogApplication         : Started BlogApplication in 2.324 seconds (JVM running for 4.176)
+2021-04-26 20:28:59.934  INFO 8412 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-26 20:28:59.936  INFO 8412 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-26 20:28:59.936  INFO 8412 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-04-26 20:28:59.959  INFO 8412 --- [http-nio-8080-exec-1] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.IndexController.index, args=[{}])
+2021-04-26 20:28:59.975  INFO 8412 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-04-26 20:29:00.199  INFO 8412 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-04-26 20:29:00.547  INFO 8412 --- [http-nio-8080-exec-1] com.program.blog.aspect.LogAspect        : Result : index
+2021-04-26 20:30:24.433  INFO 16036 --- [restartedMain] com.program.blog.BlogApplication         : Starting BlogApplication using Java 12.0.2 on LAPTOP-B2BM54RN with PID 16036 (E:\IdeaProjects\blog\target\classes started by 轩 in E:\IdeaProjects\blog)
+2021-04-26 20:30:24.437 DEBUG 16036 --- [restartedMain] com.program.blog.BlogApplication         : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-04-26 20:30:24.438  INFO 16036 --- [restartedMain] com.program.blog.BlogApplication         : The following profiles are active: dev
+2021-04-26 20:30:24.491  INFO 16036 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-26 20:30:24.492  INFO 16036 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-26 20:30:25.558  INFO 16036 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-26 20:30:25.565  INFO 16036 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-26 20:30:25.565  INFO 16036 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-04-26 20:30:25.623  INFO 16036 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-26 20:30:25.623  INFO 16036 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1130 ms
+2021-04-26 20:30:26.099  INFO 16036 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-26 20:30:26.174  INFO 16036 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-04-26 20:30:26.584  INFO 16036 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-04-26 20:30:26.615  INFO 16036 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-26 20:30:26.623  INFO 16036 --- [restartedMain] com.program.blog.BlogApplication         : Started BlogApplication in 2.61 seconds (JVM running for 3.694)
+2021-04-26 20:30:30.006  INFO 16036 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-26 20:30:30.008  INFO 16036 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-26 20:30:30.008  INFO 16036 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-04-26 20:30:30.031  INFO 16036 --- [http-nio-8080-exec-1] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.IndexController.index, args=[{}])
+2021-04-26 20:30:30.049  INFO 16036 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-04-26 20:30:30.245  INFO 16036 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-04-26 20:30:30.386  INFO 16036 --- [http-nio-8080-exec-1] com.program.blog.aspect.LogAspect        : Result : index
+2021-04-26 20:31:51.966  INFO 13544 --- [restartedMain] com.program.blog.BlogApplication         : Starting BlogApplication using Java 12.0.2 on LAPTOP-B2BM54RN with PID 13544 (E:\IdeaProjects\blog\target\classes started by 轩 in E:\IdeaProjects\blog)
+2021-04-26 20:31:51.968 DEBUG 13544 --- [restartedMain] com.program.blog.BlogApplication         : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-04-26 20:31:51.968  INFO 13544 --- [restartedMain] com.program.blog.BlogApplication         : The following profiles are active: dev
+2021-04-26 20:31:52.007  INFO 13544 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-26 20:31:52.008  INFO 13544 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-26 20:31:53.007  INFO 13544 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-26 20:31:53.013  INFO 13544 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-26 20:31:53.013  INFO 13544 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-04-26 20:31:53.073  INFO 13544 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-26 20:31:53.073  INFO 13544 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1064 ms
+2021-04-26 20:31:53.588  INFO 13544 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-26 20:31:53.661  INFO 13544 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-04-26 20:31:54.002  INFO 13544 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-04-26 20:31:54.030  INFO 13544 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-26 20:31:54.039  INFO 13544 --- [restartedMain] com.program.blog.BlogApplication         : Started BlogApplication in 2.485 seconds (JVM running for 3.576)
+2021-04-26 20:34:08.234  INFO 13544 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-26 20:34:08.236  INFO 13544 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-26 20:34:08.236  INFO 13544 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-04-26 20:34:08.261  INFO 13544 --- [http-nio-8080-exec-1] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/admin/blogs;jsessionid=78FE1C254F59C17AE3ACA488FC6065A5, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.admin.BlogController.blogsPage, args=[{}, 1])
+2021-04-26 20:34:08.282  INFO 13544 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-04-26 20:34:08.598  INFO 13544 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-04-26 20:34:08.728  INFO 13544 --- [http-nio-8080-exec-1] com.program.blog.aspect.LogAspect        : Result : admin/blogs
+2021-04-26 20:34:14.466  INFO 13544 --- [http-nio-8080-exec-3] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/admin/blogs/input, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.admin.BlogController.blogAddPage, args=[{}])
+2021-04-26 20:34:14.471  INFO 13544 --- [http-nio-8080-exec-3] com.program.blog.aspect.LogAspect        : Result : admin/blogs-input
+2021-04-26 20:35:24.099  WARN 13544 --- [http-nio-8080-exec-2] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [398] milliseconds.
+2021-04-26 20:35:24.111  INFO 13544 --- [http-nio-8080-exec-2] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/admin/blogs/new, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.admin.BlogController.blogAdd, args=[Blog(id=null, title=123123, content=123123123123, indexPicture=123412341234, flag=, describe=123412341234, viewCount=null, published=true, recommend=false, createTime=null, updateTime=null, tagIds=null, commentList=null, type=Type(id=2, name=null, blogCount=0, blogList=null), writer=null), org.apache.catalina.session.StandardSessionFacade@741d06f4, {blog=Blog(id=null, title=123123, content=123123123123, indexPicture=123412341234, flag=, describe=123412341234, viewCount=null, published=true, recommend=false, createTime=null, updateTime=null, tagIds=null, commentList=null, type=Type(id=2, name=null, blogCount=0, blogList=null), writer=null), org.springframework.validation.BindingResult.blog=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, {}])
+2021-04-26 20:35:24.111  INFO 13544 --- [http-nio-8080-exec-2] c.p.b.controller.admin.BlogController    : false
+2021-04-26 20:35:24.260  INFO 13544 --- [http-nio-8080-exec-2] com.program.blog.aspect.LogAspect        : Result : redirect:/admin/blogs
+2021-04-26 20:35:24.273  INFO 13544 --- [http-nio-8080-exec-10] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/admin/blogs, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.admin.BlogController.blogsPage, args=[{message=success}, 1])
+2021-04-26 20:35:24.284  INFO 13544 --- [http-nio-8080-exec-10] com.program.blog.aspect.LogAspect        : Result : admin/blogs
+2021-04-26 20:35:25.731  INFO 13544 --- [http-nio-8080-exec-1] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/admin/blogs/input, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.admin.BlogController.blogAddPage, args=[{}])
+2021-04-26 20:35:25.734  INFO 13544 --- [http-nio-8080-exec-1] com.program.blog.aspect.LogAspect        : Result : admin/blogs-input
+2021-04-26 20:36:15.358  INFO 13544 --- [http-nio-8080-exec-10] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/admin/blogs/input, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.admin.BlogController.blogAddPage, args=[{}])
+2021-04-26 20:36:15.361  INFO 13544 --- [http-nio-8080-exec-10] com.program.blog.aspect.LogAspect        : Result : admin/blogs-input
+2021-04-26 20:36:47.712  INFO 13544 --- [http-nio-8080-exec-1] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/admin/blogs/input, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.admin.BlogController.blogAddPage, args=[{}])
+2021-04-26 20:36:47.715  INFO 13544 --- [http-nio-8080-exec-1] com.program.blog.aspect.LogAspect        : Result : admin/blogs-input
+2021-04-26 20:37:11.574  INFO 18424 --- [restartedMain] com.program.blog.BlogApplication         : Starting BlogApplication using Java 12.0.2 on LAPTOP-B2BM54RN with PID 18424 (E:\IdeaProjects\blog\target\classes started by 轩 in E:\IdeaProjects\blog)
+2021-04-26 20:37:11.579 DEBUG 18424 --- [restartedMain] com.program.blog.BlogApplication         : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-04-26 20:37:11.579  INFO 18424 --- [restartedMain] com.program.blog.BlogApplication         : The following profiles are active: dev
+2021-04-26 20:37:11.632  INFO 18424 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-26 20:37:11.632  INFO 18424 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-26 20:37:12.766  INFO 18424 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-26 20:37:12.773  INFO 18424 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-26 20:37:12.773  INFO 18424 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-04-26 20:37:12.838  INFO 18424 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-26 20:37:12.838  INFO 18424 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1204 ms
+2021-04-26 20:37:13.348  INFO 18424 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-26 20:37:13.428  INFO 18424 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-04-26 20:37:13.780  INFO 18424 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-04-26 20:37:13.809  INFO 18424 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-26 20:37:13.818  INFO 18424 --- [restartedMain] com.program.blog.BlogApplication         : Started BlogApplication in 2.647 seconds (JVM running for 3.761)
+2021-04-26 20:37:15.456  INFO 18424 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-26 20:37:15.457  INFO 18424 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-26 20:37:15.458  INFO 18424 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-04-26 20:37:15.480  INFO 18424 --- [http-nio-8080-exec-1] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.IndexController.index, args=[{}])
+2021-04-26 20:37:15.497  INFO 18424 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-04-26 20:37:15.702  INFO 18424 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-04-26 20:37:15.911  INFO 18424 --- [http-nio-8080-exec-1] com.program.blog.aspect.LogAspect        : Result : index
+2021-04-26 20:37:20.902  INFO 18424 --- [http-nio-8080-exec-1] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.IndexController.index, args=[{}])
+2021-04-26 20:37:20.926  INFO 18424 --- [http-nio-8080-exec-1] com.program.blog.aspect.LogAspect        : Result : index
+2021-04-26 20:37:21.770  INFO 18424 --- [http-nio-8080-exec-8] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.IndexController.index, args=[{}])
+2021-04-26 20:37:21.791  INFO 18424 --- [http-nio-8080-exec-8] com.program.blog.aspect.LogAspect        : Result : index
+2021-04-26 20:39:11.679  INFO 18424 --- [http-nio-8080-exec-8] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.IndexController.index, args=[{}])
+2021-04-26 20:39:11.697  INFO 18424 --- [http-nio-8080-exec-8] com.program.blog.aspect.LogAspect        : Result : index
+2021-04-26 20:39:17.796  INFO 18424 --- [http-nio-8080-exec-1] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/admin/blogs/input, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.admin.BlogController.blogAddPage, args=[{}])
+2021-04-26 20:39:17.804  INFO 18424 --- [http-nio-8080-exec-1] com.program.blog.aspect.LogAspect        : Result : admin/blogs-input
+2021-04-26 20:39:21.588  INFO 18424 --- [http-nio-8080-exec-7] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/admin/blogs/search, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.admin.BlogController.searchBlogs, args=[BlogQuery(blogTitle=, typeId=null, recommend=false), {blogQuery=BlogQuery(blogTitle=, typeId=null, recommend=false), org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, 2])
+2021-04-26 20:39:21.609  INFO 18424 --- [http-nio-8080-exec-7] com.program.blog.aspect.LogAspect        : Result : admin/blogs :: blogList
+2021-04-26 20:39:22.077  INFO 18424 --- [http-nio-8080-exec-9] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/admin/blogs/search, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.admin.BlogController.searchBlogs, args=[BlogQuery(blogTitle=, typeId=null, recommend=false), {blogQuery=BlogQuery(blogTitle=, typeId=null, recommend=false), org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, 3])
+2021-04-26 20:39:22.084  INFO 18424 --- [http-nio-8080-exec-9] com.program.blog.aspect.LogAspect        : Result : admin/blogs :: blogList
+2021-04-26 20:39:22.675  INFO 18424 --- [http-nio-8080-exec-8] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/admin/blogs/search, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.admin.BlogController.searchBlogs, args=[BlogQuery(blogTitle=, typeId=null, recommend=false), {blogQuery=BlogQuery(blogTitle=, typeId=null, recommend=false), org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, 4])
+2021-04-26 20:39:22.681  INFO 18424 --- [http-nio-8080-exec-8] com.program.blog.aspect.LogAspect        : Result : admin/blogs :: blogList
+2021-04-26 20:39:23.657  INFO 18424 --- [http-nio-8080-exec-10] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/admin/blogs/39/edit, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.admin.BlogController.blogEditPage, args=[39, {}])
+2021-04-26 20:39:23.765  INFO 18424 --- [http-nio-8080-exec-10] com.program.blog.aspect.LogAspect        : Result : /admin/blogs-input
+2021-04-26 20:39:27.806 ERROR 18424 --- [http-nio-8080-exec-7] c.p.b.e.ControllerExceptionHandler       : Request URL: http://localhost:8080/admin/blogs/39/edit, Exception: org.springframework.validation.BindException: org.springframework.validation.BeanPropertyBindingResult: 1 errors
+Field error in object 'blog' on field 'recommend': rejected value []; codes [typeMismatch.blog.recommend,typeMismatch.recommend,typeMismatch.boolean,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [blog.recommend,recommend]; arguments []; default message [recommend]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'boolean' for property 'recommend'; nested exception is java.lang.IllegalArgumentException: Invalid boolean value []], Message: org.springframework.validation.BeanPropertyBindingResult: 1 errors
+Field error in object 'blog' on field 'recommend': rejected value []; codes [typeMismatch.blog.recommend,typeMismatch.recommend,typeMismatch.boolean,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [blog.recommend,recommend]; arguments []; default message [recommend]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'boolean' for property 'recommend'; nested exception is java.lang.IllegalArgumentException: Invalid boolean value []]
+2021-04-26 20:39:27.807  WARN 18424 --- [http-nio-8080-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.validation.BindException: org.springframework.validation.BeanPropertyBindingResult: 1 errors
+Field error in object 'blog' on field 'recommend': rejected value []; codes [typeMismatch.blog.recommend,typeMismatch.recommend,typeMismatch.boolean,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [blog.recommend,recommend]; arguments []; default message [recommend]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'boolean' for property 'recommend'; nested exception is java.lang.IllegalArgumentException: Invalid boolean value []]]
+2021-04-26 20:39:58.868  INFO 18424 --- [http-nio-8080-exec-10] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/admin/blogs/39/edit, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.admin.BlogController.blogEditPage, args=[39, {}])
+2021-04-26 20:39:58.874  INFO 18424 --- [http-nio-8080-exec-10] com.program.blog.aspect.LogAspect        : Result : /admin/blogs-input
+2021-04-26 20:42:45.474  INFO 18424 --- [http-nio-8080-exec-10] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/admin/blogs/39/edit, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.admin.BlogController.blogEditPage, args=[39, {}])
+2021-04-26 20:42:45.480  INFO 18424 --- [http-nio-8080-exec-10] com.program.blog.aspect.LogAspect        : Result : /admin/blogs-input
+2021-04-26 20:42:47.797  INFO 18424 --- [http-nio-8080-exec-5] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/admin/blogs/39/edit, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.admin.BlogController.blogEdit, args=[39, Blog(id=39, title=Web学习——过滤器, content=# Web学习
+
+## 过滤器
+
+### Filter
+
+功能：
+
+1、用来拦截传入的请求和传出的响应。
+
+2、修改或以某种方式处理正在客户端和服务端之间交换的数据流。
+
+使用方式：
+
+与使用 Servlet 类似，Filter 是 Java web 提供的一个接口，开发者只需要自定义一个类并实现该接口即可。
+
+``` Java
+package com.example.filter;
+
+import javax.servlet.*;
+import java.io.IOException;
+
+public class CharacterFilter implements Filter {
+    @Override
+    public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
+        servletRequest.setCharacterEncoding("UTF-8");
+        filterChain.doFilter(servletRequest, servletResponse);
+    }
+}
+
+```
+
+1、Filter 接口有三个函数，另外两个函数有 default 关键字修饰，可实现可不实现。
+
+2、在 doFilter 中，拦截的 request 经过业务处理后通过 filterChain 将处理后的 request 或 response 传递给相应的 servlet，否则，请求/响应就会一直停留在过滤器中。(filterChain.doFilter(servletRequest, servletResponse);)
+
+配置 web.xml
+
+~~~ xml
+	<filter>
+        <filter-name>character</filter-name>
+        <filter-class>com.example.filter.CharacterFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>character</filter-name>
+        <url-pattern>/test</url-pattern>
+        <url-pattern></url-pattern>
+    </filter-mapping>
+~~~
+
+通过以上方式配置拦截器映射，要是相同拦截方式的界面有多个，可以添加多个 url-pattern。
+
+### Filter生命周期
+
+当 Tomcat 启动时，同过反射机制调用 Filter 的无参构造函数创建实例化对象，同时调用 init 方法完成初始化，一次请求时调用一次 doFilter ，多次请求 ，doFilter 方法就调用多次，当 Tomcat 服务器关闭时，调用 destory 方法销毁 Filter 对象。
+
+无参构造函数：只调用一次，当 Tomcat 启动时调用（Filter 一定要在 web.xml 中配置）
+
+init 函数：只调用一次，当 Filter 实例化对象创建完成之后调用。
+
+doFilter 函数：调用多次，访问 Filter 的业务逻辑都写在 Filter 中。
+
+destory 函数：调用一次，当 Tomcat 关闭时调用。
+
+
+
+同时配置多个 Filter 时，Filter 的调用顺序是由 web.xml 中的配置顺序决定的，写在上面的先调用，因为 web.xml 是从上到下读取的。
+
+~~~ xml
+<filter>
+        <filter-name>character</filter-name>
+        <filter-class>com.example.filter.CharacterFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>character</filter-name>
+        <url-pattern>/test</url-pattern>
+    </filter-mapping>
+
+    <filter>
+        <filter-name>my</filter-name>
+        <filter-class>com.example.filter.MyFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>my</filter-name>
+        <url-pattern>/test</url-pattern>
+    </filter-mapping>
+
+~~~
+
+
+
+也可以通过注解的方式配置 Filter 
+
+~~~ java
+@WebFilter("/test")
+public class CharacterFilter implements Filter {
+    
+}
+~~~
+
+
+
+### Filter 的使用场景
+
+1、解决中文乱码问题。
+
+2、屏蔽敏感词。
+
+​		获取从浏览器传递的信息通过 Parameter 获取，两个资源之间信息的传递通过 Attribute
+
+3、控制资源的访问权限。
+
+~~~ Java
+package com.example.filter;
+
+import javax.servlet.*;
+import javax.servlet.annotation.WebFilter;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+import java.io.IOException;
+@WebFilter("/download.jsp")
+public class DownloadFilter implements Filter {
+    @Override
+    public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
+        HttpServletRequest request = (HttpServletRequest) servletRequest;
+        HttpServletResponse response = (HttpServletResponse) servletResponse;
+        HttpSession session = request.getSession();
+        String name = (String)session.getAttribute("name");
+        if (name == null) {
+            response.sendRedirect("/login.jsp");
+        } else {
+            filterChain.doFilter(request, response);
+        }
+    }
+}
+
+~~~
+
+
+
+
+
+## 文件上传和下载
+
+- JSP
+
+1、input 的 type 设置为 file。
+
+2、form 表单的 method 必须设置为 post，如果是 get 只会上传文件名而不是文件。
+
+3、form 表单的 enctype 设置 multipart/form-data，以二进制的形式传输数据。
+
+- Servlet
+
+在实际开发中，使用 fileupload 组件上传文件，属于第三方组件，需要下载 jar 包。可以将所有的请求信息都解析成 Fileitem 对象，通过对 Fileitem 对象的操作完成上传。
+
+
+
+## Ajax
+
+Asynchronous JavaScript And XML：异步的 Javascript和XML
+
+Ajax 是一种交互方式，异步加载，客户端与服务器的数据交互更新在局部页面的技术，不需要刷新整个页面（局部刷新）。
+
+优点：
+
+1、局部刷新的效率更高。
+
+2、用户的体验更好。
+
+基于 jQuery 的Ajax
+
+~~~ jsp
+<%--
+  Created by IntelliJ IDEA.
+  User: 啦啦啦
+  Date: 2020/4/1
+  Time: 21:03
+  To change this template use File | Settings | File Templates.
+--%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<html>
+<head>
+    <title>Title</title>
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript"> 
+        $(function () {
+            var btn = $("#btn");
+            btn.click(function () {
+                $.ajax({
+                    url: '/ajaxtest',
+                    type:'post',
+                    data:'id=1',
+                    dataType:'text',
+                    success:function (data) {
+                        var text = $("#text");
+                        text.before("<span>" + data + "</span><br/>")
+                    }
+                });
+            })
+        })
+    </script>
+</head>
+<body>
+    <input id="text" type="text"><br/>
+    <input id="btn" type="button" value="提交">
+</body>
+</html>
+
+~~~
+
+不能用表单提交请求，改用 jQuery 动态绑定事件来提交。
+
+url：和 form 表单中的 action
+
+type：相当于 form 表单中的 method
+
+data：要传给服务端的属性，如 用户名、密码等，服务端通过 getParameter 方式获取内容。
+
+dataType：是服务端要传送给客户端的数据的类型。
+
+success：data 是 Servlet 返回的数据。
+
+Servlet 不能跳转整个页面，只负责将数据返回。ajax 是将内容添加到页面上，不是对整个页面的刷新。
+
+~~~Java
+package com.example.servlet;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+
+@WebServlet("/ajaxtest")
+public class AjaxTest extends HttpServlet {
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        String str = "Hello World";
+        resp.getWriter().write(str);
+//        req.setAttribute("str", str);
+//        req.getRequestDispatcher("ajaxtest.jsp").forward(req, resp);
+    }
+}
+
+~~~
+
+### 传统的 WEB 数据交互 和 AJAX 交互的区别
+
+- 客户端请求的方式不同：
+
+传统，浏览器发送 同步请求，通过 form、a
+
+AJAX，异步引擎对象发送异步请求。
+
+- 服务端响应的方式不同：
+
+传统，通过重定向响应一个完整的页面。
+
+AJAX，只需要通过 response 的 write函数 响应需要的数据，不影响页面其他部分。
+
+- 客户端处理方式不同：
+
+传统，需要等待服务器完成响应并且加载整个页面之后，用户才能进行后续的操作
+
+AJAX，只动态更新局部的数据内容，不影响用户在页面其他部分的操作。
+
+### AJAX原理
+
+![image-20200402150030712](C:\Users\啦啦啦\AppData\Roaming\Typora\typora-user-images\image-20200402150030712.png)
+
+### 基于 jQuery 的 AJAX语法
+
+$.ajax({属性})
+
+常用的属性：
+
+url：请求的的后端服务地址
+
+type：请求的方式，默认为 get
+
+data：请求参数
+
+dataType：服务器返回的数据的类型
+
+success：请求成功的回调函数
+
+error：请求失败的回调函数
+
+complete：无论成功或失败都会回调
+
+### JSON
+
+Javascript Objec Notation ， 一种轻量级数据交互格式，完成 js 与 java 等后端开发语言对象数据之间的转换。
+
+客户端与服务端之间传递对象数据。
+
+~~~jsp
+<%--
+  Created by IntelliJ IDEA.
+  User: 啦啦啦
+  Date: 2020/4/11
+  Time: 15:21
+  To change this template use File | Settings | File Templates.
+--%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<html>
+<head>
+    <title>Title</title>
+</head>
+<body>
+    编号：<input id="id" type="text"><br>
+    姓名：<input id="name" type="text"><br>
+    分数：<input id="score" type="text"><br>
+    <input id="submit" type="button" value="提交">
+<script src="js/jquery-3.3.1.js"></script>
+<script>
+    $(function () {
+        var btn = $("#submit");
+        btn.click(function () {
+            $.ajax({
+                url:"/test",
+                type:"post",
+                dataType:"json",
+                success:function (data) {
+                    $("#id").val(data.id);
+                    $("#name").val(data.name);
+                    $("#score").val(data.score);
+                }
+            })
+        })
+    })
+</script>
+</body>
+</html>
+
+~~~
+
+
+
+~~~Java
+package com.example.servlet;
+
+import com.example.entity.User;
+import net.sf.json.JSONObject;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+@WebServlet("/test")
+public class AjaxTest extends HttpServlet {
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        resp.setCharacterEncoding("UTF-8");
+        User user = new User(1,"张三", 96.5);
+        JSONObject jsonObject = JSONObject.fromObject(user);
+        resp.getWriter().write(jsonObject.toString());
+
+    }
+}
+
+~~~
+
+
+
+将 实体类 转化为 JSON格式所需要的 jar包。
+
+![image-20200411163658514](C:\Users\啦啦啦\AppData\Roaming\Typora\typora-user-images\image-20200411163658514.png)
+
+
+
+
+
+
+
+
+
+## Session
+
+会话
+
+
+
+
+, indexPicture=https://images.unsplash.com/photo-1618762273540-56007afea45e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80, flag=1, describe=最近学习了一下JVM的内存模型，本来想自己写一篇学习心得，总是觉得自己表达不清，然后就从学习资料里复制一段，写到最后发现，基本都是复制的。, viewCount=null, published=true, recommend=false, createTime=null, updateTime=null, tagIds=null, commentList=null, type=Type(id=24, name=null, blogCount=0, blogList=null), writer=null), {blog=Blog(id=39, title=Web学习——过滤器, content=# Web学习
+
+## 过滤器
+
+### Filter
+
+功能：
+
+1、用来拦截传入的请求和传出的响应。
+
+2、修改或以某种方式处理正在客户端和服务端之间交换的数据流。
+
+使用方式：
+
+与使用 Servlet 类似，Filter 是 Java web 提供的一个接口，开发者只需要自定义一个类并实现该接口即可。
+
+``` Java
+package com.example.filter;
+
+import javax.servlet.*;
+import java.io.IOException;
+
+public class CharacterFilter implements Filter {
+    @Override
+    public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
+        servletRequest.setCharacterEncoding("UTF-8");
+        filterChain.doFilter(servletRequest, servletResponse);
+    }
+}
+
+```
+
+1、Filter 接口有三个函数，另外两个函数有 default 关键字修饰，可实现可不实现。
+
+2、在 doFilter 中，拦截的 request 经过业务处理后通过 filterChain 将处理后的 request 或 response 传递给相应的 servlet，否则，请求/响应就会一直停留在过滤器中。(filterChain.doFilter(servletRequest, servletResponse);)
+
+配置 web.xml
+
+~~~ xml
+	<filter>
+        <filter-name>character</filter-name>
+        <filter-class>com.example.filter.CharacterFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>character</filter-name>
+        <url-pattern>/test</url-pattern>
+        <url-pattern></url-pattern>
+    </filter-mapping>
+~~~
+
+通过以上方式配置拦截器映射，要是相同拦截方式的界面有多个，可以添加多个 url-pattern。
+
+### Filter生命周期
+
+当 Tomcat 启动时，同过反射机制调用 Filter 的无参构造函数创建实例化对象，同时调用 init 方法完成初始化，一次请求时调用一次 doFilter ，多次请求 ，doFilter 方法就调用多次，当 Tomcat 服务器关闭时，调用 destory 方法销毁 Filter 对象。
+
+无参构造函数：只调用一次，当 Tomcat 启动时调用（Filter 一定要在 web.xml 中配置）
+
+init 函数：只调用一次，当 Filter 实例化对象创建完成之后调用。
+
+doFilter 函数：调用多次，访问 Filter 的业务逻辑都写在 Filter 中。
+
+destory 函数：调用一次，当 Tomcat 关闭时调用。
+
+
+
+同时配置多个 Filter 时，Filter 的调用顺序是由 web.xml 中的配置顺序决定的，写在上面的先调用，因为 web.xml 是从上到下读取的。
+
+~~~ xml
+<filter>
+        <filter-name>character</filter-name>
+        <filter-class>com.example.filter.CharacterFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>character</filter-name>
+        <url-pattern>/test</url-pattern>
+    </filter-mapping>
+
+    <filter>
+        <filter-name>my</filter-name>
+        <filter-class>com.example.filter.MyFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>my</filter-name>
+        <url-pattern>/test</url-pattern>
+    </filter-mapping>
+
+~~~
+
+
+
+也可以通过注解的方式配置 Filter 
+
+~~~ java
+@WebFilter("/test")
+public class CharacterFilter implements Filter {
+    
+}
+~~~
+
+
+
+### Filter 的使用场景
+
+1、解决中文乱码问题。
+
+2、屏蔽敏感词。
+
+​		获取从浏览器传递的信息通过 Parameter 获取，两个资源之间信息的传递通过 Attribute
+
+3、控制资源的访问权限。
+
+~~~ Java
+package com.example.filter;
+
+import javax.servlet.*;
+import javax.servlet.annotation.WebFilter;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+import java.io.IOException;
+@WebFilter("/download.jsp")
+public class DownloadFilter implements Filter {
+    @Override
+    public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
+        HttpServletRequest request = (HttpServletRequest) servletRequest;
+        HttpServletResponse response = (HttpServletResponse) servletResponse;
+        HttpSession session = request.getSession();
+        String name = (String)session.getAttribute("name");
+        if (name == null) {
+            response.sendRedirect("/login.jsp");
+        } else {
+            filterChain.doFilter(request, response);
+        }
+    }
+}
+
+~~~
+
+
+
+
+
+## 文件上传和下载
+
+- JSP
+
+1、input 的 type 设置为 file。
+
+2、form 表单的 method 必须设置为 post，如果是 get 只会上传文件名而不是文件。
+
+3、form 表单的 enctype 设置 multipart/form-data，以二进制的形式传输数据。
+
+- Servlet
+
+在实际开发中，使用 fileupload 组件上传文件，属于第三方组件，需要下载 jar 包。可以将所有的请求信息都解析成 Fileitem 对象，通过对 Fileitem 对象的操作完成上传。
+
+
+
+## Ajax
+
+Asynchronous JavaScript And XML：异步的 Javascript和XML
+
+Ajax 是一种交互方式，异步加载，客户端与服务器的数据交互更新在局部页面的技术，不需要刷新整个页面（局部刷新）。
+
+优点：
+
+1、局部刷新的效率更高。
+
+2、用户的体验更好。
+
+基于 jQuery 的Ajax
+
+~~~ jsp
+<%--
+  Created by IntelliJ IDEA.
+  User: 啦啦啦
+  Date: 2020/4/1
+  Time: 21:03
+  To change this template use File | Settings | File Templates.
+--%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<html>
+<head>
+    <title>Title</title>
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript"> 
+        $(function () {
+            var btn = $("#btn");
+            btn.click(function () {
+                $.ajax({
+                    url: '/ajaxtest',
+                    type:'post',
+                    data:'id=1',
+                    dataType:'text',
+                    success:function (data) {
+                        var text = $("#text");
+                        text.before("<span>" + data + "</span><br/>")
+                    }
+                });
+            })
+        })
+    </script>
+</head>
+<body>
+    <input id="text" type="text"><br/>
+    <input id="btn" type="button" value="提交">
+</body>
+</html>
+
+~~~
+
+不能用表单提交请求，改用 jQuery 动态绑定事件来提交。
+
+url：和 form 表单中的 action
+
+type：相当于 form 表单中的 method
+
+data：要传给服务端的属性，如 用户名、密码等，服务端通过 getParameter 方式获取内容。
+
+dataType：是服务端要传送给客户端的数据的类型。
+
+success：data 是 Servlet 返回的数据。
+
+Servlet 不能跳转整个页面，只负责将数据返回。ajax 是将内容添加到页面上，不是对整个页面的刷新。
+
+~~~Java
+package com.example.servlet;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+
+@WebServlet("/ajaxtest")
+public class AjaxTest extends HttpServlet {
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        String str = "Hello World";
+        resp.getWriter().write(str);
+//        req.setAttribute("str", str);
+//        req.getRequestDispatcher("ajaxtest.jsp").forward(req, resp);
+    }
+}
+
+~~~
+
+### 传统的 WEB 数据交互 和 AJAX 交互的区别
+
+- 客户端请求的方式不同：
+
+传统，浏览器发送 同步请求，通过 form、a
+
+AJAX，异步引擎对象发送异步请求。
+
+- 服务端响应的方式不同：
+
+传统，通过重定向响应一个完整的页面。
+
+AJAX，只需要通过 response 的 write函数 响应需要的数据，不影响页面其他部分。
+
+- 客户端处理方式不同：
+
+传统，需要等待服务器完成响应并且加载整个页面之后，用户才能进行后续的操作
+
+AJAX，只动态更新局部的数据内容，不影响用户在页面其他部分的操作。
+
+### AJAX原理
+
+![image-20200402150030712](C:\Users\啦啦啦\AppData\Roaming\Typora\typora-user-images\image-20200402150030712.png)
+
+### 基于 jQuery 的 AJAX语法
+
+$.ajax({属性})
+
+常用的属性：
+
+url：请求的的后端服务地址
+
+type：请求的方式，默认为 get
+
+data：请求参数
+
+dataType：服务器返回的数据的类型
+
+success：请求成功的回调函数
+
+error：请求失败的回调函数
+
+complete：无论成功或失败都会回调
+
+### JSON
+
+Javascript Objec Notation ， 一种轻量级数据交互格式，完成 js 与 java 等后端开发语言对象数据之间的转换。
+
+客户端与服务端之间传递对象数据。
+
+~~~jsp
+<%--
+  Created by IntelliJ IDEA.
+  User: 啦啦啦
+  Date: 2020/4/11
+  Time: 15:21
+  To change this template use File | Settings | File Templates.
+--%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<html>
+<head>
+    <title>Title</title>
+</head>
+<body>
+    编号：<input id="id" type="text"><br>
+    姓名：<input id="name" type="text"><br>
+    分数：<input id="score" type="text"><br>
+    <input id="submit" type="button" value="提交">
+<script src="js/jquery-3.3.1.js"></script>
+<script>
+    $(function () {
+        var btn = $("#submit");
+        btn.click(function () {
+            $.ajax({
+                url:"/test",
+                type:"post",
+                dataType:"json",
+                success:function (data) {
+                    $("#id").val(data.id);
+                    $("#name").val(data.name);
+                    $("#score").val(data.score);
+                }
+            })
+        })
+    })
+</script>
+</body>
+</html>
+
+~~~
+
+
+
+~~~Java
+package com.example.servlet;
+
+import com.example.entity.User;
+import net.sf.json.JSONObject;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+@WebServlet("/test")
+public class AjaxTest extends HttpServlet {
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        resp.setCharacterEncoding("UTF-8");
+        User user = new User(1,"张三", 96.5);
+        JSONObject jsonObject = JSONObject.fromObject(user);
+        resp.getWriter().write(jsonObject.toString());
+
+    }
+}
+
+~~~
+
+
+
+将 实体类 转化为 JSON格式所需要的 jar包。
+
+![image-20200411163658514](C:\Users\啦啦啦\AppData\Roaming\Typora\typora-user-images\image-20200411163658514.png)
+
+
+
+
+
+
+
+
+
+## Session
+
+会话
+
+
+
+
+, indexPicture=https://images.unsplash.com/photo-1618762273540-56007afea45e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80, flag=1, describe=最近学习了一下JVM的内存模型，本来想自己写一篇学习心得，总是觉得自己表达不清，然后就从学习资料里复制一段，写到最后发现，基本都是复制的。, viewCount=null, published=true, recommend=false, createTime=null, updateTime=null, tagIds=null, commentList=null, type=Type(id=24, name=null, blogCount=0, blogList=null), writer=null), org.springframework.validation.BindingResult.blog=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, {}])
+2021-04-26 20:42:47.813  INFO 18424 --- [http-nio-8080-exec-5] com.program.blog.aspect.LogAspect        : Result : redirect:/admin/blogs
+2021-04-26 20:42:48.343  WARN 18424 --- [http-nio-8080-exec-5] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [406] milliseconds.
+2021-04-26 20:42:48.372  INFO 18424 --- [http-nio-8080-exec-4] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/admin/blogs, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.admin.BlogController.blogsPage, args=[{message=success}, 1])
+2021-04-26 20:42:48.382  INFO 18424 --- [http-nio-8080-exec-4] com.program.blog.aspect.LogAspect        : Result : admin/blogs
+2021-04-26 20:42:50.895  INFO 18424 --- [http-nio-8080-exec-1] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/admin/blogs/search, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.admin.BlogController.searchBlogs, args=[BlogQuery(blogTitle=, typeId=null, recommend=false), {blogQuery=BlogQuery(blogTitle=, typeId=null, recommend=false), org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, 2])
+2021-04-26 20:42:50.903  INFO 18424 --- [http-nio-8080-exec-1] com.program.blog.aspect.LogAspect        : Result : admin/blogs :: blogList
+2021-04-26 20:42:51.386  INFO 18424 --- [http-nio-8080-exec-3] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/admin/blogs/search, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.admin.BlogController.searchBlogs, args=[BlogQuery(blogTitle=, typeId=null, recommend=false), {blogQuery=BlogQuery(blogTitle=, typeId=null, recommend=false), org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, 3])
+2021-04-26 20:42:51.392  INFO 18424 --- [http-nio-8080-exec-3] com.program.blog.aspect.LogAspect        : Result : admin/blogs :: blogList
+2021-04-26 20:42:51.878  INFO 18424 --- [http-nio-8080-exec-7] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/admin/blogs/search, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.admin.BlogController.searchBlogs, args=[BlogQuery(blogTitle=, typeId=null, recommend=false), {blogQuery=BlogQuery(blogTitle=, typeId=null, recommend=false), org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, 4])
+2021-04-26 20:42:51.883  INFO 18424 --- [http-nio-8080-exec-7] com.program.blog.aspect.LogAspect        : Result : admin/blogs :: blogList
+2021-04-26 20:42:53.536  INFO 18424 --- [http-nio-8080-exec-6] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/admin/blogs/input, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.admin.BlogController.blogAddPage, args=[{}])
+2021-04-26 20:42:53.537  INFO 18424 --- [http-nio-8080-exec-6] com.program.blog.aspect.LogAspect        : Result : admin/blogs-input
+2021-04-26 20:43:04.183  INFO 18424 --- [http-nio-8080-exec-6] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/admin/blogs/new, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.admin.BlogController.blogAdd, args=[Blog(id=null, title=1231231, content=123123123123, indexPicture=123123123, flag=原创, describe=123123123, viewCount=null, published=true, recommend=false, createTime=null, updateTime=null, tagIds=null, commentList=null, type=Type(id=1, name=null, blogCount=0, blogList=null), writer=null), org.apache.catalina.session.StandardSessionFacade@2f027a3a, {blog=Blog(id=null, title=1231231, content=123123123123, indexPicture=123123123, flag=原创, describe=123123123, viewCount=null, published=true, recommend=false, createTime=null, updateTime=null, tagIds=null, commentList=null, type=Type(id=1, name=null, blogCount=0, blogList=null), writer=null), org.springframework.validation.BindingResult.blog=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, {}])
+2021-04-26 20:43:04.184  INFO 18424 --- [http-nio-8080-exec-6] c.p.b.controller.admin.BlogController    : false
+2021-04-26 20:43:04.301  INFO 18424 --- [http-nio-8080-exec-6] com.program.blog.aspect.LogAspect        : Result : redirect:/admin/blogs
+2021-04-26 20:43:04.305  INFO 18424 --- [http-nio-8080-exec-5] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/admin/blogs, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.admin.BlogController.blogsPage, args=[{message=success}, 1])
+2021-04-26 20:43:04.311  INFO 18424 --- [http-nio-8080-exec-5] com.program.blog.aspect.LogAspect        : Result : admin/blogs
+2021-04-26 20:44:28.647  INFO 18424 --- [http-nio-8080-exec-4] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/admin/blogs/search, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.admin.BlogController.searchBlogs, args=[BlogQuery(blogTitle=, typeId=null, recommend=false), {blogQuery=BlogQuery(blogTitle=, typeId=null, recommend=false), org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, 2])
+2021-04-26 20:44:28.653  INFO 18424 --- [http-nio-8080-exec-4] com.program.blog.aspect.LogAspect        : Result : admin/blogs :: blogList
+2021-04-26 20:44:29.181  INFO 18424 --- [http-nio-8080-exec-7] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/admin/blogs/search, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.admin.BlogController.searchBlogs, args=[BlogQuery(blogTitle=, typeId=null, recommend=false), {blogQuery=BlogQuery(blogTitle=, typeId=null, recommend=false), org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, 3])
+2021-04-26 20:44:29.187  INFO 18424 --- [http-nio-8080-exec-7] com.program.blog.aspect.LogAspect        : Result : admin/blogs :: blogList
+2021-04-26 20:44:30.739  INFO 18424 --- [http-nio-8080-exec-2] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/admin/blogs/31/edit, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.admin.BlogController.blogEditPage, args=[31, {}])
+2021-04-26 20:44:30.745  INFO 18424 --- [http-nio-8080-exec-2] com.program.blog.aspect.LogAspect        : Result : /admin/blogs-input
+2021-04-26 20:44:33.327  INFO 18424 --- [http-nio-8080-exec-9] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/admin/blogs/31/edit, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.admin.BlogController.blogEdit, args=[31, Blog(id=31, title=9、关于 Typo.css, content=一、关于 Typo.css
+p { color: red }
+Typo.css 的目的是，在一致化浏览器排版效果的同时，构建最适合中文阅读的网页排版。
+
+现状和如何去做：
+一、关于 Typo.css
+OS/浏览器	Firefox	Chrome	Safari	Opera	IE9	IE8	IE7	IE6
+OS X	✔	✔	✔	✔	-	-	-	-
+Win 7	✔	✔	✔	✔	✔	✔	✔	-
+Win XP	✔	✔	✔	✔	-	✔	✔	✔
+Ubuntu	✔	✔	-	✔	-	-	-	-
+中文排版的重点和难点
+在中文排版中，HTML4 的很多标准在语义在都有照顾到。但从视觉效果上，却很难利用单独的 CSS 来实现，像着重号（例：这里强调一下）。在 HTML4 中，专名号标签（<u>）已经被放弃，而 HTML5 被重新提起。Typo.css 也根据实际情况提供相应的方案。我们重要要注意的两点是：
+
+语义：语义对应的用法和样式是否与中文排版一致
+表现：在各浏览器中的字体、大小和缩放是否如排版预期
+对于这些，Typo.css 排版项目的中文偏重注意点，都添加在附录中，详见：
+
+附录一：Typo.css 排版偏重点
+二、排版实例：
+目前已有像百姓网等全面使用 Typo.css 的项目，测试平台的覆盖，特别是在移动端上还没有覆盖完主流平台，希望有能力的同学能加入测试行列，或者加入到 Typo.css 的开发。加入方法：参与 Typo.css 开发。如有批评、建议和意见，也随时欢迎给在 Github 直接提 issues，或给我发邮件。
+
+二、排版实例：
+提供2个排版实例，第一个中文实例来自于来自于张燕婴的《论语》，由于古文排版涉及到的元素比较多，所以采用《论语》中《学而》的第一篇作为排版实例介绍；第2个来自到经典的 Lorem Ipsum，并加入了一些代码和列表等比较具有代表性的排版元素。, indexPicture=https://images.unsplash.com/photo-1618762273540-56007afea45e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80, flag=1, describe=最近学习了一下JVM的内存模型，本来想自己写一篇学习心得，总是觉得自己表达不清，然后就从学习资料里复制一段，写到最后发现，基本都是复制的写到最后发现，基本都是复制的, viewCount=null, published=true, recommend=false, createTime=null, updateTime=null, tagIds=null, commentList=null, type=Type(id=5, name=null, blogCount=0, blogList=null), writer=null), {blog=Blog(id=31, title=9、关于 Typo.css, content=一、关于 Typo.css
+p { color: red }
+Typo.css 的目的是，在一致化浏览器排版效果的同时，构建最适合中文阅读的网页排版。
+
+现状和如何去做：
+一、关于 Typo.css
+OS/浏览器	Firefox	Chrome	Safari	Opera	IE9	IE8	IE7	IE6
+OS X	✔	✔	✔	✔	-	-	-	-
+Win 7	✔	✔	✔	✔	✔	✔	✔	-
+Win XP	✔	✔	✔	✔	-	✔	✔	✔
+Ubuntu	✔	✔	-	✔	-	-	-	-
+中文排版的重点和难点
+在中文排版中，HTML4 的很多标准在语义在都有照顾到。但从视觉效果上，却很难利用单独的 CSS 来实现，像着重号（例：这里强调一下）。在 HTML4 中，专名号标签（<u>）已经被放弃，而 HTML5 被重新提起。Typo.css 也根据实际情况提供相应的方案。我们重要要注意的两点是：
+
+语义：语义对应的用法和样式是否与中文排版一致
+表现：在各浏览器中的字体、大小和缩放是否如排版预期
+对于这些，Typo.css 排版项目的中文偏重注意点，都添加在附录中，详见：
+
+附录一：Typo.css 排版偏重点
+二、排版实例：
+目前已有像百姓网等全面使用 Typo.css 的项目，测试平台的覆盖，特别是在移动端上还没有覆盖完主流平台，希望有能力的同学能加入测试行列，或者加入到 Typo.css 的开发。加入方法：参与 Typo.css 开发。如有批评、建议和意见，也随时欢迎给在 Github 直接提 issues，或给我发邮件。
+
+二、排版实例：
+提供2个排版实例，第一个中文实例来自于来自于张燕婴的《论语》，由于古文排版涉及到的元素比较多，所以采用《论语》中《学而》的第一篇作为排版实例介绍；第2个来自到经典的 Lorem Ipsum，并加入了一些代码和列表等比较具有代表性的排版元素。, indexPicture=https://images.unsplash.com/photo-1618762273540-56007afea45e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80, flag=1, describe=最近学习了一下JVM的内存模型，本来想自己写一篇学习心得，总是觉得自己表达不清，然后就从学习资料里复制一段，写到最后发现，基本都是复制的写到最后发现，基本都是复制的, viewCount=null, published=true, recommend=false, createTime=null, updateTime=null, tagIds=null, commentList=null, type=Type(id=5, name=null, blogCount=0, blogList=null), writer=null), org.springframework.validation.BindingResult.blog=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, {}])
+2021-04-26 20:44:33.367  INFO 18424 --- [http-nio-8080-exec-9] com.program.blog.aspect.LogAspect        : Result : redirect:/admin/blogs
+2021-04-26 20:44:33.370  INFO 18424 --- [http-nio-8080-exec-8] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/admin/blogs, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.admin.BlogController.blogsPage, args=[{message=success}, 1])
+2021-04-26 20:44:33.376  INFO 18424 --- [http-nio-8080-exec-8] com.program.blog.aspect.LogAspect        : Result : admin/blogs
+2021-04-26 20:48:28.367  INFO 10644 --- [restartedMain] com.program.blog.BlogApplication         : Starting BlogApplication using Java 12.0.2 on LAPTOP-B2BM54RN with PID 10644 (E:\IdeaProjects\blog\target\classes started by 轩 in E:\IdeaProjects\blog)
+2021-04-26 20:48:28.369 DEBUG 10644 --- [restartedMain] com.program.blog.BlogApplication         : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-04-26 20:48:28.369  INFO 10644 --- [restartedMain] com.program.blog.BlogApplication         : The following profiles are active: dev
+2021-04-26 20:48:28.405  INFO 10644 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-26 20:48:28.405  INFO 10644 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-26 20:48:30.610  INFO 10644 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-26 20:48:30.618  INFO 10644 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-26 20:48:30.619  INFO 10644 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-04-26 20:48:30.696  INFO 10644 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-26 20:48:30.696  INFO 10644 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2290 ms
+2021-04-26 20:48:31.814  INFO 10644 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-26 20:48:31.959  INFO 10644 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-04-26 20:48:32.326  INFO 10644 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-04-26 20:48:32.355  INFO 10644 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-26 20:48:32.365  INFO 10644 --- [restartedMain] com.program.blog.BlogApplication         : Started BlogApplication in 4.417 seconds (JVM running for 6.935)
+2021-04-26 20:48:33.605  INFO 10644 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-26 20:48:33.607  INFO 10644 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-26 20:48:33.607  INFO 10644 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-04-26 20:48:33.628  INFO 10644 --- [http-nio-8080-exec-1] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/admin/blogs/input, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.admin.BlogController.blogAddPage, args=[{}])
+2021-04-26 20:48:33.652  INFO 10644 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-04-26 20:48:34.230  INFO 10644 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-04-26 20:48:34.368  INFO 10644 --- [http-nio-8080-exec-1] com.program.blog.aspect.LogAspect        : Result : admin/blogs-input
+2021-04-26 20:48:46.520  WARN 10644 --- [http-nio-8080-exec-9] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [398] milliseconds.
+2021-04-26 20:48:46.534  INFO 10644 --- [http-nio-8080-exec-9] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/admin/blogs/new, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.admin.BlogController.blogAdd, args=[Blog(id=null, title=123123123, content=123123123123, indexPicture=123123123, flag=原创, describe=123123123, viewCount=null, published=true, recommend=false, createTime=null, updateTime=null, tagIds=null, commentList=null, type=Type(id=1, name=null, blogCount=0, blogList=null), writer=null), org.apache.catalina.session.StandardSessionFacade@663d17b5, {blog=Blog(id=null, title=123123123, content=123123123123, indexPicture=123123123, flag=原创, describe=123123123, viewCount=null, published=true, recommend=false, createTime=null, updateTime=null, tagIds=null, commentList=null, type=Type(id=1, name=null, blogCount=0, blogList=null), writer=null), org.springframework.validation.BindingResult.blog=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, {}])
+2021-04-26 20:48:46.535  INFO 10644 --- [http-nio-8080-exec-9] c.p.b.controller.admin.BlogController    : false
+2021-04-26 20:48:46.545  INFO 10644 --- [http-nio-8080-exec-9] com.program.blog.aspect.LogAspect        : Result : admin/blogs-input
+2021-04-26 20:48:52.378  INFO 10644 --- [http-nio-8080-exec-9] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/admin/blogs/new, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.admin.BlogController.blogAdd, args=[Blog(id=null, title=1231231231231231223, content=123123123123, indexPicture=123123123, flag=原创, describe=123123123, viewCount=null, published=true, recommend=false, createTime=null, updateTime=null, tagIds=null, commentList=null, type=Type(id=1, name=null, blogCount=0, blogList=null), writer=null), org.apache.catalina.session.StandardSessionFacade@663d17b5, {blog=Blog(id=null, title=1231231231231231223, content=123123123123, indexPicture=123123123, flag=原创, describe=123123123, viewCount=null, published=true, recommend=false, createTime=null, updateTime=null, tagIds=null, commentList=null, type=Type(id=1, name=null, blogCount=0, blogList=null), writer=null), org.springframework.validation.BindingResult.blog=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, {}])
+2021-04-26 20:48:52.378  INFO 10644 --- [http-nio-8080-exec-9] c.p.b.controller.admin.BlogController    : false
+2021-04-26 20:48:52.404  INFO 10644 --- [http-nio-8080-exec-9] c.p.b.controller.admin.BlogController    : Blog(id=42, title=1231231231231231223, content=123123123123, indexPicture=123123123, flag=原创, describe=123123123, viewCount=0, published=true, recommend=false, createTime=Mon Apr 26 20:48:52 CST 2021, updateTime=Mon Apr 26 20:48:52 CST 2021, tagIds=null, commentList=null, type=Type(id=1, name=null, blogCount=0, blogList=null), writer=User(id=1, nickname=null, username=null, password=null, avatar=null, userType=null, createTime=null, blogList=null))
+2021-04-26 20:48:52.404  INFO 10644 --- [http-nio-8080-exec-9] com.program.blog.aspect.LogAspect        : Result : redirect:/admin/blogs
+2021-04-26 20:48:52.422  INFO 10644 --- [http-nio-8080-exec-2] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/admin/blogs, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.admin.BlogController.blogsPage, args=[{message=success}, 1])
+2021-04-26 20:48:52.488  INFO 10644 --- [http-nio-8080-exec-2] com.program.blog.aspect.LogAspect        : Result : admin/blogs
+2021-04-26 20:49:56.013  INFO 10644 --- [http-nio-8080-exec-4] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/admin/blogs/search, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.admin.BlogController.searchBlogs, args=[BlogQuery(blogTitle=, typeId=null, recommend=false), {blogQuery=BlogQuery(blogTitle=, typeId=null, recommend=false), org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, 2])
+2021-04-26 20:49:56.023  INFO 10644 --- [http-nio-8080-exec-4] com.program.blog.aspect.LogAspect        : Result : admin/blogs :: blogList
+2021-04-26 20:49:56.565  INFO 10644 --- [http-nio-8080-exec-10] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/admin/blogs/search, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.admin.BlogController.searchBlogs, args=[BlogQuery(blogTitle=, typeId=null, recommend=false), {blogQuery=BlogQuery(blogTitle=, typeId=null, recommend=false), org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, 3])
+2021-04-26 20:49:56.660  INFO 10644 --- [http-nio-8080-exec-10] com.program.blog.aspect.LogAspect        : Result : admin/blogs :: blogList
+2021-04-26 20:49:56.929  INFO 10644 --- [http-nio-8080-exec-7] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/admin/blogs/search, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.admin.BlogController.searchBlogs, args=[BlogQuery(blogTitle=, typeId=null, recommend=false), {blogQuery=BlogQuery(blogTitle=, typeId=null, recommend=false), org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, 4])
+2021-04-26 20:49:56.936  INFO 10644 --- [http-nio-8080-exec-7] com.program.blog.aspect.LogAspect        : Result : admin/blogs :: blogList
+2021-04-26 20:49:57.348  INFO 10644 --- [http-nio-8080-exec-5] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/admin/blogs/search, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.admin.BlogController.searchBlogs, args=[BlogQuery(blogTitle=, typeId=null, recommend=false), {blogQuery=BlogQuery(blogTitle=, typeId=null, recommend=false), org.springframework.validation.BindingResult.blogQuery=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, 5])
+2021-04-26 20:49:57.353  INFO 10644 --- [http-nio-8080-exec-5] com.program.blog.aspect.LogAspect        : Result : admin/blogs :: blogList
+2021-04-26 20:49:59.090  INFO 10644 --- [http-nio-8080-exec-8] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/admin/blogs/42/edit, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.admin.BlogController.blogEditPage, args=[42, {}])
+2021-04-26 20:49:59.100  INFO 10644 --- [http-nio-8080-exec-8] com.program.blog.aspect.LogAspect        : Result : /admin/blogs-input
+2021-04-26 20:50:00.980  INFO 10644 --- [http-nio-8080-exec-8] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/admin/blogs/42/edit, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.admin.BlogController.blogEdit, args=[42, Blog(id=42, title=1231231231231231223, content=123123123123, indexPicture=123123123, flag=原创, describe=123123123, viewCount=null, published=true, recommend=false, createTime=null, updateTime=null, tagIds=null, commentList=null, type=Type(id=1, name=null, blogCount=0, blogList=null), writer=null), {blog=Blog(id=42, title=1231231231231231223, content=123123123123, indexPicture=123123123, flag=原创, describe=123123123, viewCount=null, published=true, recommend=false, createTime=null, updateTime=null, tagIds=null, commentList=null, type=Type(id=1, name=null, blogCount=0, blogList=null), writer=null), org.springframework.validation.BindingResult.blog=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, {}])
+2021-04-26 20:50:00.991  INFO 10644 --- [http-nio-8080-exec-8] com.program.blog.aspect.LogAspect        : Result : redirect:/admin/blogs
+2021-04-26 20:50:00.995  INFO 10644 --- [http-nio-8080-exec-1] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/admin/blogs, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.admin.BlogController.blogsPage, args=[{message=success}, 1])
+2021-04-26 20:50:01.002  INFO 10644 --- [http-nio-8080-exec-1] com.program.blog.aspect.LogAspect        : Result : admin/blogs
+2021-04-26 20:53:17.423  INFO 10644 --- [Thread-5] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-26 20:53:17.424  INFO 10644 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-04-26 20:53:17.457  INFO 10644 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-04-26 20:53:17.583  INFO 10644 --- [restartedMain] com.program.blog.BlogApplication         : Starting BlogApplication using Java 12.0.2 on LAPTOP-B2BM54RN with PID 10644 (E:\IdeaProjects\blog\target\classes started by 轩 in E:\IdeaProjects\blog)
+2021-04-26 20:53:17.583 DEBUG 10644 --- [restartedMain] com.program.blog.BlogApplication         : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-04-26 20:53:17.583  INFO 10644 --- [restartedMain] com.program.blog.BlogApplication         : The following profiles are active: dev
+2021-04-26 20:53:17.866  INFO 10644 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-26 20:53:17.866  INFO 10644 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-26 20:53:17.867  INFO 10644 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-04-26 20:53:17.900  INFO 10644 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-26 20:53:17.901  INFO 10644 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 316 ms
+2021-04-26 20:53:18.215  INFO 10644 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-26 20:53:18.253  INFO 10644 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-04-26 20:53:18.427  INFO 10644 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-04-26 20:53:18.438  INFO 10644 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-26 20:53:18.442  INFO 10644 --- [restartedMain] com.program.blog.BlogApplication         : Started BlogApplication in 0.897 seconds (JVM running for 293.012)
+2021-04-26 20:53:18.443  INFO 10644 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-04-26 20:53:20.468  INFO 10644 --- [Thread-8] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-26 20:53:20.523  INFO 10644 --- [restartedMain] com.program.blog.BlogApplication         : Starting BlogApplication using Java 12.0.2 on LAPTOP-B2BM54RN with PID 10644 (E:\IdeaProjects\blog\target\classes started by 轩 in E:\IdeaProjects\blog)
+2021-04-26 20:53:20.523 DEBUG 10644 --- [restartedMain] com.program.blog.BlogApplication         : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-04-26 20:53:20.523  INFO 10644 --- [restartedMain] com.program.blog.BlogApplication         : The following profiles are active: dev
+2021-04-26 20:53:20.730  INFO 10644 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-26 20:53:20.731  INFO 10644 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-26 20:53:20.731  INFO 10644 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-04-26 20:53:20.758  INFO 10644 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-26 20:53:20.758  INFO 10644 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 233 ms
+2021-04-26 20:53:21.010  INFO 10644 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-26 20:53:21.051  INFO 10644 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-04-26 20:53:21.216  INFO 10644 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-04-26 20:53:21.226  INFO 10644 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-26 20:53:21.229  INFO 10644 --- [restartedMain] com.program.blog.BlogApplication         : Started BlogApplication in 0.729 seconds (JVM running for 295.799)
+2021-04-26 20:53:21.230  INFO 10644 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-04-26 21:01:24.343  INFO 10644 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-26 21:01:24.344  INFO 10644 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-26 21:01:24.345  INFO 10644 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-04-26 21:01:24.347  INFO 10644 --- [http-nio-8080-exec-2] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/admin/blogs/input, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.admin.BlogController.blogAddPage, args=[{}])
+2021-04-26 21:01:24.353  INFO 10644 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2021-04-26 21:01:24.458  INFO 10644 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2021-04-26 21:01:24.500  INFO 10644 --- [http-nio-8080-exec-2] com.program.blog.aspect.LogAspect        : Result : admin/blogs-input
+2021-04-26 21:01:42.312  INFO 10644 --- [http-nio-8080-exec-1] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/admin/blogs/new, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.admin.BlogController.blogAdd, args=[Blog(id=null, title=asdgwereg, content=a手动发送多个, indexPicture=阿飞噶的风格, flag=原创, describe=12312dfasdvfagwg, viewCount=null, published=true, recommend=true, createTime=null, updateTime=null, tagIds=null, commentList=null, type=Type(id=1, name=null, blogCount=0, blogList=null), writer=null), org.apache.catalina.session.StandardSessionFacade@505c6c82, {blog=Blog(id=null, title=asdgwereg, content=a手动发送多个, indexPicture=阿飞噶的风格, flag=原创, describe=12312dfasdvfagwg, viewCount=null, published=true, recommend=true, createTime=null, updateTime=null, tagIds=null, commentList=null, type=Type(id=1, name=null, blogCount=0, blogList=null), writer=null), org.springframework.validation.BindingResult.blog=org.springframework.validation.BeanPropertyBindingResult: 0 errors}, {}])
+2021-04-26 21:01:42.312  INFO 10644 --- [http-nio-8080-exec-1] c.p.b.controller.admin.BlogController    : true
+2021-04-26 21:01:42.366  INFO 10644 --- [http-nio-8080-exec-1] com.program.blog.aspect.LogAspect        : Result : redirect:/admin/blogs
+2021-04-26 21:01:42.377  INFO 10644 --- [http-nio-8080-exec-4] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/admin/blogs, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.admin.BlogController.blogsPage, args=[{message=success}, 1])
+2021-04-26 21:01:42.396  INFO 10644 --- [http-nio-8080-exec-4] com.program.blog.aspect.LogAspect        : Result : admin/blogs
+2021-04-26 21:02:29.918  INFO 10644 --- [http-nio-8080-exec-2] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.IndexController.index, args=[{}])
+2021-04-26 21:02:30.053  INFO 10644 --- [http-nio-8080-exec-2] com.program.blog.aspect.LogAspect        : Result : index
+2021-04-26 21:02:45.714  INFO 10644 --- [http-nio-8080-exec-5] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.IndexController.index, args=[{}])
+2021-04-26 21:02:45.727  INFO 10644 --- [http-nio-8080-exec-5] com.program.blog.aspect.LogAspect        : Result : index
+2021-04-26 21:02:47.823  INFO 10644 --- [http-nio-8080-exec-8] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/39/blog, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.UBlogController.toBlogPage, args=[39, {}])
+2021-04-26 21:02:47.978  INFO 10644 --- [http-nio-8080-exec-8] com.program.blog.aspect.LogAspect        : Result : blog
+2021-04-26 21:03:29.100  INFO 10644 --- [http-nio-8080-exec-9] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.IndexController.index, args=[{}])
+2021-04-26 21:03:29.117  INFO 10644 --- [http-nio-8080-exec-9] com.program.blog.aspect.LogAspect        : Result : index
+2021-04-26 21:03:34.952  INFO 10644 --- [http-nio-8080-exec-4] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/39/blog, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.UBlogController.toBlogPage, args=[39, {}])
+2021-04-26 21:03:34.966  INFO 10644 --- [http-nio-8080-exec-4] com.program.blog.aspect.LogAspect        : Result : blog
+2021-04-26 21:05:46.724  INFO 12168 --- [restartedMain] com.program.blog.BlogApplication         : Starting BlogApplication using Java 12.0.2 on LAPTOP-B2BM54RN with PID 12168 (E:\IdeaProjects\blog\target\classes started by 轩 in E:\IdeaProjects\blog)
+2021-04-26 21:05:46.726 DEBUG 12168 --- [restartedMain] com.program.blog.BlogApplication         : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-04-26 21:05:46.726  INFO 12168 --- [restartedMain] com.program.blog.BlogApplication         : The following profiles are active: dev
+2021-04-26 21:05:46.755  INFO 12168 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-26 21:05:46.755  INFO 12168 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-26 21:05:47.727  INFO 12168 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-26 21:05:47.735  INFO 12168 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-26 21:05:47.735  INFO 12168 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-04-26 21:05:47.842  INFO 12168 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-26 21:05:47.843  INFO 12168 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1087 ms
+2021-04-26 21:05:48.565  INFO 12168 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-26 21:05:48.641  INFO 12168 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-04-26 21:05:48.970  INFO 12168 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-04-26 21:05:49.000  INFO 12168 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-26 21:05:49.010  INFO 12168 --- [restartedMain] com.program.blog.BlogApplication         : Started BlogApplication in 2.743 seconds (JVM running for 4.125)
+2021-04-26 21:05:51.223  INFO 12168 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-26 21:05:51.225  INFO 12168 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-26 21:05:51.226  INFO 12168 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-04-26 21:05:51.253  INFO 12168 --- [http-nio-8080-exec-1] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/39/blog, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.UBlogController.toBlogPage, args=[39, {}])
+2021-04-26 21:05:51.326  INFO 12168 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-04-26 21:05:51.744  INFO 12168 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-04-26 21:05:51.834  INFO 12168 --- [http-nio-8080-exec-1] c.p.b.controller.user.UBlogController    : Mon Apr 26 20:27:57 CST 2021
+2021-04-26 21:05:51.843  INFO 12168 --- [http-nio-8080-exec-1] com.program.blog.aspect.LogAspect        : Result : blog
+2021-04-26 21:06:45.662  INFO 12168 --- [http-nio-8080-exec-4] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/39/blog, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.UBlogController.toBlogPage, args=[39, {}])
+2021-04-26 21:06:45.670  INFO 12168 --- [http-nio-8080-exec-4] c.p.b.controller.user.UBlogController    : Mon Apr 26 20:27:57 CST 2021
+2021-04-26 21:06:45.750  INFO 12168 --- [http-nio-8080-exec-4] com.program.blog.aspect.LogAspect        : Result : blog
+2021-04-26 21:07:12.594  INFO 12168 --- [http-nio-8080-exec-8] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/39/blog, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.UBlogController.toBlogPage, args=[39, {}])
+2021-04-26 21:07:12.607  INFO 12168 --- [http-nio-8080-exec-8] c.p.b.controller.user.UBlogController    : Mon Apr 26 20:27:57 CST 2021
+2021-04-26 21:07:12.711  INFO 12168 --- [http-nio-8080-exec-8] com.program.blog.aspect.LogAspect        : Result : blog
+2021-04-26 21:18:39.939  INFO 12168 --- [http-nio-8080-exec-3] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/39/blog, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.UBlogController.toBlogPage, args=[39, {}])
+2021-04-26 21:18:39.949  INFO 12168 --- [http-nio-8080-exec-3] c.p.b.controller.user.UBlogController    : Mon Apr 26 20:27:57 CST 2021
+2021-04-26 21:18:40.015  INFO 12168 --- [http-nio-8080-exec-3] com.program.blog.aspect.LogAspect        : Result : blog
+2021-04-26 21:20:40.849  INFO 12168 --- [http-nio-8080-exec-9] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/39/blog, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.UBlogController.toBlogPage, args=[39, {}])
+2021-04-26 21:20:40.857  INFO 12168 --- [http-nio-8080-exec-9] c.p.b.controller.user.UBlogController    : Mon Apr 26 20:27:57 CST 2021
+2021-04-26 21:20:40.981  INFO 12168 --- [http-nio-8080-exec-9] com.program.blog.aspect.LogAspect        : Result : blog
+2021-04-26 21:33:16.269  INFO 1812 --- [restartedMain] com.program.blog.BlogApplication         : Starting BlogApplication using Java 12.0.2 on LAPTOP-B2BM54RN with PID 1812 (E:\IdeaProjects\blog\target\classes started by 轩 in E:\IdeaProjects\blog)
+2021-04-26 21:33:16.270 DEBUG 1812 --- [restartedMain] com.program.blog.BlogApplication         : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-04-26 21:33:16.271  INFO 1812 --- [restartedMain] com.program.blog.BlogApplication         : The following profiles are active: dev
+2021-04-26 21:33:16.315  INFO 1812 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-26 21:33:16.315  INFO 1812 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-26 21:33:17.546  INFO 1812 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-26 21:33:17.555  INFO 1812 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-26 21:33:17.555  INFO 1812 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-04-26 21:33:17.837  INFO 1812 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-26 21:33:17.837  INFO 1812 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1522 ms
+2021-04-26 21:33:18.578  INFO 1812 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-26 21:33:18.661  INFO 1812 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-04-26 21:33:19.003  INFO 1812 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-04-26 21:33:19.038  INFO 1812 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-26 21:33:19.048  INFO 1812 --- [restartedMain] com.program.blog.BlogApplication         : Started BlogApplication in 3.218 seconds (JVM running for 4.507)
+2021-04-26 21:33:23.533  INFO 1812 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-26 21:33:23.535  INFO 1812 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-26 21:33:23.536  INFO 1812 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-04-26 21:33:23.565  INFO 1812 --- [http-nio-8080-exec-1] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/39/blog, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.UBlogController.toBlogPage, args=[39, {}])
+2021-04-26 21:33:23.587  INFO 1812 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-04-26 21:33:24.182  INFO 1812 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-04-26 21:33:24.287  INFO 1812 --- [http-nio-8080-exec-1] c.p.b.controller.user.UBlogController    : Mon Apr 26 20:27:57 CST 2021
+2021-04-26 21:33:24.299  INFO 1812 --- [http-nio-8080-exec-1] com.program.blog.aspect.LogAspect        : Result : blog
+2021-04-26 21:34:02.291  INFO 1812 --- [http-nio-8080-exec-1] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/comment, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.UBlogController.comment, args=[Comment(id=null, content=12312313123123123, createTime=null, replyComment=null, parentComment=Comment(id=-1, content=null, createTime=null, replyComment=null, parentComment=null, writer=null, replyTo=null, blog=null), writer=null, replyTo=null, blog=null)])
+2021-04-26 21:34:02.291  INFO 1812 --- [http-nio-8080-exec-1] c.p.b.controller.user.UBlogController    : Comment(id=null, content=12312313123123123, createTime=null, replyComment=null, parentComment=Comment(id=-1, content=null, createTime=null, replyComment=null, parentComment=null, writer=null, replyTo=null, blog=null), writer=null, replyTo=null, blog=null)
+2021-04-26 21:34:02.291  INFO 1812 --- [http-nio-8080-exec-1] com.program.blog.aspect.LogAspect        : Result : 
+2021-04-26 21:35:08.000  INFO 1812 --- [http-nio-8080-exec-5] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/39/blog, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.UBlogController.toBlogPage, args=[39, {}])
+2021-04-26 21:35:08.008  INFO 1812 --- [http-nio-8080-exec-5] c.p.b.controller.user.UBlogController    : Mon Apr 26 20:27:57 CST 2021
+2021-04-26 21:35:08.020  INFO 1812 --- [http-nio-8080-exec-5] com.program.blog.aspect.LogAspect        : Result : blog
+2021-04-26 21:35:10.144  INFO 1812 --- [http-nio-8080-exec-10] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/27/blog, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.UBlogController.toBlogPage, args=[27, {}])
+2021-04-26 21:35:10.151  INFO 1812 --- [http-nio-8080-exec-10] c.p.b.controller.user.UBlogController    : Mon Apr 19 18:48:29 CST 2021
+2021-04-26 21:35:10.162  INFO 1812 --- [http-nio-8080-exec-10] com.program.blog.aspect.LogAspect        : Result : blog
+2021-04-26 21:35:22.063  INFO 1812 --- [http-nio-8080-exec-5] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/comment, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.UBlogController.comment, args=[Comment(id=null, content=12312312312, createTime=null, replyComment=null, parentComment=Comment(id=-1, content=null, createTime=null, replyComment=null, parentComment=null, writer=null, replyTo=null, blog=null), writer=null, replyTo=null, blog=Blog(id=null, title=null, content=null, indexPicture=null, flag=null, describe=null, viewCount=null, published=false, recommend=false, createTime=null, updateTime=null, commentList=null, type=null, writer=null))])
+2021-04-26 21:35:22.063  INFO 1812 --- [http-nio-8080-exec-5] c.p.b.controller.user.UBlogController    : Comment(id=null, content=12312312312, createTime=null, replyComment=null, parentComment=Comment(id=-1, content=null, createTime=null, replyComment=null, parentComment=null, writer=null, replyTo=null, blog=null), writer=null, replyTo=null, blog=Blog(id=null, title=null, content=null, indexPicture=null, flag=null, describe=null, viewCount=null, published=false, recommend=false, createTime=null, updateTime=null, commentList=null, type=null, writer=null))
+2021-04-26 21:35:22.064  INFO 1812 --- [http-nio-8080-exec-5] com.program.blog.aspect.LogAspect        : Result : 

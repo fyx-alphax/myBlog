@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.program.blog.repository.user.UBlogRepository">
+    <resultMap id="blogList" type="com.program.blog.entity.Blog">
+        <id column="id" property="id"/>
+        <result column="title" property="title"/>
+        <result column="describe" property="describe"/>
+        <result column="indexPicture" property="indexPicture"/>
+        <result column="viewCount" property="viewCount"/>
+        <result column="updateTime" property="updateTime"/>
+        <result column="createTime" property="createTime"/>
+        <result column="content" property="content"/>
+        <result column="flag" property="flag"/>
+        <association property="type" javaType="com.program.blog.entity.Type" column="type_id" select="com.program.blog.repository.user.UTypeRepository.getTypeById">
+        </association>
+        <association property="writer" javaType="com.program.blog.entity.User" column="writer_id" select="com.program.blog.repository.user.UUserRepository.selectUserInfoById">
+        </association>
+    </resultMap>
+
+    <select id="getPublishedList"  resultMap="blogList">
+        select id, title, `describe`, indexPicture, viewCount, writer_id, type_id, updateTime from blog where published=1
+    </select>
+    <select id="publishedCount" resultType="int">
+        select count(id) from blog where published=1
+    </select>
+    <select id="listRecommend" resultType="com.program.blog.entity.Blog">
+        select id, title, indexPicture from blog where recommend=1 and published=1 order by updateTime desc
+    </select>
+    <select id="listBlogByTypeId" parameterType="Long" resultMap="blogList">
+        select id, title, `describe`, indexPicture, viewCount, writer_id, type_id, updateTime from blog where published=1 and type_id=#{typeId}
+    </select>
+    <select id="listBlogByTitle" parameterType="String" resultMap="blogList">
+        select id, title, `describe`, indexPicture, viewCount, writer_id, type_id, updateTime from blog where published=1 and title like "%"#{title}"%"
+    </select>
+    <select id="getBlogById" parameterType="Long" resultMap="blogList">
+        select id, flag, title, content, viewCount, writer_id, type_id, createTime, updateTime from blog where id=#{id}
+    </select>
+    <select id="getTotalView" resultType="int">
+        select sum(viewCount) from blog
+    </select>
+    <update id="updateViewCount">
+        update blog set viewCount=#{viewCount} where id=#{id}
+    </update>
+</mapper>

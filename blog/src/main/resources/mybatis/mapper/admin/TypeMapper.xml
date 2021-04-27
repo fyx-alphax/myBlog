@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.program.blog.repository.admin.TypeRepository">
+    <insert id="insertType" parameterType="com.program.blog.entity.Type" useGeneratedKeys="true" keyProperty="id" keyColumn="id">
+        insert into type (name) values (#{name})
+    </insert>
+    <update id="updateTypeName">
+        update type set name=#{name} where id=#{id}
+    </update>
+    <delete id="deleteTypeById" parameterType="Long">
+        delete from type where id=#{id}
+    </delete>
+    <select id="getTypeById" parameterType="Long" resultType="com.program.blog.entity.Type">
+        select * from type where id=#{id}
+    </select>
+    <select id="findAll" resultType="com.program.blog.entity.Type">
+        select * from type order by id
+    </select>
+    <select id="getTypeByName" parameterType="String" resultType="com.program.blog.entity.Type">
+        select * from type where name=#{name}
+    </select>
+</mapper>

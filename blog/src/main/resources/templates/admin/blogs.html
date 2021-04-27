@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="admin/admin_fragment :: head(~{::title})">
+    <meta charset="UTF-8">
+    <!--移动端更好的适应-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../static/dist/semantic/semantic.min.css">
+    <link rel="stylesheet" href="../../static/css/me.css">
+    <title>博客管理</title>
+</head>
+<body>
+    <!--导航开始--------------------------------------------->
+    <nav class="ui inverted gird-header">
+        <div class="ui container" th:replace="admin/admin_fragment :: firstNav(1)">
+            <div class="ui inverted secondary stackable menu">
+                <h2 class="ui olive header item" style="font-family: STSong">管理后台</h2>
+                <a href="#" class=" m-item item m-mobile-hide" th:classappend="${status == 1} ? 'active'"><i class="home icon"></i>文章管理</a>
+                <a href="#" class=" m-item item m-mobile-hide" th:classappend="${status == 2} ? 'active'"><i class="clone outline icon"></i>分类管理</a>
+                <a href="#" class=" m-item item m-mobile-hide" th:classappend="${status == 3} ? 'active'"><i class="pencil alternate icon"></i>友链管理</a>
+                <div class="right m-item m-mobile-hide menu">
+                    <div class="ui dropdown item">
+                        <img class="ui avatar image" src="../../static/images/pika.jpg" th:src="@{/images/pika.jpg}">冯雨轩
+                        <i class="dropdown icon"></i>
+                        <div class="menu">
+                            <a href="#" class="item">修改密码</a>
+                            <a href="#" th:href="@{/}" class="item">首页</a>
+                            <a href="#" class="item" th:href="@{/admin/logout}">注销</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="ui menu toggle black icon button m-right-top m-mobile-show">
+            <i class="sidebar icon"></i>
+        </a>
+
+        <!-- 二级导航 -->
+        <div class="ui attached pointing menu" th:replace="admin/admin_fragment :: secondNav">
+            <div class="ui container">
+                <div class="right menu">
+                    <a href="#" th:href="@{/admin/blogs/input}" class="item">发布</a>
+                    <a href="#" class="active teal item">列表</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--导航结束---------------------------------------------->
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!--中间内容开始------------------------------------------>
+    <div class="m-container-small m-padded-large">
+        <div class="ui container">
+            <!--中间内容上面的搜索 ---->
+            <div class="ui container">
+                <div class="ui segment form">
+                    <input type="hidden" name="page">
+                    <div class="inline fields">
+                        <div class="field">
+                            <input type="text" name="title" placeholder="标题">
+                        </div>
+                        <div class="field">
+                            <div class="ui selection dropdown">
+                                <input type="hidden" name="typeId">
+                                <i class="dropdown icon"></i>
+                                <div class="default text">分类</div>
+                                <div class="menu" >
+                                    <div class="item" data-value="1" th:each="type:${typePageInfo.list}" th:text="${type.name}" th:data-value="${type.id}">java</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui checkbox">
+                                <input type="checkbox" id="recommend" name="recommend">
+                                <label for="recommend">推荐</label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <button type="button" onclick="loadBlogList()" class="ui mini teal basic button"><i class="search icon"></i>搜索</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--中间内容上面的搜索结束 ---->
+            <br>
+            <div class="ui message" th:classappend="${message}=='success' ? 'success':'negative'" th:unless="${#strings.isEmpty(message)}">
+                <i class="close icon"></i>
+                <div class="header">提示：</div>
+                <p th:text="${message}=='success' ? '恭喜，操作成功！':'操作失败！'">恭喜，操作成功！</p>
+            </div>
+
+            <!-- 中间内容搜索结果开始 -->
+            <div id="table_container">
+                <table th:fragment="blogList" class="ui celled table">
+                    <thead>
+                    <tr>
+                        <th></th>
+                        <th>标题</th>
+                        <th>类型</th>
+                        <th>推荐</th>
+                        <th>发布状态</th>
+                        <th>更新时间</th>
+                        <th>操作</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr th:each="blog:${blogPageInfo.list}">
+                        <td th:text="${blogPageInfo.list.indexOf(blog)}+1+((*{blogPageInfo.pageNum}-1)*5)">1</td>
+                        <td th:text="${blog.title}">springboot开发指南</td>
+                        <td th:text="${blog.type.name}">springboot</td>
+                        <td th:text="${blog.recommend} ? '是':'否'">是</td>
+                        <td th:text="${blog.published} ? '发布':'草稿'">是</td>
+                        <td th:text="${#dates.format(blog.updateTime,'yyyy-MM-dd HH:mm:ss')}">2020-01-02 09:01</td>
+                        <td>
+                            <a href="#" th:href="@{/admin/blogs/{id}/edit(id=${blog.id})}" class="ui mini teal basic button">编辑</a>
+                            <a href="#" th:href="@{/admin/blogs/{id}/delete(id=${blog.id})}" class="ui mini red basic button">删除</a>
+                        </td>
+                    </tr>
+                    </tbody>
+                    <!-- 中间内容分页开始 -->
+                    <tfoot>
+                    <tr>
+                        <th colspan="7">
+                            <div class="ui mini pagination menu" th:if="${blogPageInfo.pages}>1">
+                                <a class="item" onclick="page(this)" th:attr="data-page=${blogPageInfo.pageNum}-1" th:if="${blogPageInfo.pageNum}>1">上一页</a>
+                                <a class="item" onclick="page(this)" th:attr="data-page=${blogPageInfo.pageNum}+1" th:if="${blogPageInfo.pageNum}<${blogPageInfo.pages}">下一页</a>
+                            </div>
+                            <a th:href="@{/admin/blogs/input}" class="ui mini right floated teal basic button">新增</a>
+                        </th>
+                    </tr>
+                    </tfoot>
+                    <!-- 中间内容分页结束 -->
+                </table>
+            </div>
+            <!-- 中间内容搜索结果结束 -->
+        </div>
+    </div>
+    <!--中间内容结束------------------------------------------>
+    <br>
+    <!--底部内容开始-->
+    <footer th:replace="admin/admin_fragment :: footer" class="ui inverted vertical segment m-padded-massive">
+        <div class="ui center aligned container">
+            <div class="ui inverted divided stackable grid">
+                <div class="three wide column">
+                    <div class="ui inverted link list">
+                        <div class="item">
+                            <img src="../../static/images/wechat.jpg" class="ui rounded image" alt="" style="width: 110px"/>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="three wide column">
+                    <h4 class="ui inverted header m-text-thin m-text-spaced">最新博客</h4>
+                    <div class="ui inverted link list">
+                        <a class="item" href="#">testXXXXXXXXX</a>
+                        <a class="item" href="#">testXXXXXXXXX</a>
+                        <a class="item" href="#">testXXXXXXXXX</a>
+                        <a class="item" href="#">testXXXXXXXXX</a>
+                    </div>
+                </div>
+                <div class="three wide column">
+                    <h4 class="ui inverted header m-text-thin m-text-spaced">联系我</h4>
+                    <div class="ui inverted link list">
+                        <a class="item" href="#">Email: 978505436@qq.com</a>
+                        <a class="item" href="#">QQ: 978505436</a>
+                    </div>
+                </div>
+                <div class="seven wide column">
+                    <h4 class="ui inverted header m-text-thin m-text-spaced">介绍</h4>
+                    <p class="m-text-thin m-text-spaced m-opacity-mini">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                        XXXXXXXXXXXXXXXXXXXXXXXXXXXX</p>
+                </div>
+
+            </div>
+            <div class="ui inverted section divider"></div>
+            <p class="m-text-thin m-text-spaced m-opacity-tiny">Copyright 2019 - 2020</p>
+        </div>
+    </footer>
+    <!--底部内容结束------------------------------------------>
+
+<!--/*/<th:block th:replace="admin/admin_fragment :: script">/*/-->
+    <script src="../../static/dist/jquery/jquery-3.4.1.min.js"></script>
+    <script src="../../static/dist/semantic/semantic.min.js"></script>
+<!--/*/</th:block>/*/-->
+
+<script>
+    // 运行时间统计
+    function secondToDate(second) {
+        if (!second) {
+            return 0;
+        }
+        var time = new Array(0, 0, 0, 0, 0);
+        if (second >= 365 * 24 * 3600) {
+            time[0] = parseInt(second / (365 * 24 * 3600));
+            second %= 365 * 24 * 3600;
+        }
+        if (second >= 24 * 3600) {
+            time[1] = parseInt(second / (24 * 3600));
+            second %= 24 * 3600;
+        }
+        if (second >= 3600) {
+            time[2] = parseInt(second / 3600);
+            second %= 3600;
+        }
+        if (second >= 60) {
+            time[3] = parseInt(second / 60);
+            second %= 60;
+        }
+        if (second > 0) {
+            time[4] = second;
+        }
+        return time;
+    }
+    function setTime() {
+        /*此处为网站的创建时间*/
+        var create_time = Math.round(new Date(Date.UTC(2021, 0o3, 15, 15, 15, 15)).getTime() / 1000);
+        var timestamp = Math.round((new Date().getTime() + 8 * 60 * 60 * 1000) / 1000);
+        currentTime = secondToDate((timestamp - create_time));
+        currentTimeHtml = currentTime[0] + '年' + currentTime[1] + '天'
+            + currentTime[2] + '时' + currentTime[3] + '分' + currentTime[4]
+            + '秒';
+        document.getElementById("htmer_time").innerHTML = currentTimeHtml;
+    }
+    setInterval(setTime, 1000);
+
+    $('.m-menu.m-toggle').click(function () {
+        $('.m-item').toggleClass('m-mobile-hide');
+    });
+
+    $('.ui.dropdown').dropdown({
+        on : 'hover'
+    });
+    $('.close.icon').click(function () {
+        $('.message').remove();
+    });
+    function page(obj) {
+        $("[name='page']").val($(obj).data("page"));
+        loadBlogList();
+    }
+
+    function loadBlogList() {
+        $('#table_container').load(/*[[@{/admin/blogs/search}]]*/"/admin/blogs/search",{
+            blogTitle: $("[name='title']").val(),
+            typeId: $("[name='typeId']").val(),
+            recommend: $("[name='recommend']").prop('checked'),
+            pageNum: $("[name='page']").val()
+        })
+    }
+</script>
+</body>
+</html>

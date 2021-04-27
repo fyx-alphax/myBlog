@@ -1,0 +1,9 @@
+spring:
+  profiles:
+    active: dev
+pagehelper:
+  helper-dialect: mysql
+  reasonable: true
+mybatis:
+  configuration:
+    lazy-loading-enabled: true

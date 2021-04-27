@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="admin/admin_fragment :: head(~{::title})">
+    <meta charset="UTF-8">
+    <!--移动端更好的适应-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../static/dist/semantic/semantic.min.css">
+    <link rel="stylesheet" href="../../static/lib/editormd/css/editormd.min.css">
+    <link rel="stylesheet" href="../../static/css/my.css">
+    <title>分类管理</title>
+</head>
+<body>
+    <!--导航开始--------------------------------------------->
+    <nav class="ui inverted attached segment m-padded-mini m-shadow-small">
+        <div class="ui container" th:replace="admin/admin_fragment :: firstNav(2)">
+            <div class="ui inverted secondary stackable menu">
+                <h2 class="ui teal header item">管理后台</h2>
+                <a href="#" class="m-item item m-mobile-hide"><i class="home icon"></i>首页</a>
+                <a href="#" class="m-item item m-mobile-hide"><i class="idea icon"></i>分类</a>
+                <a href="#" class="m-item item m-mobile-hide"><i class="tags icon"></i>标签</a>
+                <div class="right m-item m-mobile-hide menu">
+                    <div class="ui dropdown item">
+                        <img class="ui avatar image" src="../../static/images/pika.jpg">冯雨轩
+                        <i class="dropdown icon"></i>
+                        <div class="menu">
+                            <a href="#" class="item">修改密码</a>
+                            <a href="#" class="item">博客管理</a>
+                            <a href="#" class="item">注销</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a href="#" class="ui m-menu m-toggle black icon button m-right-top m-mobile-show">
+            <i class="sidebar icon"></i>
+        </a>
+    </nav>
+    <!-- 二级导航 -->
+    <div class="ui attached pointing menu" th:replace="admin/admin_fragment :: secondNav">
+        <div class="ui container">
+            <div class="right menu">
+                <a href="#" class="active teal item">发布</a>
+                <a href="#" th:href="@{/admin/types}" class="item">列表</a>
+            </div>
+        </div>
+    </div>
+    <!--导航结束---------------------------------------------->
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!--中间内容开始------------------------------------------>
+    <div class="m-container-small m-padded-large">
+        <div class="ui container">
+            <div class="ui segment">
+                <form action="#" method="post" class="ui form" th:object="${type}" th:action="@{/admin/types/new}">
+                    <div class="required field" style="margin-top: 6em !important; ">
+                        <div class="ui left labeled input">
+                            <div class="ui selection compact teal basic label">
+                                <div class="text">名称</div>
+                            </div>
+                            <input type="text" autocomplete="off" name="name" th:value="*{name}" placeholder="请输入分类名称">
+                        </div>
+                    </div>
+                    <div class="ui negative message" th:unless="${#strings.isEmpty(message)}">
+                        <i class="close icon"></i>
+                        <div class="header">提示：</div>
+                        <p th:text="${message}">操作出错啦！</p>
+                    </div>
+                    <div class="ui right aligned container">
+                        <button type="button" class="ui button" onclick="window.history.go(-1)">返回</button>
+                        <button type="submit" class="ui teal button">发布</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+    <!--中间内容结束------------------------------------------>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!--底部内容开始-->
+    <footer class="ui inverted vertical segment m-padded-massive" th:replace="admin/admin_fragment :: footer">
+        <div class="ui center aligned container">
+            <div class="ui inverted divided stackable grid">
+                <div class="three wide column">
+                    <div class="ui inverted link list">
+                        <div class="item">
+                            <img src="../../static/images/wechat.jpg" class="ui rounded image" alt="" style="width: 110px"/>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="three wide column">
+                    <h4 class="ui inverted header m-text-thin m-text-spaced">最新博客</h4>
+                    <div class="ui inverted link list">
+                        <a class="item" href="#">testXXXXXXXXX</a>
+                        <a class="item" href="#">testXXXXXXXXX</a>
+                        <a class="item" href="#">testXXXXXXXXX</a>
+                        <a class="item" href="#">testXXXXXXXXX</a>
+                    </div>
+                </div>
+                <div class="three wide column">
+                    <h4 class="ui inverted header m-text-thin m-text-spaced">联系我</h4>
+                    <div class="ui inverted link list">
+                        <a class="item" href="#">Email: 978505436@qq.com</a>
+                        <a class="item" href="#">QQ: 978505436</a>
+                    </div>
+                </div>
+                <div class="seven wide column">
+                    <h4 class="ui inverted header m-text-thin m-text-spaced">介绍</h4>
+                    <p class="m-text-thin m-text-spaced m-opacity-mini">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                        XXXXXXXXXXXXXXXXXXXXXXXXXXXX</p>
+                </div>
+
+            </div>
+            <div class="ui inverted section divider"></div>
+            <p class="m-text-thin m-text-spaced m-opacity-tiny">Copyright 2019 - 2020</p>
+        </div>
+    </footer>
+    <!--底部内容结束------------------------------------------>
+
+<!--/*/<th:block th:replace="admin/admin_fragment :: script">/*/-->
+    <script src="../../static/dist/jquery/jquery-3.4.1.min.js"></script>
+    <script src="../../static/dist/semantic/semantic.min.js"></script>
+    <script src="../../static/lib/editormd/editormd.min.js"></script>
+<!--/*/</th:block>/*/-->
+
+<script>
+    // 运行时间统计
+    function secondToDate(second) {
+        if (!second) {
+            return 0;
+        }
+        var time = new Array(0, 0, 0, 0, 0);
+        if (second >= 365 * 24 * 3600) {
+            time[0] = parseInt(second / (365 * 24 * 3600));
+            second %= 365 * 24 * 3600;
+        }
+        if (second >= 24 * 3600) {
+            time[1] = parseInt(second / (24 * 3600));
+            second %= 24 * 3600;
+        }
+        if (second >= 3600) {
+            time[2] = parseInt(second / 3600);
+            second %= 3600;
+        }
+        if (second >= 60) {
+            time[3] = parseInt(second / 60);
+            second %= 60;
+        }
+        if (second > 0) {
+            time[4] = second;
+        }
+        return time;
+    }
+    function setTime() {
+        /*此处为网站的创建时间*/
+        var create_time = Math.round(new Date(Date.UTC(2021, 0o3, 15, 15, 15, 15)).getTime() / 1000);
+        var timestamp = Math.round((new Date().getTime() + 8 * 60 * 60 * 1000) / 1000);
+        currentTime = secondToDate((timestamp - create_time));
+        currentTimeHtml = currentTime[0] + '年' + currentTime[1] + '天'
+            + currentTime[2] + '时' + currentTime[3] + '分' + currentTime[4]
+            + '秒';
+        document.getElementById("htmer_time").innerHTML = currentTimeHtml;
+    }
+    setInterval(setTime, 1000);
+
+    $('.m-menu.m-toggle').click(function () {
+        $('.m-item').toggleClass('m-mobile-hide');
+    });
+
+    $('.ui.dropdown').dropdown({
+        on : 'hover'
+    });
+    $('.close.icon').click(function () {
+        $('.negative.message').remove();
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/blog?userUnicode=true&characterEncoding=utf-8
+    username: root
+    password: fyx123456
+
+  thymeleaf:
+    cache: false
+
+mybatis:
+  mapper-locations: classpath:mybatis/mapper/*/*.xml
+  type-aliases-package: com.program.blog.
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+logging:
+  level:
+    root: info
+    com.program.blog: debug
+  file:
+    name: log/blog.log

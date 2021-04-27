@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.program.blog.repository.admin.BlogRepository">
+    <resultMap id="listBlogMap" type="com.program.blog.entity.Blog">
+        <id column="id" property="id"/>
+        <result column="title" property="title"/>
+        <result column="updateTime" property="updateTime"/>
+        <result column="recommend" property="recommend"/>
+        <result column="published" property="published"/>
+        <association property="type" select="com.program.blog.repository.admin.TypeRepository.getTypeById" column="type_id" javaType="com.program.blog.entity.Type">
+        </association>
+    </resultMap>
+
+    
+    <resultMap id="blogMap" type="com.program.blog.entity.Blog">
+        <id column="id" property="id"/>
+        <result column="title" property="title"/>
+        <result column="content" property="content"/>
+        <result column="updateTime" property="updateTime"/>
+        <result column="createTime" property="createTime"/>
+        <result column="recommend" property="recommend"/>
+        <result column="indexPicture" property="indexPicture"/>
+        <result column="flag" property="flag"/>
+        <result column="describe" property="describe"/>
+        <result column="viewCount" property="viewCount"/>
+        <result column="published" property="published"/>
+        <association property="type" select="com.program.blog.repository.admin.TypeRepository.getTypeById" column="type_id" javaType="com.program.blog.entity.Type" fetchType="eager">
+        </association>
+    </resultMap>
+
+    <select id="listBlogs" resultMap="listBlogMap">
+        select id,title,updateTime,recommend,type_id,published from blog
+        <where>
+            <if test="recommend == true">recommend = #{recommend}</if>
+            <if test="blogTitle != null">and title like "%"#{blogTitle}"%"</if>
+            <if test="typeId != null">and type_id = #{typeId}</if>
+        </where>
+    </select>
+
+    <select id="getBlogIdByTitle" parameterType="String" resultType="Long">
+        select id from blog where title=#{title}
+    </select>
+
+    <select id="getBlogById" parameterType="Long" resultMap="blogMap">
+        select * from blog b where b.id=#{id};
+    </select>
+    
+    <insert id="saveBlog" parameterType="com.program.blog.entity.Blog" useGeneratedKeys="true" keyProperty="id" keyColumn="id">
+        insert into blog (id, title, indexPicture, content, flag, viewCount, createTime, updateTime, type_id, writer_id, recommend, published, `describe`)
+        VALUES
+               (#{id},#{title},#{indexPicture},#{content},#{flag},#{viewCount},#{createTime},#{updateTime},#{type.id},#{writer.id},#{recommend},#{published},#{describe});
+    </insert>
+
+    <delete id="deleteBlogById" parameterType="Long">
+        delete from blog where id=#{id};
+    </delete>
+
+    <update id="updateBlog" parameterType="com.program.blog.entity.Blog">
+        update blog
+        set
+            title=#{title}, content=#{content}, indexPicture=#{indexPicture}, flag=#{flag}, published=#{published}, recommend=#{recommend}, updateTime=#{updateTime}, type_id=#{type.id}
+        where
+              id=#{id};
+    </update>
+
+    <update id="updateTypes" parameterType="Long">
+        update blog
+        set
+            type_id=1
+        where
+            type_id=#{id}
+    </update>
+
+    <select id="getBlogByTitle" parameterType="String" resultMap="blogMap">
+        select * from blog b where b.title=#{title};
+    </select>
+
+</mapper>
