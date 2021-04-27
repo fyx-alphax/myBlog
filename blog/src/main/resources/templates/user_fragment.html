@@ -39,7 +39,7 @@
                         </div>
                     </form>
                 </div>
-
+                <a class="ui right item" th:href="@{/admin}">管理后台</a>
                 <div class="right m-item m-mobile-hide menu" th:if="${session.user}!=null">
                     <div class="ui dropdown item">
                         <img class="ui avatar image" src="../../static/images/pika.jpg" th:src="@{/images/pika.jpg}">冯雨轩
@@ -126,6 +126,7 @@
             var zp = new zplayer({
                 element: document.getElementById("player"),
                 fixed:true,
+                listFolded: false,
                 volume: 0.1,
                 musics: [{
                     title: "只要平凡",

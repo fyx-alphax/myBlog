@@ -1869,3 +1869,106 @@ org.apache.ibatis.reflection.ReflectionException: There is no getter for propert
 2021-04-27 18:30:36.266  INFO 18392 --- [http-nio-8080-exec-4] com.program.blog.aspect.LogAspect        : Result : admin/blogs-input
 2021-04-27 18:33:05.977  INFO 18392 --- [http-nio-8080-exec-1] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/admin/blogs/input, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.admin.BlogController.blogAddPage, args=[{}])
 2021-04-27 18:33:05.980  INFO 18392 --- [http-nio-8080-exec-1] com.program.blog.aspect.LogAspect        : Result : admin/blogs-input
+2021-04-27 19:46:58.379  INFO 19172 --- [restartedMain] com.program.blog.BlogApplication         : Starting BlogApplication using Java 12.0.2 on LAPTOP-B2BM54RN with PID 19172 (E:\IdeaProjects\blog\target\classes started by 轩 in E:\IdeaProjects\blog)
+2021-04-27 19:46:58.392 DEBUG 19172 --- [restartedMain] com.program.blog.BlogApplication         : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-04-27 19:46:58.392  INFO 19172 --- [restartedMain] com.program.blog.BlogApplication         : The following profiles are active: dev
+2021-04-27 19:46:58.456  INFO 19172 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-27 19:46:58.456  INFO 19172 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-27 19:47:00.255  INFO 19172 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-27 19:47:00.264  INFO 19172 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-27 19:47:00.265  INFO 19172 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-04-27 19:47:00.526  INFO 19172 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-27 19:47:00.526  INFO 19172 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2070 ms
+2021-04-27 19:47:01.649  INFO 19172 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-27 19:47:01.788  INFO 19172 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-04-27 19:47:02.149  INFO 19172 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-04-27 19:47:02.182  INFO 19172 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-27 19:47:02.193  INFO 19172 --- [restartedMain] com.program.blog.BlogApplication         : Started BlogApplication in 4.692 seconds (JVM running for 6.535)
+2021-04-27 19:47:42.085  INFO 19172 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-27 19:47:42.087  INFO 19172 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-27 19:47:42.087  INFO 19172 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-04-27 19:47:42.098  WARN 19172 --- [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2021-04-27 19:47:59.218  WARN 19172 --- [http-nio-8080-exec-5] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [407] milliseconds.
+2021-04-27 19:47:59.234  INFO 19172 --- [http-nio-8080-exec-6] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/admin, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.admin.LoginController.loginPage, args=[])
+2021-04-27 19:47:59.242  INFO 19172 --- [http-nio-8080-exec-6] com.program.blog.aspect.LogAspect        : Result : admin/login
+2021-04-27 19:49:06.052  INFO 19172 --- [http-nio-8080-exec-5] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/admin, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.admin.LoginController.loginPage, args=[])
+2021-04-27 19:49:06.052  INFO 19172 --- [http-nio-8080-exec-5] com.program.blog.aspect.LogAspect        : Result : admin/login
+2021-04-27 19:49:13.330  INFO 19172 --- [http-nio-8080-exec-5] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/admin/login, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.admin.LoginController.login, args=[fyx, 123456, org.apache.catalina.session.StandardSessionFacade@5bd99f09, {}])
+2021-04-27 19:49:13.358  INFO 19172 --- [http-nio-8080-exec-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-04-27 19:49:14.481  INFO 19172 --- [http-nio-8080-exec-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-04-27 19:49:14.597  INFO 19172 --- [http-nio-8080-exec-5] com.program.blog.aspect.LogAspect        : Result : redirect:/admin
+2021-04-27 19:49:14.617  INFO 19172 --- [http-nio-8080-exec-8] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/admin, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.admin.LoginController.loginPage, args=[])
+2021-04-27 19:49:14.618  INFO 19172 --- [http-nio-8080-exec-8] com.program.blog.aspect.LogAspect        : Result : admin/login
+2021-04-27 19:49:24.547  INFO 19172 --- [http-nio-8080-exec-5] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/admin/login, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.admin.LoginController.login, args=[fyx, fyx123456, org.apache.catalina.session.StandardSessionFacade@5bd99f09, {}])
+2021-04-27 19:49:24.550  INFO 19172 --- [http-nio-8080-exec-5] com.program.blog.aspect.LogAspect        : Result : redirect:/admin
+2021-04-27 19:49:24.554  INFO 19172 --- [http-nio-8080-exec-8] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/admin, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.admin.LoginController.loginPage, args=[])
+2021-04-27 19:49:24.555  INFO 19172 --- [http-nio-8080-exec-8] com.program.blog.aspect.LogAspect        : Result : admin/login
+2021-04-27 19:50:22.575  INFO 19172 --- [http-nio-8080-exec-8] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/admin, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.admin.LoginController.loginPage, args=[])
+2021-04-27 19:50:22.575  INFO 19172 --- [http-nio-8080-exec-8] com.program.blog.aspect.LogAspect        : Result : admin/login
+2021-04-27 19:50:27.230  INFO 19172 --- [http-nio-8080-exec-5] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/admin/login, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.admin.LoginController.login, args=[fyx, 123, org.apache.catalina.session.StandardSessionFacade@5bd99f09, {}])
+2021-04-27 19:50:27.233  INFO 19172 --- [http-nio-8080-exec-5] com.program.blog.aspect.LogAspect        : Result : redirect:/admin
+2021-04-27 19:50:27.237  INFO 19172 --- [http-nio-8080-exec-8] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/admin, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.admin.LoginController.loginPage, args=[])
+2021-04-27 19:50:27.238  INFO 19172 --- [http-nio-8080-exec-8] com.program.blog.aspect.LogAspect        : Result : admin/login
+2021-04-27 19:50:31.358  INFO 19172 --- [http-nio-8080-exec-2] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/admin/login, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.admin.LoginController.login, args=[fyx, fyx123, org.apache.catalina.session.StandardSessionFacade@5bd99f09, {}])
+2021-04-27 19:50:31.362  INFO 19172 --- [http-nio-8080-exec-2] com.program.blog.aspect.LogAspect        : Result : redirect:/admin
+2021-04-27 19:50:31.367  INFO 19172 --- [http-nio-8080-exec-4] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/admin, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.admin.LoginController.loginPage, args=[])
+2021-04-27 19:50:31.367  INFO 19172 --- [http-nio-8080-exec-4] com.program.blog.aspect.LogAspect        : Result : admin/login
+2021-04-27 19:50:39.315  INFO 19172 --- [http-nio-8080-exec-2] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/admin/login, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.admin.LoginController.login, args=[fyx, 123456, org.apache.catalina.session.StandardSessionFacade@5bd99f09, {}])
+2021-04-27 19:50:39.318  INFO 19172 --- [http-nio-8080-exec-2] com.program.blog.aspect.LogAspect        : Result : redirect:/admin
+2021-04-27 19:50:39.323  INFO 19172 --- [http-nio-8080-exec-4] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/admin, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.admin.LoginController.loginPage, args=[])
+2021-04-27 19:50:39.323  INFO 19172 --- [http-nio-8080-exec-4] com.program.blog.aspect.LogAspect        : Result : admin/login
+2021-04-27 19:50:43.468  INFO 19172 --- [http-nio-8080-exec-10] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/admin/login, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.admin.LoginController.login, args=[fyx, fyx, org.apache.catalina.session.StandardSessionFacade@5bd99f09, {}])
+2021-04-27 19:50:43.577  INFO 19172 --- [http-nio-8080-exec-10] com.program.blog.aspect.LogAspect        : Result : admin/index
+2021-04-27 19:50:56.679  INFO 19172 --- [http-nio-8080-exec-6] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/admin/blogs, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.admin.BlogController.blogsPage, args=[{}, 1])
+2021-04-27 19:50:57.014  INFO 19172 --- [http-nio-8080-exec-6] com.program.blog.aspect.LogAspect        : Result : admin/blogs
+2021-04-27 19:50:59.686  INFO 19172 --- [http-nio-8080-exec-7] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.IndexController.index, args=[{}])
+2021-04-27 19:50:59.900  INFO 19172 --- [http-nio-8080-exec-7] com.program.blog.aspect.LogAspect        : Result : index
+2021-04-27 19:53:30.660  INFO 1332 --- [restartedMain] com.program.blog.BlogApplication         : Starting BlogApplication using Java 12.0.2 on LAPTOP-B2BM54RN with PID 1332 (E:\IdeaProjects\blog\target\classes started by 轩 in E:\IdeaProjects\blog)
+2021-04-27 19:53:30.662 DEBUG 1332 --- [restartedMain] com.program.blog.BlogApplication         : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-04-27 19:53:30.662  INFO 1332 --- [restartedMain] com.program.blog.BlogApplication         : The following profiles are active: dev
+2021-04-27 19:53:30.717  INFO 1332 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-27 19:53:30.718  INFO 1332 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-27 19:53:31.798  INFO 1332 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-27 19:53:31.804  INFO 1332 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-27 19:53:31.804  INFO 1332 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-04-27 19:53:31.865  INFO 1332 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-27 19:53:31.865  INFO 1332 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1144 ms
+2021-04-27 19:53:32.407  INFO 1332 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-27 19:53:32.493  INFO 1332 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-04-27 19:53:32.844  INFO 1332 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-04-27 19:53:32.883  INFO 1332 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-27 19:53:32.926  INFO 1332 --- [restartedMain] com.program.blog.BlogApplication         : Started BlogApplication in 2.658 seconds (JVM running for 3.862)
+2021-04-27 19:54:40.463  INFO 1332 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-27 19:54:40.465  INFO 1332 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-27 19:54:40.466  INFO 1332 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-04-27 19:54:40.548  INFO 1332 --- [http-nio-8080-exec-1] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.IndexController.index, args=[{}])
+2021-04-27 19:54:40.613  INFO 1332 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-04-27 19:54:41.428  INFO 1332 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-04-27 19:54:41.905  INFO 1332 --- [http-nio-8080-exec-1] com.program.blog.aspect.LogAspect        : Result : index
+2021-04-27 19:54:51.934  WARN 1332 --- [http-nio-8080-exec-10] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [429] milliseconds.
+2021-04-27 19:54:51.946  INFO 1332 --- [http-nio-8080-exec-3] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/admin, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.admin.LoginController.loginPage, args=[])
+2021-04-27 19:54:51.948  INFO 1332 --- [http-nio-8080-exec-3] com.program.blog.aspect.LogAspect        : Result : admin/login
+2021-04-27 19:54:55.600  INFO 1332 --- [http-nio-8080-exec-7] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/admin/login, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.admin.LoginController.login, args=[fyx, fyx, org.apache.catalina.session.StandardSessionFacade@263baa9, {}])
+2021-04-27 19:54:55.606  INFO 1332 --- [http-nio-8080-exec-7] com.program.blog.aspect.LogAspect        : Result : admin/index
+2021-04-27 19:55:01.687  INFO 1332 --- [http-nio-8080-exec-4] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.IndexController.index, args=[{}])
+2021-04-27 19:55:01.729  INFO 1332 --- [http-nio-8080-exec-4] com.program.blog.aspect.LogAspect        : Result : index
+2021-04-27 19:55:04.410  INFO 1332 --- [http-nio-8080-exec-6] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/admin/blogs, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.admin.BlogController.blogsPage, args=[{}, 1])
+2021-04-27 19:55:04.520  INFO 1332 --- [http-nio-8080-exec-6] com.program.blog.aspect.LogAspect        : Result : admin/blogs
+2021-04-27 19:55:07.319  INFO 1332 --- [http-nio-8080-exec-4] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/admin/logout, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.admin.LoginController.logout, args=[org.apache.catalina.session.StandardSessionFacade@263baa9])
+2021-04-27 19:55:07.319  INFO 1332 --- [http-nio-8080-exec-4] com.program.blog.aspect.LogAspect        : Result : redirect:/admin
+2021-04-27 19:55:07.329  INFO 1332 --- [http-nio-8080-exec-9] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/admin, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.admin.LoginController.loginPage, args=[])
+2021-04-27 19:55:07.330  INFO 1332 --- [http-nio-8080-exec-9] com.program.blog.aspect.LogAspect        : Result : admin/login
+2021-04-27 19:56:03.137  INFO 1332 --- [http-nio-8080-exec-4] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/admin, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.admin.LoginController.loginPage, args=[])
+2021-04-27 19:56:03.138  INFO 1332 --- [http-nio-8080-exec-4] com.program.blog.aspect.LogAspect        : Result : admin/login
+2021-04-27 19:56:34.748  INFO 1332 --- [http-nio-8080-exec-4] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/admin, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.admin.LoginController.loginPage, args=[])
+2021-04-27 19:56:34.748  INFO 1332 --- [http-nio-8080-exec-4] com.program.blog.aspect.LogAspect        : Result : admin/login
+2021-04-27 19:58:04.474  INFO 1332 --- [http-nio-8080-exec-4] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.IndexController.index, args=[{}])
+2021-04-27 19:58:04.638  INFO 1332 --- [http-nio-8080-exec-4] com.program.blog.aspect.LogAspect        : Result : index
+2021-04-27 19:58:25.037  INFO 1332 --- [http-nio-8080-exec-8] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.IndexController.index, args=[{}])
+2021-04-27 19:58:25.152  INFO 1332 --- [http-nio-8080-exec-8] com.program.blog.aspect.LogAspect        : Result : index
+2021-04-27 19:59:13.539  INFO 1332 --- [http-nio-8080-exec-3] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.IndexController.index, args=[{}])
+2021-04-27 19:59:13.567  INFO 1332 --- [http-nio-8080-exec-3] com.program.blog.aspect.LogAspect        : Result : index
+2021-04-27 19:59:24.454  INFO 1332 --- [http-nio-8080-exec-10] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/admin, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.admin.LoginController.loginPage, args=[])
+2021-04-27 19:59:24.454  INFO 1332 --- [http-nio-8080-exec-10] com.program.blog.aspect.LogAspect        : Result : admin/login
+2021-04-27 19:59:25.731  INFO 1332 --- [http-nio-8080-exec-9] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.IndexController.index, args=[{}])
+2021-04-27 19:59:25.751  INFO 1332 --- [http-nio-8080-exec-9] com.program.blog.aspect.LogAspect        : Result : index

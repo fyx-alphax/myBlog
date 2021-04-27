@@ -177,6 +177,10 @@
     }
     setInterval(setTime, 1000);
 
+    $('.ui.dropdown').dropdown({
+        on : 'hover'
+    });
+
     var zp = new zplayer({
         element: document.getElementById("player"),
         lrcStart: true,/*是否开启歌词功能 ，默认false（为true时musics集合中需要传入lrc字段。）*/
