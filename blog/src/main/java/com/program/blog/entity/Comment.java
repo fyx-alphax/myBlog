@@ -16,6 +16,8 @@ public class Comment {
     private Date createTime;
     private List<Comment> replyComment;
     private String writerName;
+    private Boolean isAdmin;
+    private String replyTo;
     private Long parentId;
     private Long blogId;
 }

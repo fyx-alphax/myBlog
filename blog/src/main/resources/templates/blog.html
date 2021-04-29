@@ -20,13 +20,12 @@
 <nav id="nav" class="gird-header">
   <div class="ui container">
     <div class="ui inverted secondary stackable menu">
-      <h2 class="ui olive header item" style="font-family: STSong">PIKASTAR</h2>
+      <h2 class="ui orange header item" style="font-family: STSong">PIKA'S</h2>
       <!--<div class="right m-item item m-mobile-hide">-->
       <a href="#" class="m-item item" th:href="@{/}"><i class="home icon"></i>首页</a>
       <a href="#" class="m-item item" th:href="@{/types}"><i class="clone outline icon"></i>分类</a>
       <a href="#" class="m-item item" th:href="@{/archives}"><i class="clock icon"></i>时间轴</a>
-      <a href="#" class="m-item item"><i class="music icon"></i>音乐盒</a>
-      <a href="#" class="m-item item"><i class="pencil alternate icon"></i>友人帐</a>
+      <a href="#" class="m-item item" th:href="@{/music}"><i class="music icon"></i>音乐盒</a>
       <a href="#" class="m-item item" th:href="@{/about}"><i class="info icon"></i>关于我</a>
       <!--</div>-->
       <div class="right inverted m-item item">
@@ -37,7 +36,7 @@
           </div>
         </form>
       </div>
-
+      <a class="ui right item" th:if="${session.user}==null" th:href="@{/admin}">管理后台</a>
       <div class="right m-item m-mobile-hide menu" th:if="${session.user}!=null">
         <div class="ui dropdown item">
           <img class="ui avatar image" src="../../static/images/pika.jpg" th:src="@{/images/pika.jpg}">冯雨轩
@@ -487,12 +486,12 @@ h5,h6{font-size:1em;}
             <h3 class="ui dividing header">评论</h3>
             <div class="comment" th:if="${commentList}!=null" th:each="comment : ${commentList}">
               <a class="avatar">
-                <img src="../static/images/avatar.png" th:src="@{/images/guest.jpg}">
+                <img src="../static/images/avatar.png" th:src="${comment.isAdmin==false} ? @{/images/guest.jpg} : @{/images/pika.jpg}">
               </a>
               <div class="content">
                 <a class="author" >
                   <span th:text="${comment.writerName}">Matt</span>
-                  <div class="ui mini basic teal left pointing label m-padded-mini">栈主</div>
+                  <div class="ui mini basic teal left pointing label m-padded-mini" th:if="${comment.isAdmin}">栈主</div>
                 </a>
                 <div class="metadata">
                   <span class="date" th:text="${#dates.format(comment.createTime, 'yyyy-MM-dd HH:mm')}">Today at 5:42PM</span>
@@ -501,20 +500,21 @@ h5,h6{font-size:1em;}
                   How artistic!
                 </div>
                 <div class="actions">
-                  <a class="reply" th:attr="data-commentId=${comment.id}, data-writerName=${comment.writerName}"   onclick="reply(this)">回复</a>
+                  <a class="reply" th:attr="data-replyTo=${comment.writerName}, data-commentId=${comment.id}, data-writerName=${comment.writerName}"   onclick="reply(this)">回复</a>
+                  <a class="deleted" th:if="${session.user}!=null" th:attr="data-commentId=${comment.id}" onclick="deleted(this)">删除</a>
                 </div>
               </div>
               <!--子集评论-->
               <div class="comments">
                 <div class="comment" th:each="reply:${comment.replyComment}">
                   <a class="avatar">
-                    <img src="../static/images/avatar.png" th:src="@{/images/guest.jpg}">
+                    <img src="../static/images/avatar.png" th:src="${reply.isAdmin==false} ? @{/images/guest.jpg} : @{/images/pika.jpg}">
                   </a>
                   <div class="content">
                     <a class="author" >
                       <span th:text="${reply.writerName}">小红</span>
-                      <div class="ui mini basic teal left pointing label m-padded-mini">栈主</div>
-                      &nbsp;<span class="m-teal" th:text="'@ ' + ${comment.writerName}">@ 小白</span>
+                      <div class="ui mini basic teal left pointing label m-padded-mini" th:if="${reply.isAdmin}">栈主</div>
+                      &nbsp;<span class="m-teal" th:text="'@ ' + ${reply.replyTo}">@ 小白</span>
                     </a>
                     <div class="metadata">
                       <span class="date" th:text="${#dates.format(reply.createTime, 'yyyy-MM-dd HH:mm')}">Today at 5:42PM</span>
@@ -523,7 +523,8 @@ h5,h6{font-size:1em;}
                       How artistic!
                     </div>
                     <div class="actions">
-                      <a class="reply" th:attr="data-commentid=${comment.id}, data-writername=${reply.writerName}" onclick="reply(this)">回复</a>
+                      <a class="reply" th:attr="data-replyTo=${reply.writerName}, data-commentid=${comment.id}, data-writername=${reply.writerName}" onclick="reply(this)">回复</a>
+                      <a class="deleted" th:if="${session.user}!=null" th:attr="data-commentId=${reply.id}" onclick="deleted(this)">删除</a>
                     </div>
                   </div>
                 </div>
@@ -537,6 +538,7 @@ h5,h6{font-size:1em;}
       <div id="comment-form" class="ui form">
         <input type="hidden" th:value="${blog.id}" name="blogId">
         <input type="hidden" name="parentId" value="-1">
+        <input type="hidden" name="replyTo" value="null">
         <div class="field">
           <textarea name="content" placeholder="请输入评论信息..."></textarea>
         </div>
@@ -544,7 +546,7 @@ h5,h6{font-size:1em;}
           <div class="field m-mobile-wide m-margin-bottom-small">
             <div class="ui left icon input">
               <i class="user icon"></i>
-              <input type="text" name="nickname" placeholder="姓名">
+              <input type="text" name="nickname" autocomplete="on" placeholder="姓名">
             </div>
           </div>
           <div class="field m-mobile-wide m-margin-bottom-small">
@@ -656,9 +658,6 @@ h5,h6{font-size:1em;}
   <script src="../static/lib/waypoints/jquery.waypoints.min.js" th:src="@{/lib/waypoints/jquery.waypoints.min.js}"></script>
 <!--/*/</th:block>/*/-->
 
-<!--/*/<th:block th:replace="user_fragment :: zplayer">/*/-->
-<div id="player"></div>
-<!--/*/</th:block>/*/-->
 
 <script th:inline="javascript">
 
@@ -701,9 +700,11 @@ h5,h6{font-size:1em;}
           "blogId" : $("[name='blogId']").val(),
           "writerName": $("[name='nickname']").val(),
           "writer.email"   : $("[name='email']").val(),
-          "content" : $("[name='content']").val()
+          "content" : $("[name='content']").val(),
+          "replyTo" : $("[name='replyTo']").val()
         },function (responseTxt, statusTxt, xhr) {
           $(window).scrollTo($('#comment-container').offset().top,500);
+          $("#comment-container").transition('scale in');
           clearContent();
         });
       }
@@ -711,10 +712,21 @@ h5,h6{font-size:1em;}
 
     function reply(obj) {
         var commentId = $(obj).data('commentid');
-        var writerName = $(obj).data('writername');
-        $("[name='content']").attr("placeholder", "@"+writerName).focus();
+        var replyTo = $(obj).data('replyto');
+        $("[name='content']").attr("placeholder", "@"+replyTo).focus();
+        $("[name='replyTo']").val(replyTo);
         $("[name='parentId']").val(commentId);
         $(window).scrollTo($('#comment-form'),500);
+    }
+
+    function deleted(obj) {
+      $("#comment-container").load(/*[[@{/comment/delete}]]*/"/comment/delete",{
+        "blogId" : $("[name='blogId']").val(),
+        "commentId": $(obj).data('commentid')
+      },function (responseTxt, statusTxt, xhr) {
+        $(window).scrollTo($('#comment-container').offset().top,500);
+        $("#comment-container").transition('scale in');
+      });
     }
 
     function clearContent() {

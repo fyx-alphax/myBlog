@@ -8,25 +8,29 @@
         <result column="content" property="content"/>
         <result column="createTime" property="createTime"/>
         <result column="writer_name" property="writerName"/>
+        <result column="isAdmin" property="isAdmin"/>
         <result column="blog_id" property="blogId"/>
+        <result column="blogId" property="blogId"/>
+        <result column="replyTo" property="replyTo"/>
         <collection  property="replyComment" ofType="com.program.blog.entity.Comment" column="id" select="listReplyComment">
-            <id column="id" property="id"/>
-            <result column="content" property="content"/>
-            <result column="createTime" property="createTime"/>
-            <result column="writerName" property="writerName"/>
-            <result column="blogId" property="blogId"/>
         </collection>
     </resultMap>
 
 
     <insert id="saveComment" useGeneratedKeys="true" keyColumn="id" keyProperty="id" parameterType="com.program.blog.entity.Comment">
-        insert into comment (content, createTime, writer_name, blog_id, parent_comment_id) VALUES (#{content}, #{createTime}, #{writerName}, #{blogId}, #{parentId});
+        insert into comment (content, createTime, writer_name, blog_id, parent_comment_id, isAdmin, replyTo) VALUES (#{content}, #{createTime}, #{writerName}, #{blogId}, #{parentId}, #{isAdmin}, #{replyTo});
     </insert>
+    <delete id="deleteComment" parameterType="Long">
+        delete from comment where id=#{id} or (parent_comment_id=#{id} and parent_comment_id != -1)
+    </delete>
+    <select id="getComment" parameterType="Long" resultMap="listComment">
+        select * from comment where id=#{id}
+    </select>
     <select id="listBlogComment" resultMap="listComment">
         select * from comment where blog_id=#{blogId} and parent_comment_id=-1
     </select>
     <select id="listReplyComment" resultType="com.program.blog.entity.Comment">
-        select id, content, createTime, writer_name writerName, blog_id blogId from comment where parent_comment_id=#{parentId} order by createTime
+        select id, content, createTime, isAdmin, replyTo, writer_name writerName, blog_id blogId from comment where parent_comment_id=#{parentId} order by createTime
     </select>
     <select id="count" resultType="int">
         select count(id) from comment

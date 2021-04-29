@@ -6,14 +6,13 @@ import com.program.blog.exception.NotFoundException;
 import com.program.blog.service.user.UBlogService;
 import com.program.blog.service.user.UCommentService;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
 
+import javax.servlet.http.HttpSession;
 import java.util.List;
 
 @Slf4j
@@ -42,11 +41,23 @@ public class UBlogController {
 
     @PostMapping("/comment")
     public String comment(Comment comment,
+                          HttpSession session,
                           Model model){
-        log.info(comment.getParentId().toString());
+        comment.setIsAdmin(session.getAttribute("user") != null);
+        log.info(comment.getReplyTo());
         uCommentService.saveComment(comment);
         List<Comment> commentList = uCommentService.listBlogComment(comment.getBlogId());
         model.addAttribute("commentList", commentList);
+        return "blog :: commentList";
+    }
+
+    @PostMapping("/comment/delete")
+    public String deleteComment(Long commentId,
+                                Long blogId,
+                                Model model){
+        uCommentService.deleteComment(commentId);
+        List<Comment> commentList = uCommentService.listBlogComment(blogId);
+        model.addAttribute("commentList",commentList);
         return "blog :: commentList";
     }
 

@@ -74,7 +74,7 @@
             <div class="ui padded vertical segment m-padded-tb-large">
               <div class="ui middle aligned mobile reversed stackable grid blogBox" th:each="blog:${blogPageInfo.list}">
                 <div class="eleven wide column">
-                  <h3 class="ui header" ><a href="#" th:text="${blog.title}">大圣，此去欲何?</a></h3>
+                  <h3 class="ui header" ><a href="#" th:href="@{/{id}/blog(id=${blog.id})}" th:text="${blog.title}">大圣，此去欲何?</a></h3>
                   <p class="m-text" th:text="${blog.describe}">戴上金箍，没法爱你；放下金箍，没法保护你。我知道上天不会给我第二次机会，曾经我们说好的永远，原来也仅仅只有，十二画，而已。“大圣，此去欲何?”“踏南天，碎凌霄。”“若一去不回……”“便一去不回” 其实很多时候，我们都是有机会的，最后真正放弃的，是我们自己。......</p>
                   <div class="ui grid">
                     <div class="eleven wide column">
@@ -88,9 +88,6 @@
                         </div>
                         <div class="item">
                           <i class="eye icon" ></i><span th:text="${blog.viewCount}">2222</span>
-                        </div>
-                        <div class="item">
-                          <i class="comment outline icon"></i> <span>2222</span>
                         </div>
                       </div>
                     </div>
@@ -197,9 +194,6 @@
 
 </footer>
 
-<!--/*/<th:block th:replace="user_fragment :: zplayer">/*/-->
-<div id="player"></div>
-<!--/*/</th:block>/*/-->
 
 <!--/*/<th:block th:replace="user_fragment :: script">/*/-->
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>

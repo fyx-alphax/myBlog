@@ -9,4 +9,6 @@ public interface UCommentService {
     List<Comment> listBlogComment(Long blogId);
 
     int commentCount();
+
+    long deleteComment(Long commentId);
 }

@@ -14,4 +14,8 @@ public interface UCommentRepository {
     List<Comment> listReplyComment(Long parentId);
     List<Comment> listBlogComment(Long blogId);
     int count();
+
+    long deleteComment(Long id);
+
+    Comment getComment(Long id);
 }

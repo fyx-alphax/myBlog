@@ -29,8 +29,16 @@ public class UCommentServiceImpl implements  UCommentService {
     }
 
     @Override
+    public long deleteComment(Long commentId) {
+       return uCommentRepository.deleteComment(commentId);
+    }
+
+    @Override
     public Comment saveComment(Comment comment) {
         comment.setCreateTime(new Date());
+        if (comment.getReplyTo().equals("null")){
+            comment.setReplyTo(null);
+        }
         uCommentRepository.saveComment(comment);
         return comment;
     }

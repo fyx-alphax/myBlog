@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="../static/lib/editormd/css/editormd.min.css" th:href="@{/lib/editormd/css/editormd.min.css}">
     <link rel="stylesheet" href="../static/css/timeline.css" th:href="@{/css/timeline.css}">
     <link rel="stylesheet" href="../static/css/me.css" th:href="@{/css/me.css}">
-    <script type="text/javascript" src="../static/lib/music/js/zplayer.min.js" th:src="@{/lib/music/js/zplayer.min.js}"></script>
     <link rel="stylesheet" href="../static/lib/music/css/zplayer.min.css" th:href="@{/lib/music/css/zplayer.min.css}"/>
     <link rel="stylesheet" href="../static/css/typo.css" th:href="@{/css/typo.css}">
     <link rel="stylesheet" href="../static/css/animate.css" th:href="@{/css/animate.css}">
@@ -28,8 +27,7 @@
                 <a href="#" class="m-item item" th:classappend="${status == 2} ? 'active'" th:href="@{/types}"><i class="clone outline icon"></i>分类</a>
                 <a href="#" class="m-item item" th:classappend="${status == 3} ? 'active'" th:href="@{/archives}"><i class="clock icon"></i>时间轴</a>
                 <a href="#" class="m-item item" th:classappend="${status == 4} ? 'active'" th:href="@{/music}"><i class="music icon"></i>音乐盒</a>
-                <a href="#" class="m-item item" th:classappend="${status == 5} ? 'active'"><i class="pencil alternate icon"></i>友人帐</a>
-                <a href="#" class="m-item item" th:classappend="${status == 6} ? 'active'" th:href="@{/about}"><i class="info icon"></i>关于我</a>
+                <a href="#" class="m-item item" th:classappend="${status == 5} ? 'active'" th:href="@{/about}"><i class="info icon"></i>关于我</a>
                 <!--</div>-->
                 <div class="right inverted m-item item">
                     <form name="search" action="#" method="post" th:action="@{/search}">
@@ -39,7 +37,7 @@
                         </div>
                     </form>
                 </div>
-                <a class="ui right item" th:href="@{/admin}">管理后台</a>
+                <a class="ui right item" th:if="${session.user}==null" th:href="@{/admin}">管理后台</a>
                 <div class="right m-item m-mobile-hide menu" th:if="${session.user}!=null">
                     <div class="ui dropdown item">
                         <img class="ui avatar image" src="../../static/images/pika.jpg" th:src="@{/images/pika.jpg}">冯雨轩
@@ -117,76 +115,6 @@
         <script src="../static/lib/tocbot/tocbot.min.js" th:src="@{/lib/tocbot/tocbot.min.js}"></script>
         <script src="../static/lib/scrollTo/jquery.scrollTo.min.js" th:src="@{/lib/scrollTo/jquery.scrollTo.min.js}"></script>
         <script type="text/javascript" src="../static/lib/music/js/zplayer.min.js" th:src="@{/lib/music/js/zplayer.min.js}"></script>
-    </th:block>
-
-    <th:block th:fragment="zplayer">
-        <div id="player"></div>
-        <script>
-
-            var zp = new zplayer({
-                element: document.getElementById("player"),
-                fixed:true,
-                listFolded: false,
-                volume: 0.1,
-                musics: [{
-                    title: "只要平凡",
-                    author: "张杰/张碧晨",
-                    url: "http://music.163.com/song/media/outer/url?id=574919767.mp3",
-                    pic: "http://p1.music.126.net/CjGoliP3xOB0gcCUaeTTBg==/109951163375727336.jpg?param=300x300",
-                },{
-                    title: "十点半的地铁",
-                    author: "李健",
-                    url: "http://music.163.com/song/media/outer/url?id=466333788.mp3",
-                    pic: "http://p2.music.126.net/64oU_90n8lR7pEJ_dExIPw==/109951163903238311.jpg?param=300y300",
-                },{
-                    title: "天亮以前说再见",
-                    author: "曲肖冰",
-                    url: "http://music.163.com/song/media/outer/url?id=1336789644.mp3",
-                    pic: "http://p2.music.126.net/_P71psYXWlTrEWEuyyN7QA==/109951163770392080.jpg?param=300y300",
-                },{
-                    title: "起风了",
-                    author: "买辣椒也用券",
-                    url: "http://music.163.com/song/media/outer/url?id=1330348068.mp3",
-                    pic: "http://p1.music.126.net/diGAyEmpymX8G7JcnElncQ==/109951163699673355.jpg?param=300y300",
-                },{
-                    title: "遥远的你",
-                    author: "不靠谱组合",
-                    url: "http://music.163.com/song/media/outer/url?id=1333192765.mp3",
-                    pic: "http://p1.music.126.net/j_MOk-u1iEtYWHs-QId41Q==/109951163703802494.jpg?param=300y300",
-                },{
-                    title: "尘土",
-                    author: "安朕宇",
-                    url: "http://music.163.com/song/media/outer/url?id=865021614.mp3",
-                    pic: "http://p1.music.126.net/ssXglUifx_l0Ncv6dORQWQ==/109951163402130495.jpg?param=300y300",
-                },{
-                    title: "夜来故事多",
-                    author: "RAiNBOW计划",
-                    url: "http://music.163.com/song/media/outer/url?id=35625826.mp3",
-                    pic: "http://p1.music.126.net/W_srVOtG_DKS1-txPLqNQQ==/3273246117001205.jpg?param=300y300",
-                },{
-                    title: "夜空中最亮的星",
-                    author: "逃跑计划",
-                    url: "http://music.163.com/song/media/outer/url?id=25706282.mp3",
-                    pic: "http://p1.music.126.net/d541jx7SqoDzVkenhmtg6g==/19193074974743620.jpg?param=300y300",
-                },{
-                    title: "理想不大",
-                    author: "RAiNBOW计划",
-                    url: "http://music.163.com/song/media/outer/url?id=465921645.mp3",
-                    pic: "http://p1.music.126.net/yRgTfVXGbey72ou_49CtVA==/18931391207076094.jpg?param=300y300",
-                },{
-                    title: "世间美好与你环环相扣",
-                    author: "柏松",
-                    url: "http://music.163.com/song/media/outer/url?id=1363948882.mp3",
-                    pic: "http://p2.music.126.net/DK1_4sP_339o5rowMdPXdw==/109951164071024476.jpg?param=300x300",
-                },{
-                    title: "云烟成雨",
-                    author: "房东的猫",
-                    url: "http://music.163.com/song/media/outer/url?id=513360721.mp3",
-                    pic: "http://p1.music.126.net/DSTg1dR7yKsyGq4IK3NL8A==/109951163046050093.jpg?param=300x300",
-                }]
-            })
-            zp.init();
-        </script>
     </th:block>
 
 </body>
