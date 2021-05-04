@@ -102,7 +102,7 @@ public class BlogController {
         PageInfo<Type> typePageInfo = typeService.listType();
         model.addAttribute("blog", blog);
         model.addAttribute("typePageInfo", typePageInfo);
-        return "/admin/blogs-input";
+        return "admin/blogs-input";
     }
 
     @PostMapping("/{id}/edit")

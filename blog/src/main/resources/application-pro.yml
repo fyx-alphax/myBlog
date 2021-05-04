@@ -1,12 +1,15 @@
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/blog
-    username: root
-    password: fyx123456
+    url: jdbc:mysql://localhost:3306/pika_blog_top?userUnicode=true&characterEncoding=utf-8
+    username: pika_blog_top
+    password: ZnG5NNYLnAnLBjbM
+
+  thymeleaf:
+    cache: false
 
 mybatis:
-  mapper-locations: classpath:mybatis/mapper/*.xml
+  mapper-locations: classpath:mybatis/mapper/*/*.xml
   type-aliases-package: com.program.blog.
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

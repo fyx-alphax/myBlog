@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
-<head>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="user_fragment :: head(~{::title})">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>错误</title>
@@ -44,7 +44,7 @@
   </div>
 
 <!--底部栏-->
-<footer class="ui inverted vertical segment m-padded-tb-massive m-opacity">
+<footer class="ui inverted vertical segment m-padded-tb-massive m-opacity" th:replace="user_fragment :: footer">
   <!--容器-->
   <div class="ui center aligned container">
     <div class="ui inverted divided stackable grid">
@@ -106,8 +106,11 @@
 </footer>
 
 
+<!--/*/<th:block th:replace="user_fragment :: script">/*/-->
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.js"></script>
+<script src="../static/lib/waypoints/jquery.waypoints.min.js" th:src="@{/lib/waypoints/jquery.waypoints.min.js}"></script>
+<!--/*/</th:block>/*/-->
 
 <script>
     // $('#newblog-container').load(/*[[@{/footer/newblog}]]*/"/footer/newblog");
@@ -141,7 +144,7 @@
     }
     function setTime() {
         /*此处为网站的创建时间*/
-        var create_time = Math.round(new Date(Date.UTC(2020, 01, 25, 15, 15, 15)).getTime() / 1000);
+        var create_time = Math.round(new Date(Date.UTC(2021, 0o3, 15, 15, 15, 15)).getTime() / 1000);
         var timestamp = Math.round((new Date().getTime() + 8 * 60 * 60 * 1000) / 1000);
         currentTime = secondToDate((timestamp - create_time));
         currentTimeHtml = currentTime[0] + '年' + currentTime[1] + '天'

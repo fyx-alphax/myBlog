@@ -1,0 +1,82 @@
+2021-05-02 14:04:54.836  INFO 9188 --- [main] com.program.blog.BlogApplicationTests    : Starting BlogApplicationTests using Java 12.0.2 on LAPTOP-B2BM54RN with PID 9188 (started by Ðù in E:\IdeaProjects\blog)
+2021-05-02 14:04:54.841 DEBUG 9188 --- [main] com.program.blog.BlogApplicationTests    : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-05-02 14:04:54.842  INFO 9188 --- [main] com.program.blog.BlogApplicationTests    : The following profiles are active: dev
+2021-05-02 14:05:00.917  INFO 9188 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-02 14:05:01.119  INFO 9188 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-05-02 14:05:01.714  INFO 9188 --- [main] com.program.blog.BlogApplicationTests    : Started BlogApplicationTests in 7.603 seconds (JVM running for 9.403)
+2021-05-02 14:05:02.382  INFO 9188 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-02 14:12:08.674  INFO 16336 --- [restartedMain] com.program.blog.BlogApplication         : Starting BlogApplication using Java 12.0.2 on LAPTOP-B2BM54RN with PID 16336 (E:\IdeaProjects\blog\target\classes started by è½© in E:\IdeaProjects\blog)
+2021-05-02 14:12:08.676 DEBUG 16336 --- [restartedMain] com.program.blog.BlogApplication         : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-05-02 14:12:08.676  INFO 16336 --- [restartedMain] com.program.blog.BlogApplication         : The following profiles are active: dev
+2021-05-02 14:12:08.705  INFO 16336 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-05-02 14:12:08.705  INFO 16336 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-05-02 14:12:09.650  INFO 16336 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-05-02 14:12:09.670  INFO 16336 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-05-02 14:12:09.671  INFO 16336 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-05-02 14:12:09.737  INFO 16336 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-05-02 14:12:09.737  INFO 16336 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1031 ms
+2021-05-02 14:12:10.260  INFO 16336 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-02 14:12:10.338  INFO 16336 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-05-02 14:12:10.676  INFO 16336 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-05-02 14:12:10.718  INFO 16336 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-02 14:12:10.728  INFO 16336 --- [restartedMain] com.program.blog.BlogApplication         : Started BlogApplication in 2.847 seconds (JVM running for 4.255)
+2021-05-02 14:12:18.731  INFO 16336 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-02 14:12:18.733  INFO 16336 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-05-02 14:12:18.733  INFO 16336 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-05-02 14:12:18.750  INFO 16336 --- [http-nio-8080-exec-1] com.program.blog.aspect.LogAspect        : Request: LogAspect.RequestLog(url=http://localhost:8080/, ip=0:0:0:0:0:0:0:1, classMethod=com.program.blog.controller.user.IndexController.index, args=[{}])
+2021-05-02 14:12:18.767  INFO 16336 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-05-02 14:12:19.602  INFO 16336 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-05-02 14:12:19.836  INFO 16336 --- [http-nio-8080-exec-1] com.program.blog.aspect.LogAspect        : Result : index
+2021-05-02 14:13:58.590  INFO 18152 --- [main] com.program.blog.BlogApplicationTests    : Starting BlogApplicationTests using Java 12.0.2 on LAPTOP-B2BM54RN with PID 18152 (started by Ðù in E:\IdeaProjects\blog)
+2021-05-02 14:13:58.592 DEBUG 18152 --- [main] com.program.blog.BlogApplicationTests    : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-05-02 14:13:58.592  INFO 18152 --- [main] com.program.blog.BlogApplicationTests    : The following profiles are active: dev
+2021-05-02 14:14:00.766  INFO 18152 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-02 14:14:00.891  INFO 18152 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-05-02 14:14:01.352  INFO 18152 --- [main] com.program.blog.BlogApplicationTests    : Started BlogApplicationTests in 3.121 seconds (JVM running for 3.898)
+2021-05-02 14:14:01.821  INFO 18152 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-02 14:23:35.458  INFO 16336 --- [Thread-5] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-02 14:23:35.459  INFO 16336 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-05-02 14:23:35.508  INFO 16336 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-05-02 14:23:35.653  INFO 16336 --- [restartedMain] com.program.blog.BlogApplication         : Starting BlogApplication using Java 12.0.2 on LAPTOP-B2BM54RN with PID 16336 (E:\IdeaProjects\blog\target\classes started by è½© in E:\IdeaProjects\blog)
+2021-05-02 14:23:35.653 DEBUG 16336 --- [restartedMain] com.program.blog.BlogApplication         : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-05-02 14:23:35.653  INFO 16336 --- [restartedMain] com.program.blog.BlogApplication         : The following profiles are active: pro
+2021-05-02 14:23:36.049  INFO 16336 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-05-02 14:23:36.050  INFO 16336 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-05-02 14:23:36.050  INFO 16336 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-05-02 14:23:36.080  INFO 16336 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-05-02 14:23:36.080  INFO 16336 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 424 ms
+2021-05-02 14:23:36.453  INFO 16336 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-02 14:23:36.505  INFO 16336 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-05-02 14:23:36.727  INFO 16336 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-05-02 14:23:36.743  INFO 16336 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-02 14:23:36.749  INFO 16336 --- [restartedMain] com.program.blog.BlogApplication         : Started BlogApplication in 1.154 seconds (JVM running for 690.275)
+2021-05-02 14:23:36.751  INFO 16336 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-05-02 14:23:36.825  INFO 10452 --- [main] com.program.blog.BlogApplicationTests    : Starting BlogApplicationTests using Java 12.0.2 on LAPTOP-B2BM54RN with PID 10452 (started by Ðù in E:\IdeaProjects\blog)
+2021-05-02 14:23:36.827 DEBUG 10452 --- [main] com.program.blog.BlogApplicationTests    : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-05-02 14:23:36.827  INFO 10452 --- [main] com.program.blog.BlogApplicationTests    : The following profiles are active: pro
+2021-05-02 14:23:39.086  INFO 10452 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-02 14:23:39.255  INFO 10452 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-05-02 14:23:39.836  INFO 10452 --- [main] com.program.blog.BlogApplicationTests    : Started BlogApplicationTests in 3.52 seconds (JVM running for 4.672)
+2021-05-02 14:23:40.300  INFO 10452 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-02 14:27:00.575  INFO 16336 --- [Thread-8] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-02 14:27:00.636  INFO 16336 --- [restartedMain] com.program.blog.BlogApplication         : Starting BlogApplication using Java 12.0.2 on LAPTOP-B2BM54RN with PID 16336 (E:\IdeaProjects\blog\target\classes started by è½© in E:\IdeaProjects\blog)
+2021-05-02 14:27:00.636 DEBUG 16336 --- [restartedMain] com.program.blog.BlogApplication         : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-05-02 14:27:00.636  INFO 16336 --- [restartedMain] com.program.blog.BlogApplication         : The following profiles are active: pro
+2021-05-02 14:27:00.729  INFO 1432 --- [main] com.program.blog.BlogApplicationTests    : Starting BlogApplicationTests using Java 12.0.2 on LAPTOP-B2BM54RN with PID 1432 (started by Ðù in E:\IdeaProjects\blog)
+2021-05-02 14:27:00.731 DEBUG 1432 --- [main] com.program.blog.BlogApplicationTests    : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-05-02 14:27:00.731  INFO 1432 --- [main] com.program.blog.BlogApplicationTests    : The following profiles are active: pro
+2021-05-02 14:27:00.900  INFO 16336 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-05-02 14:27:00.900  INFO 16336 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-05-02 14:27:00.901  INFO 16336 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-05-02 14:27:00.938  INFO 16336 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-05-02 14:27:00.939  INFO 16336 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 301 ms
+2021-05-02 14:27:01.348  INFO 16336 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-02 14:27:01.394  INFO 16336 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-05-02 14:27:01.580  INFO 16336 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-05-02 14:27:01.592  INFO 16336 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-02 14:27:01.595  INFO 16336 --- [restartedMain] com.program.blog.BlogApplication         : Started BlogApplication in 0.986 seconds (JVM running for 895.122)
+2021-05-02 14:27:01.596  INFO 16336 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-05-02 14:27:02.982  INFO 1432 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-02 14:27:03.130  INFO 1432 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-05-02 14:27:03.623  INFO 1432 --- [main] com.program.blog.BlogApplicationTests    : Started BlogApplicationTests in 3.265 seconds (JVM running for 4.087)
+2021-05-02 14:27:04.089  INFO 1432 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
